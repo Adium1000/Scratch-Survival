@@ -1,5 +1,2 @@
 # The compiled lists for the game
-Biomes.txt
-Blocks.txt
-Items.txt
-Recipes.txt
+*.txt
