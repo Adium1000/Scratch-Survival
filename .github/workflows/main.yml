@@ -26,6 +26,7 @@ jobs:
           java -jar JSONtoList.jar Blocks.json
           java -jar JSONtoList.jar Items.json
           java -jar JSONtoList.jar Recipes.json
+          java -jar JSONtoList.jar Floors.json
           
       - name: Upload Lists
         uses: actions/upload-artifact@v2.2.3

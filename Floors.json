@@ -1,0 +1,69 @@
+{
+    "Data": [
+        {
+            "Index": 0,
+            "Name": "Air",
+            "Texture": "Nothing",
+            "Material": "Nothing"
+        },
+        {
+            "Index": 1,
+            "Name": "Stone Floor",
+            "Texture": "BlockStone",
+            "Material": "Stone"
+        },
+        {
+            "Index": 2,
+            "Name": "Grass",
+            "Texture": "FloorGrass",
+            "Material": "Grass"
+        },
+        {
+            "Index": 3,
+            "Name": "Dark Grass",
+            "Texture": "FloorDarkGrass",
+            "Material": "Grass"
+        },
+        {
+            "Index": 4,
+            "Name": "Stone Stairs",
+            "Texture": "Nothing",
+            "Material": "Stone"
+        },
+        {
+            "Index": 5,
+            "Name": "Snow",
+            "Texture": "FloorSnow",
+            "Material": "Snow"
+        }
+    ],
+    "Structure": [
+        {
+            "Index": 0,
+            "Name": "Name",
+            "Type": "String"
+        },
+        {
+            "Index": 1,
+            "Name": "Texture",
+            "Type": "String"
+        },
+        {
+            "_comment": "This determines what sound will play when you walk on it. Nothing is no sound.",
+            "Index": 2,
+            "Name": "Material",
+            "Type": "Enum",
+            "Values": {
+                "Nothing": "-1",
+                "Wood": "0",
+                "Stone": "1",
+                "Sand": "2",
+                "Gravel": "3",
+                "Dirt": "4",
+                "Snow": "5",
+                "Grass": "6",
+                "Metal": "7"
+            }
+        }
+    ]
+}
