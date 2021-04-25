@@ -20,9 +20,15 @@ jobs:
           distribution: 'adopt'
           java-version: '11'
           
-      - name: create-scratch-lists
+      - name: Create Lists
         run: |
           java -jar JSONtoList.jar Biomes.json
           java -jar JSONtoList.jar Blocks.json
           java -jar JSONtoList.jar Items.json
           java -jar JSONtoList.jar Recipes.json
+          
+      - name: Upload Lists
+        uses: actions/upload-artifact@v2.2.3
+        with:
+          name: Lists
+          path: '*.txt'
