@@ -1,0 +1,215 @@
+{
+    "Data": [
+        {
+            "Index": 0,
+            "Name": "How u do dis",
+            "Texture": "ItemBig",
+            "Rarity": "Dev"
+        },
+        {
+            "Index": 1,
+            "Name": "Copper Sword",
+            "Texture": "ItemCopperSword",
+            "Type": "Sword",
+            "TypeInfo": [
+                "45",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "Index": 3,
+            "Name": "Copper Pickaxe",
+            "Texture": "ItemCopperPickaxe",
+            "Type": "Tool",
+            "TypeInfo": [
+                "0",
+                "1",
+                "0"
+            ]
+        },
+        {
+            "Index": 2,
+            "Name": "Copper Axe",
+            "Texture": "ItemCopperAxe",
+            "Type": "Tool",
+            "TypeInfo": [
+                "1",
+                "1",
+                "0"
+            ]
+        },
+        {
+            "Index": 4,
+            "Name": "Stone Block",
+            "Texture": "ItemBlock",
+            "Type": "Block",
+            "TypeInfo": [
+                "1",
+                "0",
+                "0"
+            ]
+        },
+        {
+            "Index": 5,
+            "Name": "Stone Floor",
+            "Texture": "ItemFloor",
+            "Type": "Floor",
+            "TypeInfo": [
+                "1",
+                "0",
+                "0"
+            ]
+        },
+        {
+            "Index": 6,
+            "Name": "Workbench",
+            "Texture": "ItemWorkbench",
+            "Type": "Block",
+            "TypeInfo": [
+                "4",
+                "0",
+                "0"
+            ]
+        },
+        {
+            "Index": 7,
+            "Name": "Wood Log",
+            "Texture": "ItemLog"
+        },
+        {
+            "Index": 8,
+            "Name": "Stone",
+            "Texture": "ItemStone"
+        },
+        {
+            "Index": 9,
+            "Name": "Chest",
+            "Texture": "ItemChest",
+            "Type": "Block",
+            "TypeInfo": [
+                "5",
+                "0",
+                "0"
+            ]
+        },
+        {
+            "Index": 10,
+            "Name": "Bow",
+            "Texture": "ItemBow",
+            "Type": "Bow",
+            "TypeInfo": [
+                "EntityArrow",
+                "2",
+                "2"
+            ]
+        },
+        {
+            "Index": 11,
+            "Name": "Wood Plank",
+            "Texture": "ItemPlank"
+        },
+        {
+            "Index": 12,
+            "Name": "Copper Ingot",
+            "Texture": "ItemCopperIngot"
+        },
+        {
+            "Index": 13,
+            "Name": "Feather",
+            "Texture": "ItemFeather"
+        },
+        {
+            "Index": 14,
+            "Name": "Coal",
+            "Texture": "ItemCoal"
+        },
+        {
+            "Index": 15,
+            "Name": "Furnace",
+            "Texture": "ItemFurnace",
+            "Type": "Block",
+            "TypeInfo": [
+                "7",
+                "0",
+                "0"
+            ]
+        },
+        {
+            "Index": 16,
+            "Name": "Iron Ore",
+            "Texture": "ItemIronOre",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Index": 17,
+            "Name": "Tin Ingot",
+            "Texture": "ItemTinIngot"
+        },
+        {
+            "Index": 18,
+            "Name": "Iron Ingot",
+            "Texture": "ItemIronIngot",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Index": 19,
+            "Name": "Bronze Ingot",
+            "Texture": "ItemBronzeIngot",
+            "Rarity": "Uncommon"
+        },
+        {
+            "Index": 20,
+            "Name": "Copper Ore",
+            "Texture": "ItemCopperOre"
+        },
+        {
+            "Index": 21,
+            "Name": "Tin Ore",
+            "Texture": "ItemTinOre"
+        }
+    ],
+    "Structure": [
+        {
+            "Index": 0,
+            "Name": "Name",
+            "Type": "String"
+        },
+        {
+            "Index": 1,
+            "Name": "Texture",
+            "Type": "String"
+        },
+        {
+            "Index": 2,
+            "Name": "Rarity",
+            "Type": "String",
+            "Default": "Common"
+        },
+        {
+            "Index": 3,
+            "Name": "Type",
+            "Type": "Enum",
+            "Values": {
+                "Nothing": "0",
+                "Tool": "1",
+                "Block": "2",
+                "Floor": "3",
+                "Sword": "4",
+                "Bow": "5"
+            },
+            "Default": "Nothing"
+        },
+        {
+            "Index": 4,
+            "Name": "TypeInfo",
+            "Type": "Array",
+            "Length": 3,
+            "Default": [
+                "-",
+                "-",
+                "-"
+            ]
+        }
+    ]
+}

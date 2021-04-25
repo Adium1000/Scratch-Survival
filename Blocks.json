@@ -1,0 +1,384 @@
+{
+    "Data": [
+        {
+            "Index": 0,
+            "Model": [
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ]
+        },
+        {
+            "Index": 1,
+            "Model": [
+                "BlockStone",
+                "BlockStone",
+                "BlockStone",
+                "BlockStone",
+                "BlockStone",
+                "BlockStone",
+                "BlockStone",
+                "BlockStone"
+            ],
+            "LightResistance": 20,
+            "Hitbox": "8x8",
+            "DoNightShadow": false,
+            "IdealToolClass": "Pickaxe",
+            "IdealMiningTime": 1,
+            "DropPrimary": {
+                "ItemID": 8,
+                "Min": 0,
+                "Max": 1
+            }
+        },
+        {
+            "Index": 2,
+            "Model": [
+                "BlockBedrock",
+                "BlockBedrock",
+                "BlockBedrock",
+                "BlockBedrock",
+                "BlockBedrock",
+                "BlockBedrock",
+                "BlockBedrock",
+                "BlockBedrock"
+            ],
+            "LightResistance": 20,
+            "DoNightShadow": false,
+            "Hitbox": "8x8",
+            "IdealMiningTime": 0,
+            "UnidealMiningTime": 0
+        },
+        {
+            "Index": 3,
+            "Model": [
+                "Tree1Trunk",
+                "Tree1Trunk",
+                "Tree1Trunk",
+                "Tree1Trunk2",
+                "Tree1Trunk3",
+                "Tree1Trunk3",
+                "Tree1Trunk4",
+                "Tree1Trunk5"
+            ],
+            "Hitbox": "Tree1Trunk",
+            "IdealToolClass": "Axe",
+            "IdealMiningTime": 2,
+            "UnidealMiningTime": 0.2,
+            "DropPrimary": {
+                "ItemID": 7,
+                "Min": 0,
+                "Max": 1
+            },
+            "ExtraData": "Rotation"
+        },
+        {
+            "Index": 4,
+            "Model": [
+                "BlockWorkbench1",
+                "BlockWorkbench2",
+                "BlockWorkbench1",
+                "BlockWorkbench3",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "Hitbox": "6x6",
+            "IdealToolClass": "Axe",
+            "IdealMiningTime": 2,
+            "UnidealMiningTime": 0.2,
+            "ExtraData": "CraftingStation",
+            "ExtraDataParameters": [
+                "1",
+                "0",
+                "0"
+            ],
+            "DropPrimary": {
+                "ItemID": 6
+            }
+        },
+        {
+            "Index": 5,
+            "Model": [
+                "BlockChest0",
+                "BlockChest0",
+                "BlockChest1",
+                "BlockChest2",
+                "BlockChest3",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "Hitbox": "6x6",
+            "IdealToolClass": "Axe",
+            "IdealMiningTime": 2,
+            "UnidealMiningTime": 0.2,
+            "ExtraData": "Storage",
+            "ExtraDataParameters": [
+                "18",
+                "0",
+                "0"
+            ]
+        },
+        {
+            "Index": 6,
+            "Model": [
+                "Tuft0-",
+                "Tuft1-",
+                "Tuft2-",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "ExtraData": "MultiModelingRotation",
+            "ExtraDataParameters": [
+                "2",
+                "0",
+                "0"
+            ],
+            "DoNightShadow": false
+        },
+        {
+            "Index": 7,
+            "Model": [
+                "BlockFurnace0",
+                "BlockFurnace1",
+                "BlockFurnace2",
+                "BlockFurnace3",
+                "BlockFurnace4",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "Hitbox": "6x6",
+            "IdealToolClass": "Pickaxe",
+            "IdealMiningTime": 2,
+            "UnidealMiningTime": 0.2,
+            "LightEmission": 50,
+            "ExtraData": "CraftingStation",
+            "ExtraDataParameters": [
+                "2",
+                "0",
+                "0"
+            ],
+            "DropPrimary": {
+                "ItemID": 15
+            }
+        },
+        {
+            "Index": 8,
+            "Model": [
+                "BlockStone",
+                "BlockStone",
+                "BlockStone",
+                "BlockOreCoal",
+                "BlockOreCoal",
+                "BlockStone",
+                "BlockStone",
+                "BlockStone"
+            ],
+            "Hitbox": "8x8",
+            "LightResistance": 20,
+            "DoNightShadow": false,
+            "IdealToolClass": "Pickaxe",
+            "IdealMiningTime": 1,
+            "DropPrimary": {
+                "ItemID": 8,
+                "Min": 0,
+                "Max": 1
+            },
+            "DropSecondary": {
+                "ItemID": 14,
+                "Min": 1,
+                "Max": 3
+            }
+        },
+        {
+            "Index": 9,
+            "Model": [
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "Hitbox": "Staircase",
+            "IdealToolClass": "Nothing",
+            "IdealMiningTime": 0,
+            "ExtraData": "DownwardStairs"
+        },
+        {
+            "Index": 10,
+            "Model": [
+                "BlockUpwardStairs0",
+                "BlockUpwardStairs1",
+                "BlockUpwardStairs2",
+                "BlockUpwardStairs3",
+                "BlockUpwardStairs4",
+                "BlockUpwardStairs5",
+                "Nothing",
+                "Nothing"
+            ],
+            "Hitbox": "6x6",
+            "IdealToolClass": "Nothing",
+            "IdealMiningTime": 0,
+            "ExtraData": "UpwardStairs"
+        }
+    ],
+    "Structure": [
+        {
+            "Index": 0,
+            "Name": "Model",
+            "Type": "Array",
+            "Length": 8
+        },
+        {
+            "Index": 1,
+            "Name": "DoNightShadow",
+            "Type": "Boolean",
+            "Default": true
+        },
+        {
+            "Index": 2,
+            "Name": "Hitbox",
+            "Type": "String",
+            "Default": "Nothing"
+        },
+        {
+            "Index": 3,
+            "Name": "IdealToolClass",
+            "Type": "Enum",
+            "Values": {
+                "Nothing": "-1",
+                "Pickaxe": "0",
+                "Axe": "1",
+                "Shovel": "2"
+            },
+            "Default": "Nothing"
+        },
+        {
+            "Index": 4,
+            "Name": "HarvestLevel",
+            "Type": "Int",
+            "Default": 0
+        },
+        {
+            "Index": 5,
+            "Name": "IdealMiningTime",
+            "Type": "Float",
+            "Default": 0
+        },
+        {
+            "Index": 6,
+            "Name": "UnidealMiningTime",
+            "Type": "Float",
+            "Default": 0
+        },
+        {
+            "Index": 7,
+            "Name": "DropPrimary",
+            "Type": "Object",
+            "Structure": [
+                {
+                    "Index": 0,
+                    "Name": "ItemID",
+                    "Type": "Int",
+                    "Default": "0"
+                },
+                {
+                    "Index": 1,
+                    "Name": "Min",
+                    "Type": "Int",
+                    "Default": "1"
+                },
+                {
+                    "Index": 2,
+                    "Name": "Max",
+                    "Type": "Int",
+                    "Default": "1"
+                }
+            ],
+            "Default": {
+                "Min": 0,
+                "Max": 0
+            }
+        },
+        {
+            "Index": 8,
+            "Name": "DropSecondary",
+            "Type": "Object",
+            "Structure": [
+                {
+                    "Index": 0,
+                    "Name": "ItemID",
+                    "Type": "Int",
+                    "Default": "0"
+                },
+                {
+                    "Index": 1,
+                    "Name": "Min",
+                    "Type": "Int",
+                    "Default": "0"
+                },
+                {
+                    "Index": 2,
+                    "Name": "Max",
+                    "Type": "Int",
+                    "Default": "0"
+                }
+            ],
+            "Default": {}
+        },
+        {
+            "Index": 9,
+            "Name": "ExtraData",
+            "Type": "Enum",
+            "Values": {
+                "Nothing": "0",
+                "Rotation": "1",
+                "CraftingStation": "2",
+                "Storage": "3",
+                "MultiModeling": "4",
+                "MultiModelingRotation": "5",
+                "DownwardStairs": "6",
+                "UpwardStairs": "7"
+            },
+            "Default": "Nothing"
+        },
+        {
+            "Index": 10,
+            "Name": "ExtraDataParameters",
+            "Type": "Array",
+            "Length": 3,
+            "Default": [
+                "0",
+                "0",
+                "0"
+            ]
+        },
+        {
+            "Index": 11,
+            "Name": "LightResistance",
+            "Type": "Int",
+            "Default": 10
+        },
+        {
+            "Index": 12,
+            "Name": "LightEmission",
+            "Type": "Int",
+            "Default": 0
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "Data": [
+        {
+            "Output": 6,
+            "Inputs": {
+                "Item0": 7
+            }
+        },
+        {
+            "Workstation": "Furnace",
+            "Output": 12,
+            "Inputs": {
+                "Item0": 14,
+                "Item1": 20,
+                "Item2": 20
+            }
+        },
+        {
+            "Workstation": "Furnace",
+            "Output": 17,
+            "Inputs": {
+                "Item0": 14,
+                "Item1": 21,
+                "Item2": 21
+            }
+        },
+        {
+            "Workstation": "Furnace",
+            "Output": 19,
+            "Inputs": {
+                "Item0": 14,
+                "Item1": 12,
+                "Item2": 17
+            }
+        },
+        {
+            "Workstation": "Furnace",
+            "Output": 18,
+            "Inputs": {
+                "Item0": 14,
+                "Item1": 16,
+                "Item2": 16
+            }
+        }
+    ],
+    "Structure": [
+        {
+            "Index": 0,
+            "Name": "Workstation",
+            "Type": "Enum",
+            "Values": {
+                "Nothing": "0",
+                "Workbench": "1",
+                "Furnace": "2"
+            },
+            "Default": "Nothing"
+        },
+        {
+            "Index": 1,
+            "Name": "Output",
+            "Type": "Int"
+        },
+        {
+            "Index": 2,
+            "Name": "Inputs",
+            "Type": "Object",
+            "Structure": [
+                {
+                    "Index": 0,
+                    "Name": "Item0",
+                    "Type": "Int"
+                },
+                {
+                    "Index": 1,
+                    "Name": "Item1",
+                    "Type": "Int",
+                    "Default": 0
+                },
+                {
+                    "Index": 2,
+                    "Name": "Item2",
+                    "Type": "Int",
+                    "Default": 0
+                }
+            ]
+        }
+    ]
+}

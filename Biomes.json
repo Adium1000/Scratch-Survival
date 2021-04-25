@@ -1,0 +1,363 @@
+{
+    "Data": [
+        {
+            "Index": 0,
+            "Temperature": 0.5,
+            "Humidity": 0.5,
+            "Blocks": {
+                "Block0": {
+                    "ID": 3,
+                    "Chance": 0.2
+                },
+                "Block1": {
+                    "ID": 6,
+                    "Chance": 0.5
+                }
+            },
+            "NoiseBlocks": {
+                "Block0": {
+                    "ID": 1,
+                    "Threshold": 0.35
+                }
+            },
+            "FloorID": 2,
+            "NoiseFloors": {
+                "Floor1": {
+                    "ID": 1,
+                    "Threshold": 0.35
+                }
+            }
+        },
+        {
+            "Index": 1,
+            "Temperature": 0.4,
+            "Humidity": 0.6,
+            "Blocks": {
+                "Block0": {
+                    "ID": 3,
+                    "Chance": 0.2
+                },
+                "Block1": {
+                    "ID": 1,
+                    "Chance": 0.05
+                },
+                "Block2": {
+                    "ID": 6,
+                    "Chance": 0.5
+                }
+            },
+            "NoiseBlocks": {
+                "Block0": {
+                    "ID": 1,
+                    "Threshold": 0.35
+                }
+            },
+            "FeatureBlocks": {
+                "Block0": {
+                    "ID": 5,
+                    "Threshold": 0.35
+                },
+                "Block1": {
+                    "ID": 4,
+                    "Threshold": -0.65
+                }
+            },
+            "FloorID": 3,
+            "NoiseFloors": {
+                "Floor1": {
+                    "ID": 1,
+                    "Threshold": 0.35
+                }
+            }
+        }
+    ],
+    "Structure": [
+        {
+            "Index": 0,
+            "Name": "Temperature",
+            "Type": "Float"
+        },
+        {
+            "Index": 1,
+            "Name": "Humidity",
+            "Type": "Float"
+        },
+        {
+            "Index": 2,
+            "Name": "Type",
+            "Type": "Enum",
+            "Values": {
+                "Overworld": "0",
+                "Caves": "1",
+                "Mushrooms": "2",
+                "Underworld": "3"
+            },
+            "Default": "Overworld"
+        },
+        {
+            "Index": 3,
+            "Name": "AnimalSpawns",
+            "Type": "Enum",
+            "Values": {
+                "Neutral": "0"
+            },
+            "Default": "Neutral"
+        },
+        {
+            "Index": 4,
+            "Name": "MonsterSpawns",
+            "Type": "Enum",
+            "Values": {
+                "Neutral": "0"
+            },
+            "Default": "Neutral"
+        },
+        {
+            "Index": 5,
+            "Name": "Blocks",
+            "Type": "Object",
+            "Structure": [
+                {
+                    "Index": 0,
+                    "Name": "Block0",
+                    "Type": "Object",
+                    "Structure": [
+                        {
+                            "Index": 0,
+                            "Name": "ID",
+                            "Type": "Int"
+                        },
+                        {
+                            "Index": 1,
+                            "Name": "Chance",
+                            "Type": "Float"
+                        }
+                    ],
+                    "Default": {
+                        "ID": -1,
+                        "Chance": 0
+                    }
+                },
+                {
+                    "Index": 1,
+                    "Name": "Block1",
+                    "Type": "Object",
+                    "Structure": [
+                        {
+                            "Index": 0,
+                            "Name": "ID",
+                            "Type": "Int"
+                        },
+                        {
+                            "Index": 1,
+                            "Name": "Chance",
+                            "Type": "Float"
+                        }
+                    ],
+                    "Default": {
+                        "ID": -1,
+                        "Chance": 0
+                    }
+                },
+                {
+                    "Index": 2,
+                    "Name": "Block2",
+                    "Type": "Object",
+                    "Structure": [
+                        {
+                            "Index": 0,
+                            "Name": "ID",
+                            "Type": "Int"
+                        },
+                        {
+                            "Index": 1,
+                            "Name": "Chance",
+                            "Type": "Float"
+                        }
+                    ],
+                    "Default": {
+                        "ID": -1,
+                        "Chance": 0
+                    }
+                }
+            ],
+            "Default": {}
+        },
+        {
+            "Index": 6,
+            "Name": "NoiseBlocks",
+            "Type": "Object",
+            "Structure": [
+                {
+                    "Index": 0,
+                    "Name": "Block0",
+                    "Type": "Object",
+                    "Structure": [
+                        {
+                            "Index": 0,
+                            "Name": "ID",
+                            "Type": "Int"
+                        },
+                        {
+                            "Index": 1,
+                            "Name": "Threshold",
+                            "Type": "Float"
+                        }
+                    ],
+                    "Default": {
+                        "ID": -1,
+                        "Threshold": 0
+                    }
+                },
+                {
+                    "Index": 1,
+                    "Name": "Block1",
+                    "Type": "Object",
+                    "Structure": [
+                        {
+                            "Index": 0,
+                            "Name": "ID",
+                            "Type": "Int"
+                        },
+                        {
+                            "Index": 1,
+                            "Name": "Threshold",
+                            "Type": "Float"
+                        }
+                    ],
+                    "Default": {
+                        "ID": -1,
+                        "Threshold": 0
+                    }
+                }
+            ],
+            "Default": {}
+        },
+        {
+            "Index": 7,
+            "Name": "FloorID",
+            "Type": "Int"
+        },
+        {
+            "Index": 8,
+            "Name": "AlternateFloor",
+            "Type": "Object",
+            "Structure": [
+                {
+                    "Index": 0,
+                    "Type": "Int",
+                    "Name": "ID"
+                },
+                {
+                    "Index": 1,
+                    "Type": "Float",
+                    "Name": "Chance"
+                }
+            ],
+            "Default": {
+                "ID": -1,
+                "Chance": 0
+            }
+        },
+        {
+            "Index": 9,
+            "Name": "FeatureBlocks",
+            "Type": "Object",
+            "Structure": [
+                {
+                    "Index": 0,
+                    "Name": "Block0",
+                    "Type": "Object",
+                    "Structure": [
+                        {
+                            "Index": 0,
+                            "Name": "ID",
+                            "Type": "Int"
+                        },
+                        {
+                            "Index": 1,
+                            "Name": "Threshold",
+                            "Type": "Float"
+                        }
+                    ],
+                    "Default": {
+                        "ID": -1,
+                        "Threshold": 0
+                    }
+                },
+                {
+                    "Index": 0,
+                    "Name": "Block1",
+                    "Type": "Object",
+                    "Structure": [
+                        {
+                            "Index": 0,
+                            "Name": "ID",
+                            "Type": "Int"
+                        },
+                        {
+                            "Index": 1,
+                            "Name": "Threshold",
+                            "Type": "Float"
+                        }
+                    ],
+                    "Default": {
+                        "ID": -1,
+                        "Threshold": 0
+                    }
+                }
+            ],
+            "Default": {}
+        },
+        {
+            "Index": 10,
+            "Name": "NoiseFloors",
+            "Type": "Object",
+            "Structure": [
+                {
+                    "Index": 0,
+                    "Name": "Floor0",
+                    "Type": "Object",
+                    "Structure": [
+                        {
+                            "Index": 0,
+                            "Name": "ID",
+                            "Type": "Int"
+                        },
+                        {
+                            "Index": 1,
+                            "Name": "Threshold",
+                            "Type": "Float"
+                        }
+                    ],
+                    "Default": {
+                        "ID": -1,
+                        "Threshold": 0
+                    }
+                },
+                {
+                    "Index": 1,
+                    "Name": "Floor1",
+                    "Type": "Object",
+                    "Structure": [
+                        {
+                            "Index": 0,
+                            "Name": "ID",
+                            "Type": "Int"
+                        },
+                        {
+                            "Index": 1,
+                            "Name": "Threshold",
+                            "Type": "Float"
+                        }
+                    ],
+                    "Default": {
+                        "ID": -1,
+                        "Threshold": 0
+                    }
+                }
+            ],
+            "Default": {}
+        }
+    ]
+}
