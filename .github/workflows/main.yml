@@ -1,0 +1,28 @@
+
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+          
+      - name: create-scratch-lists
+        run: |
+          java -jar JSONtoList.jar Biomes.json,
+          java -jar JSONtoList.jar Blocks.json,
+          java -jar JSONtoList.jar Items.json,
+          java -jar JSONtoList.jar Recipes.json,
