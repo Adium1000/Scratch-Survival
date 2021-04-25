@@ -22,6 +22,7 @@ jobs:
           
       - name: create-scratch-lists
         run: |
+          ls -al,
           java -jar JSONtoList.jar Biomes.json,
           java -jar JSONtoList.jar Blocks.json,
           java -jar JSONtoList.jar Items.json,
