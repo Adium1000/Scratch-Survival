@@ -57,14 +57,14 @@
         {
             "Index": 3,
             "Model": [
-                "Tree1Trunk",
-                "Tree1Trunk",
-                "Tree1Trunk",
-                "Tree1Trunk2",
-                "Tree1Trunk3",
-                "Tree1Trunk3",
-                "Tree1Trunk4",
-                "Tree1Trunk5"
+                "BlockTree0-",
+                "BlockTree1-",
+                "BlockTree2-",
+                "BlockTree3-",
+                "BlockTree4-",
+                "BlockTree5-",
+                "BlockTree6-",
+                "BlockTree7-"
             ],
             "Hitbox": "Tree1Trunk",
             "IdealToolClass": "Axe",
@@ -75,7 +75,12 @@
                 "Min": 0,
                 "Max": 1
             },
-            "ExtraData": "Rotation"
+            "ExtraData": "MultiModelingRotation",
+            "ExtraDataParameters": [
+                "4",
+                "0",
+                "0"
+            ]
         },
         {
             "Index": 4,
@@ -129,9 +134,9 @@
         {
             "Index": 6,
             "Model": [
-                "Tuft0-",
-                "Tuft1-",
-                "Tuft2-",
+                "BlockGrass0-",
+                "BlockGrass1-",
+                "BlockGrass2-",
                 "Nothing",
                 "Nothing",
                 "Nothing",
@@ -141,7 +146,7 @@
             "UnidealMiningTime": 5,
             "ExtraData": "MultiModelingRotation",
             "ExtraDataParameters": [
-                "2",
+                "3",
                 "0",
                 "0"
             ],
@@ -235,6 +240,63 @@
             "IdealToolClass": "Nothing",
             "IdealMiningTime": 0,
             "ExtraData": "UpwardStairs"
+        },
+        {
+            "Index": 11,
+            "Model": [
+                "BlockYellowFlower0-",
+                "BlockYellowFlower1-",
+                "BlockYellowFlower2-",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "ExtraData": "MultiModelingRotation",
+            "ExtraDataParameters": [
+                "2",
+                "0",
+                "0"
+            ],
+            "DoNightShadow": false
+        },
+        {
+            "Index": 12,
+            "Model": [
+                "BlockRedFlower0-",
+                "BlockRedFlower1-",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "ExtraData": "MultiModelingRotation",
+            "ExtraDataParameters": [
+                "2",
+                "0",
+                "0"
+            ],
+            "DoNightShadow": false
+        },
+        {
+            "Index": 13,
+            "Model": [
+                "BlockTorchBase",
+                "BlockTorchBase",
+                "BlockTorchFlame",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "LightEmission": 75
         }
     ],
     "Structure": [

@@ -167,6 +167,18 @@
             "Index": 21,
             "Name": "Tin Ore",
             "Texture": "ItemTinOre"
+        },
+        {
+            "Index": 22,
+            "Name": "Torch",
+            "Texture": "ItemTorch",
+            "Type": "Block",
+            "TypeInfo": [
+                "13",
+                "",
+                ""
+            ],
+            "LightEmission": 10
         }
     ],
     "Structure": [
@@ -210,6 +222,12 @@
                 "-",
                 "-"
             ]
+        },
+        {
+            "Index": 5,
+            "Name": "LightEmission",
+            "Type": "Int",
+            "Default": 0
         }
     ]
 }

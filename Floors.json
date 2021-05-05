@@ -49,7 +49,6 @@
             "Type": "String"
         },
         {
-            "_comment": "This determines what sound will play when you walk on it. Nothing is no sound.",
             "Index": 2,
             "Name": "Material",
             "Type": "Enum",
@@ -61,8 +60,7 @@
                 "Gravel": "3",
                 "Dirt": "4",
                 "Snow": "5",
-                "Grass": "6",
-                "Metal": "7"
+                "Grass": "6"
             }
         }
     ]
