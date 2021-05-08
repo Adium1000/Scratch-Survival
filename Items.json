@@ -179,6 +179,50 @@
                 ""
             ],
             "LightEmission": 10
+        },
+        {
+            "Index": 23,
+            "Name": "Copper Helmet",
+            "Texture": "ItemCopperHelmet",
+            "Type": "Helmet",
+            "TypeInfo": [
+                "2",
+                "",
+                ""
+            ]
+        },
+        {
+            "Index": 24,
+            "Name": "Copper Chestplate",
+            "Texture": "ItemCopperChestplate",
+            "Type": "Chestplate",
+            "TypeInfo": [
+                "3",
+                "",
+                ""
+            ]
+        },
+        {
+            "Index": 25,
+            "Name": "Copper Pants",
+            "Texture": "ItemCopperPants",
+            "Type": "Pants",
+            "TypeInfo": [
+                "2",
+                "",
+                ""
+            ]
+        },
+        {
+            "Index": 26,
+            "Name": "Copper Boots",
+            "Texture": "ItemCopperBoots",
+            "Type": "Boots",
+            "TypeInfo": [
+                "1",
+                "",
+                ""
+            ]
         }
     ],
     "Structure": [
@@ -208,7 +252,11 @@
                 "Block": "2",
                 "Floor": "3",
                 "Sword": "4",
-                "Bow": "5"
+                "Bow": "5",
+                "Helmet": "6",
+                "Chestplate": "7",
+                "Pants": "8",
+                "Boots": "9"
             },
             "Default": "Nothing"
         },
