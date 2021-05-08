@@ -223,6 +223,108 @@
                 "",
                 ""
             ]
+        },
+        {
+            "Index": 27,
+            "Name": "Raw Meat",
+            "Texture": "ItemRawMeat",
+            "Type": "Food",
+            "TypeInfo": [
+                "5",
+                "",
+                ""
+            ]
+        },
+        {
+            "Index": 28,
+            "Name": "Cooked Meat",
+            "Texture": "ItemCookedMeat",
+            "Type": "Food",
+            "TypeInfo": [
+                "20",
+                "",
+                ""
+            ]
+        },
+        {
+            "Index": 29,
+            "Name": "Potato",
+            "Texture": "ItemPotato",
+            "Type": "Food",
+            "TypeInfo": [
+                "8",
+                "",
+                ""
+            ]
+        },
+        {
+            "Index": 30,
+            "Name": "Corn",
+            "Texture": "ItemCorn",
+            "Type": "Food",
+            "TypeInfo": [
+                "6",
+                "",
+                ""
+            ]
+        },
+        {
+            "Index": 31,
+            "Name": "Wheat",
+            "Texture": "ItemWheat"
+        },
+        {
+            "Index": 32,
+            "Name": "Bread",
+            "Texture": "ItemBread",
+            "Type": "Food",
+            "TypeInfo": [
+                "15",
+                "",
+                ""
+            ]
+        },
+        {
+            "Index": 33,
+            "Name": "Hamburger",
+            "Texture": "ItemHamburger",
+            "Type": "Food",
+            "TypeInfo": [
+                "45",
+                "",
+                ""
+            ],
+            "Rarity": "Uncommon"
+        },
+        {
+            "Index": 34,
+            "Name": "Stew",
+            "Texture": "ItemStew",
+            "Type": "Food",
+            "TypeInfo": [
+                "40",
+                "",
+                ""
+            ],
+            "Rarity": "Uncommon"
+        },
+        {
+            "Index": 35,
+            "Name": "Big Hamburger",
+            "Texture": "ItemBigHamburger",
+            "Type": "Food",
+            "TypeInfo": [
+                "90",
+                "",
+                ""
+            ],
+            "Rarity": "Rare"
+        },
+        {
+            "Index": 36,
+            "Name": "Copper Hoe",
+            "Texture": "ItemCopperHoe",
+            "Type": "Hoe"
         }
     ],
     "Structure": [
@@ -256,7 +358,9 @@
                 "Helmet": "6",
                 "Chestplate": "7",
                 "Pants": "8",
-                "Boots": "9"
+                "Boots": "9",
+                "Food": "10",
+                "Hoe": "11"
             },
             "Default": "Nothing"
         },

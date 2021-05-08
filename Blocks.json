@@ -11,7 +11,8 @@
                 "Nothing",
                 "Nothing",
                 "Nothing"
-            ]
+            ],
+            "Overwritable": true
         },
         {
             "Index": 1,
@@ -150,7 +151,8 @@
                 "0",
                 "0"
             ],
-            "DoNightShadow": false
+            "DoNightShadow": false,
+            "Overwritable": true
         },
         {
             "Index": 7,
@@ -260,7 +262,8 @@
                 "0",
                 "0"
             ],
-            "DoNightShadow": false
+            "DoNightShadow": false,
+            "Overwritable": true
         },
         {
             "Index": 12,
@@ -281,7 +284,8 @@
                 "0",
                 "0"
             ],
-            "DoNightShadow": false
+            "DoNightShadow": false,
+            "Overwritable": true
         },
         {
             "Index": 13,
@@ -441,6 +445,12 @@
             "Name": "LightEmission",
             "Type": "Int",
             "Default": 0
+        },
+        {
+            "Index": 13,
+            "Name": "Overwritable",
+            "Type": "Boolean",
+            "Default": false
         }
     ]
 }

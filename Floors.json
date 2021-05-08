@@ -16,13 +16,15 @@
             "Index": 2,
             "Name": "Grass",
             "Texture": "FloorGrass",
-            "Material": "Grass"
+            "Material": "Grass",
+            "Tillable": true
         },
         {
             "Index": 3,
             "Name": "Dark Grass",
             "Texture": "FloorDarkGrass",
-            "Material": "Grass"
+            "Material": "Grass",
+            "Tillable": true
         },
         {
             "Index": 4,
@@ -34,7 +36,14 @@
             "Index": 5,
             "Name": "Snow",
             "Texture": "FloorSnow",
-            "Material": "Snow"
+            "Material": "Snow",
+            "Tillable": true
+        },
+        {
+            "Index": 6,
+            "Name": "Farmland",
+            "Texture": "FloorFarmland",
+            "Material": "Dirt"
         }
     ],
     "Structure": [
@@ -62,6 +71,12 @@
                 "Snow": "5",
                 "Grass": "6"
             }
+        },
+        {
+            "Index": 3,
+            "Name": "Tillable",
+            "Type": "Boolean",
+            "Default": false
         }
     ]
 }
