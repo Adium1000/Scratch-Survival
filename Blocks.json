@@ -301,6 +301,96 @@
             ],
             "UnidealMiningTime": 5,
             "LightEmission": 75
+        },
+        {
+            "Index": 14,
+            "Model": [
+                "BlockCropCorn0-",
+                "BlockCropCorn1-",
+                "BlockCropCorn2-",
+                "BlockCropCorn3-",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "DropPrimary": {
+                "ItemID": 37,
+                "Min": 1,
+                "Max": 1
+            },
+            "DropSecondary": {
+                "ItemID": 30,
+                "Min": 1,
+                "Max": 1
+            },
+            "ExtraData": "Crop",
+            "ExtraDataParameters": [
+                "10",
+                "3",
+                ""
+            ]
+        },
+        {
+            "Index": 15,
+            "Model": [
+                "BlockCropWheat0-",
+                "BlockCropWheat1-",
+                "BlockCropWheat2-",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "DropPrimary": {
+                "ItemID": 38,
+                "Min": 1,
+                "Max": 1
+            },
+            "DropSecondary": {
+                "ItemID": 31,
+                "Min": 1,
+                "Max": 1
+            },
+            "ExtraData": "Crop",
+            "ExtraDataParameters": [
+                "10",
+                "3",
+                ""
+            ]
+        },
+        {
+            "Index": 16,
+            "Model": [
+                "BlockCropPotato0-",
+                "BlockCropPotato1-",
+                "BlockCropPotato2-",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "DropPrimary": {
+                "ItemID": 29,
+                "Min": 1,
+                "Max": 1
+            },
+            "DropSecondary": {
+                "ItemID": 29,
+                "Min": 1,
+                "Max": 1
+            },
+            "ExtraData": "Crop",
+            "ExtraDataParameters": [
+                "10",
+                "3",
+                ""
+            ]
         }
     ],
     "Structure": [
@@ -419,7 +509,8 @@
                 "MultiModeling": "4",
                 "MultiModelingRotation": "5",
                 "DownwardStairs": "6",
-                "UpwardStairs": "7"
+                "UpwardStairs": "7",
+                "Crop": "8"
             },
             "Default": "Nothing"
         },

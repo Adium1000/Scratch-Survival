@@ -250,10 +250,10 @@
             "Index": 29,
             "Name": "Potato",
             "Texture": "ItemPotato",
-            "Type": "Food",
+            "Type": "Food+Seeds",
             "TypeInfo": [
+                "16",
                 "8",
-                "",
                 ""
             ]
         },
@@ -325,6 +325,28 @@
             "Name": "Copper Hoe",
             "Texture": "ItemCopperHoe",
             "Type": "Hoe"
+        },
+        {
+            "Index": 37,
+            "Name": "Corn Seeds",
+            "Texture": "ItemCornSeeds",
+            "Type": "Seeds",
+            "TypeInfo": [
+                "14",
+                "",
+                ""
+            ]
+        },
+        {
+            "Index": 38,
+            "Name": "Wheat Seeds",
+            "Texture": "ItemWheatSeeds",
+            "Type": "Seeds",
+            "TypeInfo": [
+                "15",
+                "",
+                ""
+            ]
         }
     ],
     "Structure": [
@@ -360,7 +382,9 @@
                 "Pants": "8",
                 "Boots": "9",
                 "Food": "10",
-                "Hoe": "11"
+                "Hoe": "11",
+                "Seeds": "12",
+                "Food+Seeds": "13"
             },
             "Default": "Nothing"
         },
