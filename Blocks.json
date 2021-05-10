@@ -81,7 +81,8 @@
                 "4",
                 "0",
                 "0"
-            ]
+            ],
+            "WindEffect": 0.5
         },
         {
             "Index": 4,
@@ -152,7 +153,8 @@
                 "0"
             ],
             "DoNightShadow": false,
-            "Overwritable": true
+            "Overwritable": true,
+            "WindEffect": 1
         },
         {
             "Index": 7,
@@ -263,7 +265,8 @@
                 "0"
             ],
             "DoNightShadow": false,
-            "Overwritable": true
+            "Overwritable": true,
+            "WindEffect": 0.9
         },
         {
             "Index": 12,
@@ -285,7 +288,8 @@
                 "0"
             ],
             "DoNightShadow": false,
-            "Overwritable": true
+            "Overwritable": true,
+            "WindEffect": 0.9
         },
         {
             "Index": 13,
@@ -330,7 +334,8 @@
                 "10",
                 "3",
                 ""
-            ]
+            ],
+            "LightEmission": 75
         },
         {
             "Index": 15,
@@ -360,7 +365,8 @@
                 "10",
                 "3",
                 ""
-            ]
+            ],
+            "LightEmission": 75
         },
         {
             "Index": 16,
@@ -390,7 +396,8 @@
                 "10",
                 "3",
                 ""
-            ]
+            ],
+            "LightEmission": 75
         }
     ],
     "Structure": [
@@ -542,6 +549,12 @@
             "Name": "Overwritable",
             "Type": "Boolean",
             "Default": false
+        },
+        {
+            "Index": 14,
+            "Name": "WindEffect",
+            "Type": "Float",
+            "Default": 0
         }
     ]
 }
