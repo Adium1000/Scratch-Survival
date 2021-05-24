@@ -4,7 +4,13 @@
             "Index": 0,
             "Name": "How u do dis",
             "Texture": "ItemBig",
-            "Rarity": "Dev"
+            "Rarity": "Dev",
+            "Type": "Tool",
+            "TypeInfo": [
+                "-1",
+                "0.1",
+                ""
+            ]
         },
         {
             "Index": 1,
