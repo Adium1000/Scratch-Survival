@@ -76,8 +76,8 @@
                 "Min": 0,
                 "Max": 1
             },
-            "ExtraData": "MultiModelingRotation",
-            "ExtraDataParameters": [
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
                 "4",
                 "0",
                 "0"
@@ -100,8 +100,8 @@
             "IdealToolClass": "Axe",
             "IdealMiningTime": 2,
             "UnidealMiningTime": 0.2,
-            "ExtraData": "CraftingStation",
-            "ExtraDataParameters": [
+            "Type": "CraftingStation",
+            "TypeInfo": [
                 "1",
                 "0",
                 "0"
@@ -126,8 +126,8 @@
             "IdealToolClass": "Axe",
             "IdealMiningTime": 2,
             "UnidealMiningTime": 0.2,
-            "ExtraData": "Storage",
-            "ExtraDataParameters": [
+            "Type": "Storage",
+            "TypeInfo": [
                 "18",
                 "0",
                 "0"
@@ -146,8 +146,8 @@
                 "Nothing"
             ],
             "UnidealMiningTime": 5,
-            "ExtraData": "MultiModelingRotation",
-            "ExtraDataParameters": [
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
                 "3",
                 "0",
                 "0"
@@ -173,8 +173,8 @@
             "IdealMiningTime": 2,
             "UnidealMiningTime": 0.2,
             "LightEmission": 50,
-            "ExtraData": "CraftingStation",
-            "ExtraDataParameters": [
+            "Type": "CraftingStation",
+            "TypeInfo": [
                 "2",
                 "0",
                 "0"
@@ -226,7 +226,7 @@
             "Hitbox": "Staircase",
             "IdealToolClass": "Nothing",
             "IdealMiningTime": 0,
-            "ExtraData": "DownwardStairs"
+            "Type": "DownwardStairs"
         },
         {
             "Index": 10,
@@ -243,7 +243,7 @@
             "Hitbox": "6x6",
             "IdealToolClass": "Nothing",
             "IdealMiningTime": 0,
-            "ExtraData": "UpwardStairs"
+            "Type": "UpwardStairs"
         },
         {
             "Index": 11,
@@ -258,8 +258,8 @@
                 "Nothing"
             ],
             "UnidealMiningTime": 5,
-            "ExtraData": "MultiModelingRotation",
-            "ExtraDataParameters": [
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
                 "2",
                 "0",
                 "0"
@@ -281,8 +281,8 @@
                 "Nothing"
             ],
             "UnidealMiningTime": 5,
-            "ExtraData": "MultiModelingRotation",
-            "ExtraDataParameters": [
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
                 "2",
                 "0",
                 "0"
@@ -329,8 +329,8 @@
                 "Min": 1,
                 "Max": 1
             },
-            "ExtraData": "Crop",
-            "ExtraDataParameters": [
+            "Type": "Crop",
+            "TypeInfo": [
                 "10",
                 "3",
                 ""
@@ -360,8 +360,8 @@
                 "Min": 1,
                 "Max": 1
             },
-            "ExtraData": "Crop",
-            "ExtraDataParameters": [
+            "Type": "Crop",
+            "TypeInfo": [
                 "10",
                 "3",
                 ""
@@ -391,13 +391,42 @@
                 "Min": 1,
                 "Max": 1
             },
-            "ExtraData": "Crop",
-            "ExtraDataParameters": [
+            "Type": "Crop",
+            "TypeInfo": [
                 "10",
                 "3",
                 ""
             ],
             "WindEffect": 0.9
+        },
+        {
+            "Index": 17,
+            "Model": [
+                "BlockSpruceTree0-",
+                "BlockSpruceTree1-",
+                "BlockSpruceTree2-",
+                "BlockSpruceTree3-",
+                "BlockSpruceTree4-",
+                "BlockSpruceTree5-",
+                "BlockSpruceTree6-",
+                "BlockSpruceTree7-"
+            ],
+            "Hitbox": "Tree1Trunk",
+            "IdealToolClass": "Axe",
+            "IdealMiningTime": 2,
+            "UnidealMiningTime": 0.2,
+            "DropPrimary": {
+                "ItemID": 7,
+                "Min": 1,
+                "Max": 1
+            },
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
+                "1",
+                "0",
+                "0"
+            ],
+            "WindEffect": 0.5
         }
     ],
     "Structure": [
@@ -506,7 +535,7 @@
         },
         {
             "Index": 9,
-            "Name": "ExtraData",
+            "Name": "Type",
             "Type": "Enum",
             "Values": {
                 "Nothing": "0",
@@ -523,7 +552,7 @@
         },
         {
             "Index": 10,
-            "Name": "ExtraDataParameters",
+            "Name": "TypeInfo",
             "Type": "Array",
             "Length": 3,
             "Default": [

@@ -1,13 +1,12 @@
 {
     "Data": [
         {
-            "Index": 0,
             "Temperature": 0.5,
-            "Humidity": 0.5,
+            "Humidity": 0.55,
             "Blocks": {
                 "Block0": {
                     "ID": 3,
-                    "Chance": 1
+                    "Chance": 0.7
                 },
                 "Block1": {
                     "ID": 6,
@@ -20,6 +19,12 @@
                     "Threshold": 0.35
                 }
             },
+            "FeatureBlocks": {
+                "Block0": {
+                    "ID": 11,
+                    "Threshold": 0.35
+                }
+            },
             "FloorID": 2,
             "NoiseFloors": {
                 "Floor1": {
@@ -29,13 +34,12 @@
             }
         },
         {
-            "Index": 1,
-            "Temperature": 0.4,
-            "Humidity": 0.6,
+            "Temperature": 0.5,
+            "Humidity": 0.5,
             "Blocks": {
                 "Block0": {
                     "ID": 3,
-                    "Chance": 0.2
+                    "Chance": 0.05
                 },
                 "Block1": {
                     "ID": 1,
@@ -43,7 +47,7 @@
                 },
                 "Block2": {
                     "ID": 6,
-                    "Chance": 0.8
+                    "Chance": 0.5
                 }
             },
             "NoiseBlocks": {
@@ -60,6 +64,39 @@
                 "Block1": {
                     "ID": 12,
                     "Threshold": -0.65
+                }
+            },
+            "FloorID": 2,
+            "NoiseFloors": {
+                "Floor1": {
+                    "ID": 1,
+                    "Threshold": 0.35
+                }
+            }
+        },
+        {
+            "Temperature": 0.45,
+            "Humidity": 0.5,
+            "Blocks": {
+                "Block0": {
+                    "ID": 17,
+                    "Chance": 0.05
+                },
+                "Block1": {
+                    "ID": 6,
+                    "Chance": 0.5
+                }
+            },
+            "NoiseBlocks": {
+                "Block0": {
+                    "ID": 1,
+                    "Threshold": 0.35
+                }
+            },
+            "FeatureBlocks": {
+                "Block0": {
+                    "ID": 12,
+                    "Threshold": 0.4
                 }
             },
             "FloorID": 3,
