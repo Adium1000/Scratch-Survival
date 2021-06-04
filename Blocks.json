@@ -73,7 +73,7 @@
             "UnidealMiningTime": 0.2,
             "DropPrimary": {
                 "ItemID": 7,
-                "Min": 0,
+                "Min": 1,
                 "Max": 1
             },
             "Type": "MultiModelingRotation",
@@ -427,6 +427,92 @@
                 "0"
             ],
             "WindEffect": 0.5
+        },
+        {
+            "Index": 18,
+            "Model": [
+                "BlockCactus0-",
+                "BlockCactus1-",
+                "BlockCactus2-",
+                "BlockCactus3-",
+                "BlockCactus4-",
+                "BlockCactus5-",
+                "BlockCactus6-",
+                "Nothing"
+            ],
+            "IdealToolClass": "Axe",
+            "IdealMiningTime": 2,
+            "UnidealMiningTime": 0.2,
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
+                "2",
+                "0",
+                "0"
+            ]
+        },
+        {
+            "Index": 19,
+            "Model": [
+                "BlockDesertTree0-",
+                "BlockDesertTree1-",
+                "BlockDesertTree2-",
+                "BlockDesertTree3-",
+                "BlockDesertTree4-",
+                "BlockDesertTree5-",
+                "BlockDesertTree6-",
+                "BlockDesertTree7-"
+            ],
+            "IdealToolClass": "Axe",
+            "IdealMiningTime": 2,
+            "UnidealMiningTime":  0.2,
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
+                "2",
+                "0",
+                "0"
+            ],
+            "WindEffect": 0.75
+        },
+        {
+            "Index": 20,
+            "Model": [
+                "BlockSand",
+                "BlockSand",
+                "BlockSand",
+                "BlockSand",
+                "BlockSand",
+                "BlockSand",
+                "BlockSand",
+                "BlockSand"
+            ],
+            "IdealMiningTime": 1,
+            "UnidealMiningTime": 1,
+            "LightResistance": 20,
+            "Hitbox": "8x8",
+            "DoNightShadow": false
+        },
+        {
+            "Index": 21,
+            "Model": [
+                "BlockSandstone",
+                "BlockSandstone",
+                "BlockSandstone",
+                "BlockSandstone",
+                "BlockSandstone",
+                "BlockSandstone",
+                "BlockSandstone",
+                "BlockSandstone"
+            ],
+            "LightResistance": 20,
+            "Hitbox": "8x8",
+            "DoNightShadow": false,
+            "IdealToolClass": "Pickaxe",
+            "IdealMiningTime": 1,
+            "DropPrimary": {
+                "ItemID": 8,
+                "Min": 1,
+                "Max": 1
+            }
         }
     ],
     "Structure": [

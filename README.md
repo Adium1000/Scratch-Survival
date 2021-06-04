@@ -15,6 +15,8 @@ Each JSON file corresponds to a list in the game. Each JSON file has two parts: 
  *Items.json* contains all the different types of items.
  *Recipes.json* contains the recipes for all different workstations. ( Hand crafting, Workbench, Furnace, etc. )
 
+A lot of constants in the game are also stored in Scratch in a list called 'Raw: Constants'. In there you can change lots numbers that effect the game. Some things in there, however, should not be changed unless you really know what your doing so be careful!
+
 ## Building
 
 This will quickly go through to process of importing these JSON files into the game. Sorry if this is conveluted or the error messages aren't very user friendly, these JSONs where made to make my life easier, not modding the game easier!
@@ -31,11 +33,11 @@ Here are the names of the generated TXT files and their corresponding list.
 
 | JSON File | TXT File | List
 | ----------- | ----------- |  -----------
-|Biomes.json|Biomes.txt|++Biomes
-|Blocks.json|Blocks.txt|++BlockTypes
-|Floors.json|Floors.txt|++FloorTypes
-|Items.json|Items.txt|++ItemTypes
-|Recipes.json|Recipes.txt|++Recipes
+|Biomes.json|Biomes.txt|Raw: Biomes
+|Blocks.json|Blocks.txt|Raw: Blocks
+|Floors.json|Floors.txt|Raw: Floors
+|Items.json|Items.txt|Raw: Items
+|Recipes.json|Recipes.txt|Raw: Recipes
 
 ## Extra Info
 Some documentation on values, mostly so I don't forget.

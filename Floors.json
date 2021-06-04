@@ -44,6 +44,12 @@
             "Name": "Farmland",
             "Texture": "FloorFarmland",
             "Material": "Dirt"
+        },
+        {
+            "Index": 7,
+            "Name": "Sand",
+            "Texture": "BlockSand",
+            "Material": "Sand"
         }
     ],
     "Structure": [
