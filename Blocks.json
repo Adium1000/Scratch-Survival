@@ -33,7 +33,7 @@
             "IdealMiningTime": 1,
             "DropPrimary": {
                 "ItemID": 8,
-                "Min": 0,
+                "Min": 1,
                 "Max": 1
             }
         },
@@ -74,7 +74,7 @@
             "DropPrimary": {
                 "ItemID": 7,
                 "Min": 1,
-                "Max": 1
+                "Max": 2
             },
             "Type": "MultiModelingRotation",
             "TypeInfo": [
@@ -418,7 +418,7 @@
             "DropPrimary": {
                 "ItemID": 7,
                 "Min": 1,
-                "Max": 1
+                "Max": 2
             },
             "Type": "MultiModelingRotation",
             "TypeInfo": [
@@ -510,6 +510,29 @@
             "IdealMiningTime": 1,
             "DropPrimary": {
                 "ItemID": 8,
+                "Min": 1,
+                "Max": 1
+            }
+        },
+        {
+            "Index": 22,
+            "Model": [
+                "BlockWood",
+                "BlockWood",
+                "BlockWood",
+                "BlockWood",
+                "BlockWood",
+                "BlockWood",
+                "BlockWood",
+                "BlockWood"
+            ],
+            "LightResistance": 20,
+            "Hitbox": "8x8",
+            "DoNightShadow": false,
+            "IdealToolClass": "Axe",
+            "IdealMiningTime": 1,
+            "DropPrimary": {
+                "ItemID": 43,
                 "Min": 1,
                 "Max": 1
             }

@@ -10,14 +10,16 @@
             "Index": 1,
             "Name": "Stone Floor",
             "Texture": "BlockStone",
-            "Material": "Stone"
+            "Material": "Stone",
+            "RandomRotation": true
         },
         {
             "Index": 2,
             "Name": "Grass",
             "Texture": "FloorGrass",
             "Material": "Grass",
-            "Tillable": true
+            "Tillable": true,
+            "RandomRotation": true
         },
         {
             "Index": 3,
@@ -37,7 +39,8 @@
             "Name": "Snow",
             "Texture": "FloorSnow",
             "Material": "Snow",
-            "Tillable": true
+            "Tillable": true,
+            "RandomRotation": true
         },
         {
             "Index": 6,
@@ -49,7 +52,14 @@
             "Index": 7,
             "Name": "Sand",
             "Texture": "BlockSand",
-            "Material": "Sand"
+            "Material": "Sand",
+            "RandomRotation": true
+        },
+        {
+            "Index": 8,
+            "Name": "Wood Floor",
+            "Texture": "BlockWood",
+            "Material": "Wood"
         }
     ],
     "Structure": [
@@ -81,6 +91,12 @@
         {
             "Index": 3,
             "Name": "Tillable",
+            "Type": "Boolean",
+            "Default": false
+        },
+        {
+            "Index": 4,
+            "Name": "RandomRotation",
             "Type": "Boolean",
             "Default": false
         }

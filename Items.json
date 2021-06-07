@@ -347,6 +347,71 @@
                 "",
                 ""
             ]
+        },
+        {
+            "Index": 39,
+            "Name": "Wooden Pickaxe",
+            "Texture": "ItemWoodenPickaxe",
+            "Type": "Tool",
+            "TypeInfo": [
+                "0",
+                "0.2",
+                "0"
+            ]
+        },
+        {
+            "Index": 40,
+            "Name": "Wooden Axe",
+            "Texture": "ItemWoodenAxe",
+            "Type": "Tool",
+            "TypeInfo": [
+                "1",
+                "0.2",
+                "0"
+            ]
+        },
+        {
+            "Index": 41,
+            "Name": "Stick",
+            "Texture": "ItemStick"
+        },
+        {
+            "Index": 42,
+            "Name": "Wooden Club",
+            "Texture": "ItemWoodenClub",
+            "Type": "Sword",
+            "TypeInfo": [
+                "45",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "Index": 43,
+            "Name": "Wood Block",
+            "Texture": "ItemWoodBlock",
+            "Type": "Block",
+            "TypeInfo": [
+                "22",
+                "",
+                ""
+            ]
+        },
+        {
+            "Index": 44,
+            "Name": "Wood Floor",
+            "Texture": "ItemWoodFloor",
+            "Type": "Floor",
+            "TypeInfo": [
+                "8",
+                "",
+                ""
+            ]
+        },
+        {
+            "Index": 45,
+            "Name": "Refined Coal",
+            "Texture": "ItemRefinedCoal"
         }
     ],
     "Structure": [
