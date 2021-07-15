@@ -25,7 +25,7 @@ So you have modified some values and want to see your changes in action! To conv
 `java -jar JSONtoList.jar <JSON File>`
 So if you have modified an item in `Items.json` you would run
 `java -jar JSONtoList.jar Items.json`
-Hopefully, you wont see any errors and the program will create a new `Items.txt` file! Now all you have to do is open scratch, find the list and import. Each JSON has a corrisponding list in the scratch project (see below). Find the one you want to change (in this case `++ItemTypes`), show the list by checking the box next to it, right click on it in the stage, click `import` than find your generated TXT file. You will need to click the green flag again to see your hard work.
+Hopefully, you wont see any errors and the program will create a new `Items.txt` file! Now all you have to do is open scratch, find the list and import. Each JSON has a corrisponding list in the scratch project (see below). Find the one you want to change (in this case `Raw: Items`), show the list by checking the box next to it, right click on it in the stage, click `import` than find your generated TXT file. You will need to click the green flag again to see your hard work.
 
 Your game should now be modified! 
 
