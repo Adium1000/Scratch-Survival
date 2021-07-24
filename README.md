@@ -100,3 +100,4 @@ Determines what extra data needs to be stored along with the block (like rotatio
 0 -> Inventory Crafting
 1 -> Workbench
 2 -> Furnace
+3 -> Anvil

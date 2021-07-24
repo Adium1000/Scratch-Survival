@@ -27,7 +27,7 @@
                 "BlockStone"
             ],
             "LightResistance": 20,
-            "Hitbox": "8x8",
+            "Hitbox": "0.5",
             "DoNightShadow": false,
             "IdealToolClass": "Pickaxe",
             "IdealMiningTime": 1,
@@ -51,7 +51,7 @@
             ],
             "LightResistance": 20,
             "DoNightShadow": false,
-            "Hitbox": "8x8",
+            "Hitbox": "0.5",
             "IdealMiningTime": 0,
             "UnidealMiningTime": 0
         },
@@ -67,7 +67,6 @@
                 "BlockTree6-",
                 "BlockTree7-"
             ],
-            "Hitbox": "Tree1Trunk",
             "IdealToolClass": "Axe",
             "IdealMiningTime": 2,
             "UnidealMiningTime": 0.2,
@@ -96,7 +95,7 @@
                 "Nothing",
                 "Nothing"
             ],
-            "Hitbox": "6x6",
+            "Hitbox": "0.25",
             "IdealToolClass": "Axe",
             "IdealMiningTime": 2,
             "UnidealMiningTime": 0.2,
@@ -122,7 +121,7 @@
                 "Nothing",
                 "Nothing"
             ],
-            "Hitbox": "6x6",
+            "Hitbox": "0.25",
             "IdealToolClass": "Axe",
             "IdealMiningTime": 2,
             "UnidealMiningTime": 0.2,
@@ -168,7 +167,7 @@
                 "Nothing",
                 "Nothing"
             ],
-            "Hitbox": "6x6",
+            "Hitbox": "0.25",
             "IdealToolClass": "Pickaxe",
             "IdealMiningTime": 2,
             "UnidealMiningTime": 0.2,
@@ -195,7 +194,7 @@
                 "BlockStone",
                 "BlockStone"
             ],
-            "Hitbox": "8x8",
+            "Hitbox": "0.5",
             "LightResistance": 20,
             "DoNightShadow": false,
             "IdealToolClass": "Pickaxe",
@@ -208,7 +207,7 @@
             "DropSecondary": {
                 "ItemID": 14,
                 "Min": 1,
-                "Max": 3
+                "Max": 2
             }
         },
         {
@@ -223,7 +222,7 @@
                 "Nothing",
                 "Nothing"
             ],
-            "Hitbox": "Staircase",
+            "Hitbox": "0.5",
             "IdealToolClass": "Nothing",
             "IdealMiningTime": 0,
             "Type": "DownwardStairs"
@@ -240,7 +239,7 @@
                 "Nothing",
                 "Nothing"
             ],
-            "Hitbox": "6x6",
+            "Hitbox": "0.25",
             "IdealToolClass": "Nothing",
             "IdealMiningTime": 0,
             "Type": "UpwardStairs"
@@ -411,7 +410,6 @@
                 "BlockSpruceTree6-",
                 "BlockSpruceTree7-"
             ],
-            "Hitbox": "Tree1Trunk",
             "IdealToolClass": "Axe",
             "IdealMiningTime": 2,
             "UnidealMiningTime": 0.2,
@@ -488,7 +486,7 @@
             "IdealMiningTime": 1,
             "UnidealMiningTime": 1,
             "LightResistance": 20,
-            "Hitbox": "8x8",
+            "Hitbox": "0.5",
             "DoNightShadow": false
         },
         {
@@ -504,7 +502,7 @@
                 "BlockSandstone"
             ],
             "LightResistance": 20,
-            "Hitbox": "8x8",
+            "Hitbox": "0.5",
             "DoNightShadow": false,
             "IdealToolClass": "Pickaxe",
             "IdealMiningTime": 1,
@@ -527,7 +525,7 @@
                 "BlockWood"
             ],
             "LightResistance": 20,
-            "Hitbox": "8x8",
+            "Hitbox": "0.5",
             "DoNightShadow": false,
             "IdealToolClass": "Axe",
             "IdealMiningTime": 1,
@@ -535,6 +533,88 @@
                 "ItemID": 43,
                 "Min": 1,
                 "Max": 1
+            }
+        },
+        {
+            "Index": 23,
+            "Model": [
+                "BlockStone",
+                "BlockStone",
+                "BlockStone",
+                "BlockOreTin",
+                "BlockOreTin",
+                "BlockStone",
+                "BlockStone",
+                "BlockStone"
+            ],
+            "Hitbox": "0.5",
+            "LightResistance": 20,
+            "DoNightShadow": false,
+            "IdealToolClass": "Pickaxe",
+            "IdealMiningTime": 1,
+            "DropPrimary": {
+                "ItemID": 8,
+                "Min": 0,
+                "Max": 1
+            },
+            "DropSecondary": {
+                "ItemID": 21,
+                "Min": 1,
+                "Max": 2
+            }
+        },
+        {
+            "Index": 24,
+            "Model": [
+                "BlockStone",
+                "BlockStone",
+                "BlockStone",
+                "BlockOreCopper",
+                "BlockOreCopper",
+                "BlockStone",
+                "BlockStone",
+                "BlockStone"
+            ],
+            "Hitbox": "0.5",
+            "LightResistance": 20,
+            "DoNightShadow": false,
+            "IdealToolClass": "Pickaxe",
+            "IdealMiningTime": 1,
+            "DropPrimary": {
+                "ItemID": 8,
+                "Min": 0,
+                "Max": 1
+            },
+            "DropSecondary": {
+                "ItemID": 20,
+                "Min": 1,
+                "Max": 2
+            }
+        },
+        {
+            "Index": 25,
+            "Model": [
+                "BlockAnvil1",
+                "BlockAnvil2",
+                "BlockAnvil3",
+                "BlockAnvil4",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "Hitbox": "0.25",
+            "IdealToolClass": "Pickaxe",
+            "IdealMiningTime": 2,
+            "UnidealMiningTime": 0.2,
+            "Type": "CraftingStation",
+            "TypeInfo": [
+                "3",
+                "0",
+                "0"
+            ],
+            "DropPrimary": {
+                "ItemID": 46
             }
         }
     ],
@@ -554,8 +634,8 @@
         {
             "Index": 2,
             "Name": "Hitbox",
-            "Type": "String",
-            "Default": "Nothing"
+            "Type": "Float",
+            "Default": 0.0
         },
         {
             "Index": 3,

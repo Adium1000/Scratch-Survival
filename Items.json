@@ -382,7 +382,7 @@
             "Type": "Sword",
             "TypeInfo": [
                 "45",
-                "0",
+                "1",
                 "5"
             ]
         },
@@ -412,6 +412,17 @@
             "Index": 45,
             "Name": "Refined Coal",
             "Texture": "ItemRefinedCoal"
+        },
+        {
+            "Index": 46,
+            "Name": "Anvil",
+            "Texture": "ItemAnvil",
+            "Type": "Block",
+            "TypeInfo": [
+                "25",
+                "",
+                ""
+            ]
         }
     ],
     "Structure": [
