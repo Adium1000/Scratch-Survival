@@ -38,6 +38,7 @@ Here are the names of the generated TXT files and their corresponding list.
 |Floors.json|Floors.txt|Raw: Floors
 |Items.json|Items.txt|Raw: Items
 |Recipes.json|Recipes.txt|Raw: Recipes
+|Achievements.json|Achievements.txt|Raw: Achievements
 
 ## Extra Info
 Some documentation on values, mostly so I don't forget.

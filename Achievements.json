@@ -1,0 +1,76 @@
+{
+    "Data": [
+        {
+            "Name": "Getting Wood",
+            "IconTexture": "ItemLog",
+            "Rarity": "Common",
+            "Description": "Collect a wood log"
+        },
+        {
+            "Name": "Rock Hard",
+            "IconTexture": "ItemStone",
+            "Rarity": "Common",
+            "Description": "Mine 100 stone",
+            "StageCount": 100
+        },
+        {
+            "Name": "Aquire Hardware",
+            "IconTexture": "ItemIronIngot",
+            "Rarity": "Rare",
+            "Description": "Find and smelt some iron"
+        },
+        {
+            "Name": "Dragonborn",
+            "IconTexture": "",
+            "Rarity": "Legendary",
+            "Description": "Secret",
+            "HideDescription": true
+        },
+        {
+            "Name": "Get Stone",
+            "IconTexture": "ItemStone",
+            "Rarity": "Common",
+            "Description": "Aquire stone"
+        },
+        {
+            "Name": "Get Copper",
+            "IconTexture": "ItemCopperIngot",
+            "Rarity": "Common",
+            "Description": "Find and smelt some copper"
+        }
+    ],
+    "Structure": [
+        {
+            "Index": 0,
+            "Name": "Name",
+            "Type": "String"
+        },
+        {
+            "Index": 1,
+            "Name": "IconTexture",
+            "Type": "String"
+        },
+        {
+            "Index": 2,
+            "Name": "Rarity",
+            "Type": "String"
+        },
+        {
+            "Index": 3,
+            "Name": "Description",
+            "Type": "String"
+        },
+        {
+            "Index": 4,
+            "Name": "StageCount",
+            "Type": "Int",
+            "Default": 1
+        },
+        {
+            "Index": 5,
+            "Name": "HideDescription",
+            "Type": "Boolean",
+            "Default": false
+        }
+    ]
+}
