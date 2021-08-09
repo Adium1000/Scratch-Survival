@@ -19,14 +19,16 @@
             "Texture": "FloorGrass",
             "Material": "Grass",
             "Tillable": true,
-            "RandomRotation": true
+            "RandomRotation": true,
+            "Spawnable": true
         },
         {
             "Index": 3,
             "Name": "Dark Grass",
             "Texture": "FloorDarkGrass",
             "Material": "Grass",
-            "Tillable": true
+            "Tillable": true,
+            "Spawnable": true
         },
         {
             "Index": 4,
@@ -40,7 +42,8 @@
             "Texture": "FloorSnow",
             "Material": "Snow",
             "Tillable": true,
-            "RandomRotation": true
+            "RandomRotation": true,
+            "Spawnable": true
         },
         {
             "Index": 6,
@@ -60,6 +63,22 @@
             "Name": "Wood Floor",
             "Texture": "BlockWood",
             "Material": "Wood"
+        },
+        {
+            "Index": 9,
+            "Name": "Foliage Floor",
+            "Texture": "FloorGrassFoliage",
+            "Material": "Grass",
+            "RandomRotation": true,
+            "Tillable": true
+        },
+        {
+            "Index": 10,
+            "Name": "Ice Floor",
+            "Texture": "FloorIce",
+            "Material": "Stone",
+            "RandomRotation": true,
+            "Slipperiness": 0.9
         }
     ],
     "Structure": [
@@ -99,6 +118,18 @@
             "Name": "RandomRotation",
             "Type": "Boolean",
             "Default": false
+        },
+        {
+            "Index": 5,
+            "Name": "Spawnable",
+            "Type": "Boolean",
+            "Default": false
+        },
+        {
+            "Index": 6,
+            "Name": "Slipperiness",
+            "Type": "Float",
+            "Default": 0.0001
         }
     ]
 }

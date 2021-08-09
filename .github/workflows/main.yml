@@ -28,6 +28,7 @@ jobs:
           java -jar JSONtoList.jar Recipes.json
           java -jar JSONtoList.jar Floors.json
           java -jar JSONtoList.jar Achievements.json false
+          java -jar JSONtoList.jar EntityMetadata.json false
           
       - name: Upload Lists
         uses: actions/upload-artifact@v2.2.3

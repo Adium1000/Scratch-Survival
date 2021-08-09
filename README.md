@@ -39,7 +39,9 @@ Here are the names of the generated TXT files and their corresponding list.
 |Items.json|Items.txt|Raw: Items
 |Recipes.json|Recipes.txt|Raw: Recipes
 |Achievements.json|Achievements.txt|Raw: Achievements
+|EntityMetadata.json|EntityMetadata.txt|Raw: EntityMeta
 
+Note that `EntityMetadata.json` dosn't actually contain information about entity behaviour, that's all contained in the `Entities` sprite in the code. 
 ## Extra Info
 Some documentation on values, mostly so I don't forget.
 

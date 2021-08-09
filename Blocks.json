@@ -153,7 +153,7 @@
             ],
             "DoNightShadow": false,
             "Overwritable": true,
-            "WindEffect": 1
+            "WindEffect": 1.3
         },
         {
             "Index": 7,
@@ -420,7 +420,7 @@
             },
             "Type": "MultiModelingRotation",
             "TypeInfo": [
-                "1",
+                "3",
                 "0",
                 "0"
             ],
@@ -462,7 +462,7 @@
             ],
             "IdealToolClass": "Axe",
             "IdealMiningTime": 2,
-            "UnidealMiningTime":  0.2,
+            "UnidealMiningTime": 0.2,
             "Type": "MultiModelingRotation",
             "TypeInfo": [
                 "2",
@@ -616,6 +616,77 @@
             "DropPrimary": {
                 "ItemID": 46
             }
+        },
+        {
+            "Index": 26,
+            "Model": [
+                "BlockBlueFlower0-",
+                "BlockBlueFlower1-",
+                "BlockBlueFlower2-",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
+                "2",
+                "0",
+                "0"
+            ],
+            "DoNightShadow": false,
+            "Overwritable": true,
+            "WindEffect": 0.9
+        },
+        {
+            "Index": 27,
+            "Model": [
+                "BlockGlowingMushroom0-",
+                "BlockGlowingMushroom1-",
+                "BlockGlowingMushroom2-",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
+                "2",
+                "0",
+                "0"
+            ],
+            "DoNightShadow": false,
+            "Overwritable": true,
+            "WindEffect": 0.9,
+            "LightEmission": 55
+        },
+        {
+            "Index": 28,
+            "Model": [
+                "BlockMushroomTree0",
+                "BlockMushroomTree1",
+                "BlockMushroomTree2",
+                "BlockMushroomTree3",
+                "BlockMushroomTree4",
+                "BlockMushroomTree5",
+                "Nothing",
+                "Nothing"
+            ],
+            "Type": "Rotation",
+            "IdealToolClass": "Axe",
+            "IdealMiningTime": 2,
+            "UnidealMiningTime": 0.2,
+            "DropPrimary": {
+                "ItemID": 7,
+                "Min": 1,
+                "Max": 2
+            },
+            "WindEffect": 0.9,
+            "LightEmission": 60
         }
     ],
     "Structure": [
@@ -773,6 +844,12 @@
             "Name": "WindEffect",
             "Type": "Float",
             "Default": 0
+        },
+        {
+            "Index": 15,
+            "Name": "RenderHeight",
+            "Type": "Float",
+            "Default": 0.25
         }
     ]
 }

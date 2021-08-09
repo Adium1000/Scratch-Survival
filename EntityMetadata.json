@@ -1,0 +1,61 @@
+{
+    "Data": [
+        {
+            "Index": 0,
+            "Name": "Null",
+            "IsSaveable": false
+        },
+        {
+            "Index": 1,
+            "Name": "Item"
+        },
+        {
+            "Index": 2,
+            "Name": "Zombie",
+            "IsHostileMob": true
+        },
+        {
+            "Index": 3,
+            "Name": "Sword Animation",
+            "IsSaveable": false
+        },
+        {
+            "Index": 4,
+            "Name": "Arrow",
+            "IsSaveable": false
+        },
+        {
+            "Index": 5,
+            "Name": "Animal"
+        },
+        {
+            "Index": 6,
+            "Name": "Dead Mob",
+            "IsSaveable": false
+        },
+        {
+            "Index": 7,
+            "Name": "Skeleton",
+            "IsHostileMob": true
+        }
+    ],
+    "Structure": [
+        {
+            "Index": 0,
+            "Name": "Name",
+            "Type": "String"
+        },
+        {
+            "Index": 1,
+            "Name": "IsHostileMob",
+            "Type": "Boolean",
+            "Default": false
+        },
+        {
+            "Index": 2,
+            "Name": "IsSaveable",
+            "Type": "Boolean",
+            "Default": true
+        }
+    ]
+}
