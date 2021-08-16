@@ -1,42 +1,117 @@
 {
     "Data": [
         {
-            "Name": "Getting Wood",
-            "IconTexture": "ItemLog",
+            "Index": 0,
+            "Name": "Benchmarking",
+            "IconTexture": "ItemWorkbench",
             "Rarity": "Common",
-            "Description": "Collect a wood log"
+            "Description": "Place a workbench"
         },
         {
-            "Name": "Rock Hard",
-            "IconTexture": "ItemStone",
+            "Index": 1,
+            "Name": "Sharp Rock",
+            "IconTexture": "ItemStoneSword",
             "Rarity": "Common",
-            "Description": "Mine 100 stone",
-            "StageCount": 100
+            "Description": "Craft a stone sword"
         },
         {
-            "Name": "Aquire Hardware",
-            "IconTexture": "ItemIronIngot",
+            "Index": 2,
+            "Name": "Gardening",
+            "IconTexture": "ItemWheat",
+            "Rarity": "Common",
+            "Description": "Plant some crops"
+        },
+        {
+            "Index": 3,
+            "Name": "On your lawn",
+            "IconTexture": "ItemWoodenClub",
+            "Rarity": "Common",
+            "Description": "Defeat a zombie"
+        },
+        {
+            "Index": 4,
+            "Name": "Diggy Diggy Coal",
+            "IconTexture": "ItemCoal",
+            "Rarity": "Common",
+            "Description": "Mine and collect some coal"
+        },
+        {
+            "Index": 5,
+            "Name": "Im smelting!",
+            "IconTexture": "ItemFurnace",
+            "Rarity": "Uncommon",
+            "Description": "Place a furnace"
+        },
+        {
+            "Index": 6,
+            "Name": "Caves and cliffs",
+            "IconTexture": "ItemFurnace",
+            "Rarity": "Uncommon",
+            "Description": "Smelt some copper ore"
+        },
+        {
+            "Index": 7,
+            "Name": "Always use protection",
+            "IconTexture": "ItemCopperChestplate",
+            "Rarity": "Uncommon",
+            "Description": "Craft a copper chestplate"
+        },
+        {
+            "Index": 8,
+            "Name": "The Bone Zone",
+            "IconTexture": "ItemBone",
+            "Rarity": "Common",
+            "Description": "Kill a skeleton and get its bone"
+        },
+        {
+            "Index": 9,
+            "Name": "He Brew",
+            "IconTexture": "ItemBrewingStation",
+            "Rarity": "Uncommon",
+            "Description": "Place a brewing station"
+        },
+        {
+            "Index": 10,
+            "Name": "Love Potion",
+            "IconTexture": "ItemLesserlHealingPotion",
+            "Rarity": "Uncommon",
+            "Description": "Craft a small healing potion"
+        },
+        {
+            "Index": 11,
+            "Name": "More Love Needed",
+            "IconTexture": "ItemGreaterHealingPotion",
             "Rarity": "Rare",
-            "Description": "Find and smelt some iron"
+            "Description": "Craft a big healing potion"
         },
         {
-            "Name": "Dragonborn",
-            "IconTexture": "",
-            "Rarity": "Legendary",
-            "Description": "Secret",
+            "Index": 12,
+            "Name": "Who left this here",
+            "IconTexture": "ItemTorch",
+            "Rarity": "Uncommon",
+            "Description": "Find an abandond structure",
             "HideDescription": true
         },
         {
-            "Name": "Get Stone",
-            "IconTexture": "ItemStone",
-            "Rarity": "Common",
-            "Description": "Aquire stone"
+            "Index": 13,
+            "Name": "Deep Underground",
+            "IconTexture": "ItemCopperPickaxe",
+            "Rarity": "Uncommon",
+            "Description": "Travel underground"
         },
         {
-            "Name": "Get Copper",
-            "IconTexture": "ItemCopperIngot",
-            "Rarity": "Common",
-            "Description": "Find and smelt some copper"
+            "Index": 14,
+            "Name": "Halted Stream Camp",
+            "IconTexture": "ItemIronOre",
+            "Rarity": "Uncommon",
+            "Description": "Find and mine some iron ore"
+        },
+        {
+            "Index": 15,
+            "Name": "Mungeon",
+            "IconTexture": "ItemIronSword",
+            "Rarity": "Rare",
+            "Description": "Find a spawner dungeon"
         }
     ],
     "Structure": [

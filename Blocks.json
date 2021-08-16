@@ -687,6 +687,27 @@
             },
             "WindEffect": 0.9,
             "LightEmission": 60
+        },
+        {
+            "Index": 29,
+            "Model": [
+                "BlockBrewingStation0",
+                "BlockBrewingStation1",
+                "BlockBrewingStation2",
+                "BlockBrewingStation3",
+                "BlockBrewingStation4",
+                "BlockBrewingStation5",
+                "Nothing",
+                "Nothing"
+            ],
+            "Type": "CraftingStation",
+            "UnidealMiningTime": 0.2,
+            "TypeInfo": [
+                "4",
+                "0",
+                "0"
+            ],
+            "Hitbox": 0.2
         }
     ],
     "Structure": [

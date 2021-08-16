@@ -119,6 +119,23 @@
                 "Item1": 12,
                 "Item2": 12
             }
+        },
+        {
+            "Workstation": "Brewing",
+            "Output": 51,
+            "Inputs": {
+                "Item0":49,
+                "Item1": 50
+            }
+        },
+        {
+            "Workstation": "Brewing",
+            "Output": 52,
+            "Inputs": {
+                "Item0": 49,
+                "Item1": 50,
+                "Item2": 48
+            }
         }
     ],
     "Structure": [
@@ -129,7 +146,9 @@
             "Values": {
                 "Nothing": "0",
                 "Workbench": "1",
-                "Furnace": "2"
+                "Furnace": "2",
+                "Anvil": "3",
+                "Brewing": "4"
             },
             "Default": "Nothing"
         },

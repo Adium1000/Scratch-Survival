@@ -410,8 +410,8 @@
         },
         {
             "Index": 45,
-            "Name": "Refined Coal",
-            "Texture": "ItemRefinedCoal"
+            "Name": "Bone",
+            "Texture": "ItemBone"
         },
         {
             "Index": 46,
@@ -420,6 +420,54 @@
             "Type": "Block",
             "TypeInfo": [
                 "25",
+                "",
+                ""
+            ]
+        },
+        {
+            "Index": 47,
+            "Name": "Brewing Station",
+            "Texture": "ItemBrewingStation",
+            "Type": "Block",
+            "TypeInfo": [
+                "29",
+                "",
+                ""
+            ]
+        },
+        {
+            "Index": 48,
+            "Name": "Mushroom",
+            "Texture": "ItemMushroom"
+        },
+        {
+            "Index": 49,
+            "Name": "Red Flower",
+            "Texture": "ItemRedFlower"
+        },
+        {
+            "Index": 50,
+            "Name": "Blue Flower",
+            "Texture": "ItemBlueFlower"
+        },
+        {
+            "Index": 51,
+            "Name": "Small Health Potion",
+            "Texture": "ItemLesserlHealingPotion",
+            "Type": "PotionHealth",
+            "TypeInfo": [
+                "30",
+                "",
+                ""
+            ]
+        },
+        {
+            "Index": 52,
+            "Name": "Big Health Potion",
+            "Texture": "ItemGreaterHealingPotion",
+            "Type": "PotionHealth",
+            "TypeInfo": [
+                "70",
                 "",
                 ""
             ]
@@ -460,7 +508,9 @@
                 "Food": "10",
                 "Hoe": "11",
                 "Seeds": "12",
-                "Food+Seeds": "13"
+                "Food+Seeds": "13",
+                "PotionHealth": "14",
+                "PotionStatus": "15"
             },
             "Default": "Nothing"
         },

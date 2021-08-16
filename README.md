@@ -39,9 +39,10 @@ Here are the names of the generated TXT files and their corresponding list.
 |Items.json|Items.txt|Raw: Items
 |Recipes.json|Recipes.txt|Raw: Recipes
 |Achievements.json|Achievements.txt|Raw: Achievements
-|EntityMetadata.json|EntityMetadata.txt|Raw: EntityMeta
+|EntityMetadata.json|EntityMetadata.txt|Raw: Entity Meta
+|StatusEffectMetadata.json|StatusEffectMetadata.txt|Raw: Status Effects
 
-Note that `EntityMetadata.json` dosn't actually contain information about entity behaviour, that's all contained in the `Entities` sprite in the code. 
+Note that `EntityMetadata.json` dosn't actually contain information about entity behaviour, that's all contained in the `Entities` sprite in the code.  Same goes for `StatusEffectMetadata.json`, but the actual code for status effects is scattered around.
 ## Extra Info
 Some documentation on values, mostly so I don't forget.
 
@@ -66,6 +67,8 @@ Metadata about items.
 |Hoe
 |Seeds|Crop Block (ID)
 |Food+Seeds|Crop Block (ID)|Food Restored
+|PotionHealth|HP Restored
+|PotionStatus|Status Effect (ID)|Duration
 
 *Food+Seeds* is a combination of 'Food' and 'Seeds'. Used for potatos as they can be eaten and planted.
 
@@ -104,3 +107,4 @@ Determines what extra data needs to be stored along with the block (like rotatio
 1 -> Workbench
 2 -> Furnace
 3 -> Anvil
+4 -> Brewing
