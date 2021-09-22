@@ -1,0 +1,63 @@
+{
+    "Data": [
+        {
+            "Index": 0,
+            "Name": "Regeneration",
+            "Texture": "StatusEffectRegeneration",
+            "Type": "Positive"
+        },
+        {
+            "Index": 1,
+            "Name": "Poison",
+            "Texture": "StatusEffectPoison",
+            "Type": "Negitive"
+        },
+        {
+            "Index": 2,
+            "Name": "Speed",
+            "Texture": "StatusEffectSpeed",
+            "Type": "Positive"
+        },
+        {
+            "Index": 3,
+            "Name": "Slowness",
+            "Texture": "StatusEffectSlowness",
+            "Type": "Negitive"
+        },
+        {
+            "Index": 4,
+            "Name": "Dark Vision",
+            "Texture": "StatusEffectDarkVision",
+            "Type": "Positive"
+        },
+        {
+            "Index": 5,
+            "Name": "Ore Vision",
+            "Texture": "StatusEffectOreVision",
+            "Type": "Positive"
+        }
+    ],
+
+    "Structure": [
+        {
+            "Index": 0,
+            "Name": "Name",
+            "Type": "String"
+        },
+        {
+            "Index": 1,
+            "Name": "Texture",
+            "Type": "String"
+        },
+        {
+            "Index": 2,
+            "Name": "Type",
+            "Type": "Enum",
+            "Values": {
+                "Positive": "0",
+                "Neutral": "1",
+                "Negitive": "2"
+            }
+        }
+    ]
+}
