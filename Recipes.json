@@ -38,10 +38,52 @@
         },
         {
             "Workstation": "Workbench",
+            "Output": 41,
+            "Inputs": {
+                "Item0": 7
+            }
+        },
+        {
+            "Workstation": "Workbench",
             "Output": 11,
             "Inputs": {
                 "Item0": 7,
                 "Item1": 7
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 55,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 41,
+                "Item2": 8
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 53,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 8,
+                "Item2": 8
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 54,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 8
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 36,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 41,
+                "Item2": 8
             }
         },
         {
@@ -64,6 +106,14 @@
         },
         {
             "Workstation": "Workbench",
+            "Output": 22,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 14
+            }
+        },
+        {
+            "Workstation": "Workbench",
             "Output": 43,
             "Inputs": {
                 "Item0": 11,
@@ -79,10 +129,24 @@
         },
         {
             "Workstation": "Workbench",
-            "Output": 22,
-            "Inputs": {
-                "Item0": 41,
-                "Item1": 14
+            "Output": 56,
+            "Inputs":{
+                "Item0": 8   
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 57,
+            "Inputs":{
+                "Item0": 56,
+                "Item1": 56
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 58,
+            "Inputs":{
+                "Item0": 56
             }
         },
         {
@@ -116,6 +180,48 @@
             "Output": 46,
             "Inputs": {
                 "Item0": 14,
+                "Item1": 12,
+                "Item2": 12
+            }
+        },
+        {
+            "Workstation": "Furnace",
+            "Output": 4,
+            "Inputs": {
+                "Item0": 8,
+                "Item1": 8
+            }
+        },
+        {
+            "Workstation": "Furnace",
+            "Output": 5,
+            "Inputs": {
+                "Item0": 8
+            }
+        },
+        {
+            "Workstation": "Anvil",
+            "Output": 2,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 12,
+                "Item2": 12
+            }
+        },
+        {
+            "Workstation": "Anvil",
+            "Output": 3,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 41,
+                "Item2": 12
+            }
+        },
+        {
+            "Workstation": "Anvil",
+            "Output": 1,
+            "Inputs": {
+                "Item0": 41,
                 "Item1": 12,
                 "Item2": 12
             }

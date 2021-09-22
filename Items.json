@@ -18,23 +18,23 @@
             ]
         },
         {
-            "Index": 3,
-            "Name": "Copper Pickaxe",
-            "Texture": "ItemCopperPickaxe",
-            "Type": "Tool",
-            "TypeInfo": [
-                "0",
-                "1",
-                "0"
-            ]
-        },
-        {
             "Index": 2,
             "Name": "Copper Axe",
             "Texture": "ItemCopperAxe",
             "Type": "Tool",
             "TypeInfo": [
                 "1",
+                "1",
+                "0"
+            ]
+        },
+        {
+            "Index": 3,
+            "Name": "Copper Pickaxe",
+            "Texture": "ItemCopperPickaxe",
+            "Type": "Tool",
+            "TypeInfo": [
+                "0",
                 "1",
                 "0"
             ]
@@ -322,8 +322,8 @@
         },
         {
             "Index": 36,
-            "Name": "Copper Hoe",
-            "Texture": "ItemCopperHoe",
+            "Name": "Stone Hoe",
+            "Texture": "ItemStoneHoe",
             "Type": "Hoe"
         },
         {
@@ -471,6 +471,54 @@
                 "",
                 ""
             ]
+        },
+        {
+            "Index": 53,
+            "Name": "Stone Sword",
+            "Texture": "ItemStoneSword",
+            "Type": "Sword",
+            "TypeInfo": [
+                "45",
+                "1",
+                "5"
+            ]
+        },
+        {
+            "Index": 54,
+            "Name": "Stone Axe",
+            "Texture": "ItemStoneAxe",
+            "Type": "Tool",
+            "TypeInfo": [
+                "1",
+                "1",
+                ""
+            ]
+        },
+        {
+            "Index": 55,
+            "Name": "Stone Pickaxe",
+            "Texture": "ItemStonePickaxe",
+            "Type": "Tool",
+            "TypeInfo": [
+                "0",
+                "1",
+                ""
+            ]
+        },
+        {
+            "Index": 56,
+            "Name": "Stone Brick",
+            "Texture": "ItemStoneBrick"
+        },
+        {
+            "Index": 57,
+            "Name": "Stone Brick Block",
+            "Texture": "ItemStoneBrickBlock"
+        },
+        {
+            "Index": 58,
+            "Name": "Stone Brick Floor",
+            "Texture": "ItemStoneBrickFloor"
         }
     ],
     "Structure": [

@@ -78,7 +78,7 @@
             "Texture": "FloorIce",
             "Material": "Stone",
             "RandomRotation": true,
-            "Slipperiness": 0.9
+            "Slipperiness": 0.25
         }
     ],
     "Structure": [

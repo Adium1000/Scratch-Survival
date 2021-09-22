@@ -131,10 +131,6 @@
                 "Block0": {
                     "ID": 17,
                     "Chance": 0.05
-                },
-                "Block1": {
-                    "ID": 6,
-                    "Chance": 0.5
                 }
             },
             "NoiseBlocks": {
@@ -144,19 +140,23 @@
                 },
                 "Block1": {
                     "ID": 0,
-                    "Threshold": 0.27
+                    "Threshold": -0.6
                 }
             },
             "FeatureBlocks": {
                 "Block0": {
-                    "ID": 12,
-                    "Threshold": 0.4
+                    "ID": 31,
+                    "Threshold": 0.45
                 }
             },
             "NoiseFloors": {
-                "Floor1": {
+                "Floor0": {
                     "ID": 1,
                     "Threshold": 0.4
+                },
+                "Floor1": {
+                    "ID": 10,
+                    "Threshold": -0.6
                 }
             }
         },
@@ -223,6 +223,29 @@
             "AlternateFloor": {
                 "ID": 1,
                 "Chance": 0.2
+            }
+        },
+        {
+            "Name": "Frigid Caves",
+            "Temperature": 0.45,
+            "Humidity": 0.5,
+            "FloorID": 1,
+            "Type": "Caves",
+            "NoiseBlocks": {
+                "Block0": {
+                    "ID": 1,
+                    "Threshold": 0.5
+                }
+            },
+            "NoiseFloors": {
+                "Floor0": {
+                    "ID": 10,
+                    "Threshold": -0.6
+                }
+            },
+            "AlternateFloor": {
+                "ID": 5,
+                "Chance": 0.3
             }
         }
     ],
