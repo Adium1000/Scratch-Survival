@@ -1,5 +1,2 @@
 # The compiled lists for the game
 *.txt
-
-# My parse file
-*.sh
