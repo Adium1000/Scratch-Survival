@@ -56,7 +56,8 @@
             "Name": "Sand",
             "Texture": "BlockSand",
             "Material": "Sand",
-            "RandomRotation": true
+            "RandomRotation": true,
+            "Spawnable": true
         },
         {
             "Index": 8,
@@ -70,7 +71,8 @@
             "Texture": "FloorGrassFoliage",
             "Material": "Grass",
             "RandomRotation": true,
-            "Tillable": true
+            "Tillable": true,
+            "Spawnable": true
         },
         {
             "Index": 10,
@@ -78,7 +80,14 @@
             "Texture": "FloorIce",
             "Material": "Stone",
             "RandomRotation": true,
-            "Slipperiness": 0.25
+            "Slipperiness": 0.25,
+            "Spawnable": true
+        },
+        {
+            "Index": 11,
+            "Name": "Stone Brick Floor",
+            "Texture": "FloorStoneBrick",
+            "Material": "Stone"
         }
     ],
     "Structure": [

@@ -130,7 +130,8 @@
                 "18",
                 "0",
                 "0"
-            ]
+            ],
+            "OreVisionHightlight": true
         },
         {
             "Index": 6,
@@ -208,7 +209,8 @@
                 "ItemID": 14,
                 "Min": 1,
                 "Max": 2
-            }
+            },
+            "OreVisionHightlight": true
         },
         {
             "Index": 9,
@@ -561,7 +563,8 @@
                 "ItemID": 21,
                 "Min": 1,
                 "Max": 2
-            }
+            },
+            "OreVisionHightlight": true
         },
         {
             "Index": 24,
@@ -589,7 +592,8 @@
                 "ItemID": 20,
                 "Min": 1,
                 "Max": 2
-            }
+            },
+            "OreVisionHightlight": true
         },
         {
             "Index": 25,
@@ -739,7 +743,8 @@
                 "ItemID": 16,
                 "Min": 1,
                 "Max": 2
-            }
+            },
+            "OreVisionHightlight": true
         },
         {
             "Index": 31,
@@ -763,6 +768,29 @@
             "DoNightShadow": false,
             "Overwritable": true,
             "WindEffect": 1.3
+        },
+        {
+            "Index": 32,
+            "Model": [
+                "BlockStoneBrickGrout",
+                "BlockStoneBrick2",
+                "BlockStoneBrickGrout",
+                "BlockStoneBrick1",
+                "BlockStoneBrickGrout",
+                "BlockStoneBrick2",
+                "BlockStoneBrickGrout",
+                "BlockStoneBrick1"
+            ],
+            "LightResistance": 20,
+            "Hitbox": "0.5",
+            "DoNightShadow": false,
+            "IdealToolClass": "Pickaxe",
+            "IdealMiningTime": 1,
+            "DropPrimary": {
+                "ItemID": 56,
+                "Min": 1,
+                "Max": 2
+            }
         }
     ],
     "Structure": [
@@ -926,6 +954,12 @@
             "Name": "RenderHeight",
             "Type": "Float",
             "Default": 0.25
+        },
+        {
+            "Index": 16,
+            "Name": "OreVisionHightlight",
+            "Type": "Boolean",
+            "Default": false
         }
     ]
 }

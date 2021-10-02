@@ -68,7 +68,7 @@ Metadata about items.
 |Seeds|Crop Block (ID)
 |Food+Seeds|Crop Block (ID)|Food Restored
 |PotionHealth|HP Restored
-|PotionStatus|Status Effect (ID)|Duration
+|PotionStatus|Status Effect (ID)|Strength|Duration
 
 *Food+Seeds* is a combination of 'Food' and 'Seeds'. Used for potatos as they can be eaten and planted.
 

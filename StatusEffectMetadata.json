@@ -33,7 +33,7 @@
         {
             "Index": 5,
             "Name": "Ore Vision",
-            "Texture": "StatusEffectOreVision",
+            "Texture": "ItemIronOre",
             "Type": "Positive"
         }
     ],

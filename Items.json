@@ -355,7 +355,7 @@
             "Type": "Tool",
             "TypeInfo": [
                 "0",
-                "0.2",
+                "0.15",
                 "0"
             ]
         },
@@ -479,7 +479,7 @@
             "Type": "Sword",
             "TypeInfo": [
                 "45",
-                "1",
+                "2",
                 "5"
             ]
         },
@@ -490,7 +490,7 @@
             "Type": "Tool",
             "TypeInfo": [
                 "1",
-                "1",
+                "0.3",
                 ""
             ]
         },
@@ -501,8 +501,8 @@
             "Type": "Tool",
             "TypeInfo": [
                 "0",
-                "1",
-                ""
+                "0.3",
+                "0"
             ]
         },
         {
@@ -513,12 +513,57 @@
         {
             "Index": 57,
             "Name": "Stone Brick Block",
-            "Texture": "ItemStoneBrickBlock"
+            "Texture": "ItemStoneBrickBlock",
+            "Type": "Block",
+            "TypeInfo": [
+                "32",
+                "",
+                ""
+            ]
         },
         {
             "Index": 58,
             "Name": "Stone Brick Floor",
-            "Texture": "ItemStoneBrickFloor"
+            "Texture": "ItemStoneBrickFloor",
+            "Type": "Floor",
+            "TypeInfo": [
+                "11",
+                "",
+                ""
+            ]
+        },
+        {
+            "Index": 59,
+            "Name": "Speed Potion",
+            "Texture": "ItemSpeedPotion",
+            "Type": "PotionStatus",
+            "TypeInfo": [
+                "2",
+                "1",
+                "100"
+            ]
+        },
+        {
+            "Index": 60,
+            "Name": "Dark Vision Potion",
+            "Texture": "ItemDarkVisionPotion",
+            "Type": "PotionStatus",
+            "TypeInfo": [
+                "4",
+                "1",
+                "200"
+            ]
+        },
+        {
+            "Index": 61,
+            "Name": "Ore Vision Potion",
+            "Texture": "ItemOreVisionPotion",
+            "Type": "PotionStatus",
+            "TypeInfo": [
+                "5",
+                "1",
+                "20"
+            ]
         }
     ],
     "Structure": [
