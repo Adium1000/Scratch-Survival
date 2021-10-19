@@ -16,6 +16,7 @@ assemble: create_build_dir
 	utils/openscratch assemble . build/ScratchSurvival.sb3
 
 disassemble:
+	rm -rf sprites
 	utils/openscratch disassemble build/ScratchSurvival.sb3
 
 biomes: create_build_dir

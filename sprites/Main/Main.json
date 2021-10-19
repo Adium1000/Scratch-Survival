@@ -119592,7 +119592,7 @@
       "shadow": false,
       "topLevel": false
     },
-    "Ivnd:@EIzHbdDgs`}!Xj": [
+    "E_dHW.!!q53]l,bLbtKw": [
       12,
       "_Global: Temp 3",
       "L*#U1j.XRc-pN!;TaMpA",
@@ -119629,7 +119629,7 @@
       "text": "Events:\n 0 -> Item Changed\n 1 -> GUI State Changed\n 2 -> Block Place\n 3 -> Floor Place\n "
     }
   },
-  "currentCostume": 71,
+  "currentCostume": 259,
   "costumes": [
     {
       "assetId": "e35350945cbc2cd5bdf91700d285d2d0",
@@ -121964,7 +121964,7 @@
     },
     {
       "assetId": "464e7881492f27ff286320e8d815b5cf",
-      "name": "BlockDesertTree1-1            \"WindEffect\": 0.5",
+      "name": "BlockDesertTree1-1",
       "bitmapResolution": 2,
       "md5ext": "464e7881492f27ff286320e8d815b5cf.png",
       "dataFormat": "png",
