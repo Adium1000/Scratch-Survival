@@ -1,6 +1,6 @@
 # Scratch Survival
 
-This repo has two main 'parts'. The actual project itself and the data lists. The data 
+This repo has two main 'parts'. The actual project itself and the data lists.
 
 ## The Project
 
