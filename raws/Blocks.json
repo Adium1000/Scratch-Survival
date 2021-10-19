@@ -1,0 +1,975 @@
+{
+    "Data": [
+        {
+            "Index": 0,
+            "Model": [
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "Overwritable": true
+        },
+        {
+            "Index": 1,
+            "Model": [
+                "BlockStone",
+                "BlockStone",
+                "BlockStone",
+                "BlockStone",
+                "BlockStone",
+                "BlockStone",
+                "BlockStone",
+                "BlockStone"
+            ],
+            "LightResistance": 20,
+            "Hitbox": "0.5",
+            "DoNightShadow": false,
+            "IdealToolClass": "Pickaxe",
+            "IdealMiningTime": 1,
+            "DropPrimary": {
+                "ItemID": 8,
+                "Min": 1,
+                "Max": 1
+            }
+        },
+        {
+            "Index": 2,
+            "Model": [
+                "BlockBedrock",
+                "BlockBedrock",
+                "BlockBedrock",
+                "BlockBedrock",
+                "BlockBedrock",
+                "BlockBedrock",
+                "BlockBedrock",
+                "BlockBedrock"
+            ],
+            "LightResistance": 20,
+            "DoNightShadow": false,
+            "Hitbox": "0.5",
+            "IdealMiningTime": 0,
+            "UnidealMiningTime": 0
+        },
+        {
+            "Index": 3,
+            "Model": [
+                "BlockTree0-",
+                "BlockTree1-",
+                "BlockTree2-",
+                "BlockTree3-",
+                "BlockTree4-",
+                "BlockTree5-",
+                "BlockTree6-",
+                "BlockTree7-"
+            ],
+            "IdealToolClass": "Axe",
+            "IdealMiningTime": 2,
+            "UnidealMiningTime": 0.2,
+            "DropPrimary": {
+                "ItemID": 7,
+                "Min": 1,
+                "Max": 2
+            },
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
+                "4",
+                "0",
+                "0"
+            ],
+            "WindEffect": 0.5
+        },
+        {
+            "Index": 4,
+            "Model": [
+                "BlockWorkbench1",
+                "BlockWorkbench2",
+                "BlockWorkbench1",
+                "BlockWorkbench3",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "Hitbox": "0.25",
+            "IdealToolClass": "Axe",
+            "IdealMiningTime": 2,
+            "UnidealMiningTime": 0.2,
+            "Type": "CraftingStation",
+            "TypeInfo": [
+                "1",
+                "0",
+                "0"
+            ],
+            "DropPrimary": {
+                "ItemID": 6
+            }
+        },
+        {
+            "Index": 5,
+            "Model": [
+                "BlockChest0",
+                "BlockChest0",
+                "BlockChest1",
+                "BlockChest2",
+                "BlockChest3",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "Hitbox": "0.25",
+            "IdealToolClass": "Axe",
+            "IdealMiningTime": 2,
+            "UnidealMiningTime": 0.2,
+            "Type": "Storage",
+            "TypeInfo": [
+                "18",
+                "0",
+                "0"
+            ],
+            "OreVisionHightlight": true
+        },
+        {
+            "Index": 6,
+            "Model": [
+                "BlockGrass0-",
+                "BlockGrass1-",
+                "BlockGrass2-",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
+                "3",
+                "0",
+                "0"
+            ],
+            "DoNightShadow": false,
+            "Overwritable": true,
+            "WindEffect": 1.3
+        },
+        {
+            "Index": 7,
+            "Model": [
+                "BlockFurnace0",
+                "BlockFurnace1",
+                "BlockFurnace2",
+                "BlockFurnace3",
+                "BlockFurnace4",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "Hitbox": "0.25",
+            "IdealToolClass": "Pickaxe",
+            "IdealMiningTime": 2,
+            "UnidealMiningTime": 0.2,
+            "LightEmission": 50,
+            "Type": "CraftingStation",
+            "TypeInfo": [
+                "2",
+                "0",
+                "0"
+            ],
+            "DropPrimary": {
+                "ItemID": 15
+            }
+        },
+        {
+            "Index": 8,
+            "Model": [
+                "BlockStone",
+                "BlockStone",
+                "BlockStone",
+                "BlockOreCoal",
+                "BlockOreCoal",
+                "BlockStone",
+                "BlockStone",
+                "BlockStone"
+            ],
+            "Hitbox": "0.5",
+            "LightResistance": 20,
+            "DoNightShadow": false,
+            "IdealToolClass": "Pickaxe",
+            "IdealMiningTime": 1,
+            "DropPrimary": {
+                "ItemID": 8,
+                "Min": 0,
+                "Max": 1
+            },
+            "DropSecondary": {
+                "ItemID": 14,
+                "Min": 1,
+                "Max": 2
+            },
+            "OreVisionHightlight": true
+        },
+        {
+            "Index": 9,
+            "Model": [
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "Hitbox": "0.5",
+            "IdealToolClass": "Nothing",
+            "IdealMiningTime": 0,
+            "Type": "DownwardStairs"
+        },
+        {
+            "Index": 10,
+            "Model": [
+                "BlockUpwardStairs0",
+                "BlockUpwardStairs1",
+                "BlockUpwardStairs2",
+                "BlockUpwardStairs3",
+                "BlockUpwardStairs4",
+                "BlockUpwardStairs5",
+                "Nothing",
+                "Nothing"
+            ],
+            "Hitbox": "0.25",
+            "IdealToolClass": "Nothing",
+            "IdealMiningTime": 0,
+            "Type": "UpwardStairs"
+        },
+        {
+            "Index": 11,
+            "Model": [
+                "BlockYellowFlower0-",
+                "BlockYellowFlower1-",
+                "BlockYellowFlower2-",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
+                "2",
+                "0",
+                "0"
+            ],
+            "DoNightShadow": false,
+            "Overwritable": true,
+            "WindEffect": 0.9
+        },
+        {
+            "Index": 12,
+            "Model": [
+                "BlockRedFlower0-",
+                "BlockRedFlower1-",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
+                "2",
+                "0",
+                "0"
+            ],
+            "DoNightShadow": false,
+            "Overwritable": true,
+            "WindEffect": 0.9,
+            "DropPrimary": {
+                "ItemID": 49,
+                "Min": 0,
+                "Max": 1
+            }
+        },
+        {
+            "Index": 13,
+            "Model": [
+                "BlockTorchBase",
+                "BlockTorchBase",
+                "BlockTorchFlame",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "LightEmission": 75
+        },
+        {
+            "Index": 14,
+            "Model": [
+                "BlockCropCorn0-",
+                "BlockCropCorn1-",
+                "BlockCropCorn2-",
+                "BlockCropCorn3-",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "DropPrimary": {
+                "ItemID": 37,
+                "Min": 1,
+                "Max": 1
+            },
+            "DropSecondary": {
+                "ItemID": 30,
+                "Min": 1,
+                "Max": 1
+            },
+            "Type": "Crop",
+            "TypeInfo": [
+                "10",
+                "3",
+                ""
+            ],
+            "WindEffect": 0.9
+        },
+        {
+            "Index": 15,
+            "Model": [
+                "BlockCropWheat0-",
+                "BlockCropWheat1-",
+                "BlockCropWheat2-",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "DropPrimary": {
+                "ItemID": 38,
+                "Min": 1,
+                "Max": 1
+            },
+            "DropSecondary": {
+                "ItemID": 31,
+                "Min": 1,
+                "Max": 1
+            },
+            "Type": "Crop",
+            "TypeInfo": [
+                "10",
+                "3",
+                ""
+            ],
+            "WindEffect": 0.9
+        },
+        {
+            "Index": 16,
+            "Model": [
+                "BlockCropPotato0-",
+                "BlockCropPotato1-",
+                "BlockCropPotato2-",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "DropPrimary": {
+                "ItemID": 29,
+                "Min": 1,
+                "Max": 1
+            },
+            "DropSecondary": {
+                "ItemID": 29,
+                "Min": 1,
+                "Max": 1
+            },
+            "Type": "Crop",
+            "TypeInfo": [
+                "10",
+                "3",
+                ""
+            ],
+            "WindEffect": 0.9
+        },
+        {
+            "Index": 17,
+            "Model": [
+                "BlockSpruceTree0-",
+                "BlockSpruceTree1-",
+                "BlockSpruceTree2-",
+                "BlockSpruceTree3-",
+                "BlockSpruceTree4-",
+                "BlockSpruceTree5-",
+                "BlockSpruceTree6-",
+                "BlockSpruceTree7-"
+            ],
+            "IdealToolClass": "Axe",
+            "IdealMiningTime": 2,
+            "UnidealMiningTime": 0.2,
+            "DropPrimary": {
+                "ItemID": 7,
+                "Min": 1,
+                "Max": 2
+            },
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
+                "3",
+                "0",
+                "0"
+            ],
+            "WindEffect": 0.5
+        },
+        {
+            "Index": 18,
+            "Model": [
+                "BlockCactus0-",
+                "BlockCactus1-",
+                "BlockCactus2-",
+                "BlockCactus3-",
+                "BlockCactus4-",
+                "BlockCactus5-",
+                "BlockCactus6-",
+                "Nothing"
+            ],
+            "IdealToolClass": "Axe",
+            "IdealMiningTime": 2,
+            "UnidealMiningTime": 0.2,
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
+                "2",
+                "0",
+                "0"
+            ]
+        },
+        {
+            "Index": 19,
+            "Model": [
+                "BlockDesertTree0-",
+                "BlockDesertTree1-",
+                "BlockDesertTree2-",
+                "BlockDesertTree3-",
+                "BlockDesertTree4-",
+                "BlockDesertTree5-",
+                "BlockDesertTree6-",
+                "BlockDesertTree7-"
+            ],
+            "IdealToolClass": "Axe",
+            "IdealMiningTime": 2,
+            "UnidealMiningTime": 0.2,
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
+                "2",
+                "0",
+                "0"
+            ],
+            "WindEffect": 0.75
+        },
+        {
+            "Index": 20,
+            "Model": [
+                "BlockSand",
+                "BlockSand",
+                "BlockSand",
+                "BlockSand",
+                "BlockSand",
+                "BlockSand",
+                "BlockSand",
+                "BlockSand"
+            ],
+            "IdealMiningTime": 1,
+            "UnidealMiningTime": 1,
+            "LightResistance": 20,
+            "Hitbox": "0.5",
+            "DoNightShadow": false
+        },
+        {
+            "Index": 21,
+            "Model": [
+                "BlockSandstone",
+                "BlockSandstone",
+                "BlockSandstone",
+                "BlockSandstone",
+                "BlockSandstone",
+                "BlockSandstone",
+                "BlockSandstone",
+                "BlockSandstone"
+            ],
+            "LightResistance": 20,
+            "Hitbox": "0.5",
+            "DoNightShadow": false,
+            "IdealToolClass": "Pickaxe",
+            "IdealMiningTime": 1,
+            "DropPrimary": {
+                "ItemID": 8,
+                "Min": 1,
+                "Max": 1
+            }
+        },
+        {
+            "Index": 22,
+            "Model": [
+                "BlockWood",
+                "BlockWood",
+                "BlockWood",
+                "BlockWood",
+                "BlockWood",
+                "BlockWood",
+                "BlockWood",
+                "BlockWood"
+            ],
+            "LightResistance": 20,
+            "Hitbox": "0.5",
+            "DoNightShadow": false,
+            "IdealToolClass": "Axe",
+            "IdealMiningTime": 1,
+            "DropPrimary": {
+                "ItemID": 43,
+                "Min": 1,
+                "Max": 1
+            }
+        },
+        {
+            "Index": 23,
+            "Model": [
+                "BlockStone",
+                "BlockStone",
+                "BlockStone",
+                "BlockOreTin",
+                "BlockOreTin",
+                "BlockStone",
+                "BlockStone",
+                "BlockStone"
+            ],
+            "Hitbox": "0.5",
+            "LightResistance": 20,
+            "DoNightShadow": false,
+            "IdealToolClass": "Pickaxe",
+            "IdealMiningTime": 1,
+            "DropPrimary": {
+                "ItemID": 8,
+                "Min": 0,
+                "Max": 1
+            },
+            "DropSecondary": {
+                "ItemID": 21,
+                "Min": 1,
+                "Max": 2
+            },
+            "OreVisionHightlight": true
+        },
+        {
+            "Index": 24,
+            "Model": [
+                "BlockStone",
+                "BlockStone",
+                "BlockStone",
+                "BlockOreCopper",
+                "BlockOreCopper",
+                "BlockStone",
+                "BlockStone",
+                "BlockStone"
+            ],
+            "Hitbox": "0.5",
+            "LightResistance": 20,
+            "DoNightShadow": false,
+            "IdealToolClass": "Pickaxe",
+            "IdealMiningTime": 1,
+            "DropPrimary": {
+                "ItemID": 8,
+                "Min": 1,
+                "Max": 1
+            },
+            "DropSecondary": {
+                "ItemID": 20,
+                "Min": 1,
+                "Max": 2
+            },
+            "OreVisionHightlight": true
+        },
+        {
+            "Index": 25,
+            "Model": [
+                "BlockAnvil1",
+                "BlockAnvil2",
+                "BlockAnvil3",
+                "BlockAnvil4",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "Hitbox": "0.25",
+            "IdealToolClass": "Pickaxe",
+            "IdealMiningTime": 2,
+            "UnidealMiningTime": 0.2,
+            "Type": "CraftingStation",
+            "TypeInfo": [
+                "3",
+                "0",
+                "0"
+            ],
+            "DropPrimary": {
+                "ItemID": 46
+            }
+        },
+        {
+            "Index": 26,
+            "Model": [
+                "BlockBlueFlower0-",
+                "BlockBlueFlower1-",
+                "BlockBlueFlower2-",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
+                "2",
+                "0",
+                "0"
+            ],
+            "DoNightShadow": false,
+            "Overwritable": true,
+            "WindEffect": 0.9,
+            "DropPrimary": {
+                "ItemID": 50,
+                "Min": 0,
+                "Max": 1
+            }
+        },
+        {
+            "Index": 27,
+            "Model": [
+                "BlockGlowingMushroom0-",
+                "BlockGlowingMushroom1-",
+                "BlockGlowingMushroom2-",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
+                "2",
+                "0",
+                "0"
+            ],
+            "DropPrimary": {
+                "ItemID": 48,
+                "Min": 1,
+                "Max": 1
+            },
+            "DoNightShadow": true,
+            "WindEffect": 0.9,
+            "LightEmission": 55
+        },
+        {
+            "Index": 28,
+            "Model": [
+                "BlockMushroomTree0",
+                "BlockMushroomTree1",
+                "BlockMushroomTree2",
+                "BlockMushroomTree3",
+                "BlockMushroomTree4",
+                "BlockMushroomTree5",
+                "Nothing",
+                "Nothing"
+            ],
+            "Type": "Rotation",
+            "IdealToolClass": "Axe",
+            "IdealMiningTime": 2,
+            "UnidealMiningTime": 0.2,
+            "DropPrimary": {
+                "ItemID": 7,
+                "Min": 1,
+                "Max": 2
+            },
+            "WindEffect": 0.9,
+            "LightEmission": 60
+        },
+        {
+            "Index": 29,
+            "Model": [
+                "BlockBrewingStation0",
+                "BlockBrewingStation1",
+                "BlockBrewingStation2",
+                "BlockBrewingStation3",
+                "BlockBrewingStation4",
+                "BlockBrewingStation5",
+                "Nothing",
+                "Nothing"
+            ],
+            "Type": "CraftingStation",
+            "UnidealMiningTime": 0.2,
+            "TypeInfo": [
+                "4",
+                "0",
+                "0"
+            ],
+            "Hitbox": 0.2
+        },
+        {
+            "Index": 30,
+            "Model": [
+                "BlockStone",
+                "BlockStone",
+                "BlockStone",
+                "BlockOreIron",
+                "BlockOreIron",
+                "BlockStone",
+                "BlockStone",
+                "BlockStone"
+            ],
+            "Hitbox": "0.5",
+            "LightResistance": 20,
+            "DoNightShadow": false,
+            "IdealToolClass": "Pickaxe",
+            "IdealMiningTime": 1,
+            "DropPrimary": {
+                "ItemID": 8,
+                "Min": 1,
+                "Max": 1
+            },
+            "DropSecondary": {
+                "ItemID": 16,
+                "Min": 1,
+                "Max": 2
+            },
+            "OreVisionHightlight": true
+        },
+        {
+            "Index": 31,
+            "Model": [
+                "BlockSnowGrass0-",
+                "BlockSnowGrass1-",
+                "BlockSnowGrass2-",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing",
+                "Nothing"
+            ],
+            "UnidealMiningTime": 5,
+            "Type": "MultiModelingRotation",
+            "TypeInfo": [
+                "2",
+                "0",
+                "0"
+            ],
+            "DoNightShadow": false,
+            "Overwritable": true,
+            "WindEffect": 1.3
+        },
+        {
+            "Index": 32,
+            "Model": [
+                "BlockStoneBrickGrout",
+                "BlockStoneBrick2",
+                "BlockStoneBrickGrout",
+                "BlockStoneBrick1",
+                "BlockStoneBrickGrout",
+                "BlockStoneBrick2",
+                "BlockStoneBrickGrout",
+                "BlockStoneBrick1"
+            ],
+            "LightResistance": 20,
+            "Hitbox": "0.5",
+            "DoNightShadow": false,
+            "IdealToolClass": "Pickaxe",
+            "IdealMiningTime": 1,
+            "DropPrimary": {
+                "ItemID": 56,
+                "Min": 1,
+                "Max": 2
+            }
+        }
+    ],
+    "Structure": [
+        {
+            "Index": 0,
+            "Name": "Model",
+            "Type": "Array",
+            "Length": 8
+        },
+        {
+            "Index": 1,
+            "Name": "DoNightShadow",
+            "Type": "Boolean",
+            "Default": true
+        },
+        {
+            "Index": 2,
+            "Name": "Hitbox",
+            "Type": "Float",
+            "Default": 0.0
+        },
+        {
+            "Index": 3,
+            "Name": "IdealToolClass",
+            "Type": "Enum",
+            "Values": {
+                "Nothing": "-1",
+                "Pickaxe": "0",
+                "Axe": "1",
+                "Shovel": "2"
+            },
+            "Default": "Nothing"
+        },
+        {
+            "Index": 4,
+            "Name": "HarvestLevel",
+            "Type": "Int",
+            "Default": 0
+        },
+        {
+            "Index": 5,
+            "Name": "IdealMiningTime",
+            "Type": "Float",
+            "Default": 0
+        },
+        {
+            "Index": 6,
+            "Name": "UnidealMiningTime",
+            "Type": "Float",
+            "Default": 0
+        },
+        {
+            "Index": 7,
+            "Name": "DropPrimary",
+            "Type": "Object",
+            "Structure": [
+                {
+                    "Index": 0,
+                    "Name": "ItemID",
+                    "Type": "Int",
+                    "Default": "0"
+                },
+                {
+                    "Index": 1,
+                    "Name": "Min",
+                    "Type": "Int",
+                    "Default": "1"
+                },
+                {
+                    "Index": 2,
+                    "Name": "Max",
+                    "Type": "Int",
+                    "Default": "1"
+                }
+            ],
+            "Default": {
+                "Min": 0,
+                "Max": 0
+            }
+        },
+        {
+            "Index": 8,
+            "Name": "DropSecondary",
+            "Type": "Object",
+            "Structure": [
+                {
+                    "Index": 0,
+                    "Name": "ItemID",
+                    "Type": "Int",
+                    "Default": "0"
+                },
+                {
+                    "Index": 1,
+                    "Name": "Min",
+                    "Type": "Int",
+                    "Default": "0"
+                },
+                {
+                    "Index": 2,
+                    "Name": "Max",
+                    "Type": "Int",
+                    "Default": "0"
+                }
+            ],
+            "Default": {}
+        },
+        {
+            "Index": 9,
+            "Name": "Type",
+            "Type": "Enum",
+            "Values": {
+                "Nothing": "0",
+                "Rotation": "1",
+                "CraftingStation": "2",
+                "Storage": "3",
+                "MultiModeling": "4",
+                "MultiModelingRotation": "5",
+                "DownwardStairs": "6",
+                "UpwardStairs": "7",
+                "Crop": "8"
+            },
+            "Default": "Nothing"
+        },
+        {
+            "Index": 10,
+            "Name": "TypeInfo",
+            "Type": "Array",
+            "Length": 3,
+            "Default": [
+                "0",
+                "0",
+                "0"
+            ]
+        },
+        {
+            "Index": 11,
+            "Name": "LightResistance",
+            "Type": "Int",
+            "Default": 10
+        },
+        {
+            "Index": 12,
+            "Name": "LightEmission",
+            "Type": "Int",
+            "Default": 0
+        },
+        {
+            "Index": 13,
+            "Name": "Overwritable",
+            "Type": "Boolean",
+            "Default": false
+        },
+        {
+            "Index": 14,
+            "Name": "WindEffect",
+            "Type": "Float",
+            "Default": 0
+        },
+        {
+            "Index": 15,
+            "Name": "RenderHeight",
+            "Type": "Float",
+            "Default": 0.25
+        },
+        {
+            "Index": 16,
+            "Name": "OreVisionHightlight",
+            "Type": "Boolean",
+            "Default": false
+        }
+    ]
+}

@@ -1,0 +1,1650 @@
+{
+  "isStage": false,
+  "name": "E2P Hitbox",
+  "variables": {
+    "B^Tx$/,2H/?lOi}2$:;R": [
+      "_Hitbox: Index",
+      0
+    ],
+    "meb0-6@/jLyhrJ,gK]J:": [
+      "_Global: Is Clone?",
+      0
+    ]
+  },
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "97": {
+      "opcode": "data_setvariableto",
+      "next": "98",
+      "parent": "aq:",
+      "inputs": {
+        "VALUE": [
+          3,
+          [
+            12,
+            "Clone Count: Hitbox E2P",
+            "a0eQgNy(Lj5SG*xSLsBw"
+          ],
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "_Hitbox: Index",
+          "B^Tx$/,2H/?lOi}2$:;R"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "98": {
+      "opcode": "data_changevariableby",
+      "next": "99",
+      "parent": "97",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "Clone Count: Hitbox E2P",
+          "a0eQgNy(Lj5SG*xSLsBw"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "99": {
+      "opcode": "data_setvariableto",
+      "next": "aq;",
+      "parent": "98",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "_Global: Is Clone?",
+          "meb0-6@/jLyhrJ,gK]J:"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aq.": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "aq/",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Game: Init",
+          "$!K?vc0q`vZBW`::L:I^"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 2606,
+      "y": 952
+    },
+    "aq/": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "aq.",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "Clone Count: Hitbox E2P",
+          "a0eQgNy(Lj5SG*xSLsBw"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aq:": {
+      "opcode": "control_start_as_clone",
+      "next": "97",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 2606,
+      "y": 64
+    },
+    "aq;": {
+      "opcode": "looks_seteffectto",
+      "next": null,
+      "parent": "99",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aq=": {
+      "opcode": "event_whenflagclicked",
+      "next": "9!",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 2606,
+      "y": 728
+    },
+    "9!": {
+      "opcode": "data_setvariableto",
+      "next": "aq?",
+      "parent": "aq=",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "_Global: Is Clone?",
+          "meb0-6@/jLyhrJ,gK]J:"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aq?": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "9!",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aq@": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "g)",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Game: Tick",
+          "m2%Xt3wT|T(s%WQ)U+(n"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 2606,
+      "y": 384
+    },
+    "g)": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "aq@",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "aq["
+        ],
+        "SUBSTACK": [
+          2,
+          "aq]"
+        ],
+        "SUBSTACK2": [
+          2,
+          "aq^"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aq[": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "g)",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "_Global: Is Clone?",
+            "meb0-6@/jLyhrJ,gK]J:"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aq]": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "g)",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Master Logic",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "aq^": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "g)",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Clone Logic",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "9#": {
+      "opcode": "procedures_definition",
+      "next": "v6",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "aq_"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 2606,
+      "y": 1128
+    },
+    "aq_": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "9#",
+      "inputs": {},
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Master Logic",
+        "argumentids": "[]",
+        "argumentnames": "[]",
+        "argumentdefaults": "[]",
+        "warp": "true"
+      }
+    },
+    "v6": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "9#",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "9%"
+        ],
+        "SUBSTACK": [
+          2,
+          "v7"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "9%": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "v6",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "Clone Count: Hitbox E2P",
+            "a0eQgNy(Lj5SG*xSLsBw"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "9(",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "9(": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "9%",
+      "inputs": {
+        "NUM1": [
+          3,
+          "aq`",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "8"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aq`": {
+      "opcode": "data_lengthoflist",
+      "next": null,
+      "parent": "9(",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "+HitboxesE2P",
+          "L#W67MjRHnl+#TfI/6{S"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "v7": {
+      "opcode": "control_repeat",
+      "next": null,
+      "parent": "v6",
+      "inputs": {
+        "TIMES": [
+          3,
+          "9)",
+          [
+            6,
+            "10"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "9*"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "9)": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "v7",
+      "inputs": {
+        "NUM1": [
+          3,
+          "9+",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          [
+            12,
+            "Clone Count: Hitbox E2P",
+            "a0eQgNy(Lj5SG*xSLsBw"
+          ],
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "9+": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "9)",
+      "inputs": {
+        "NUM1": [
+          3,
+          "aq{",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "8"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aq{": {
+      "opcode": "data_lengthoflist",
+      "next": null,
+      "parent": "9+",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "+HitboxesE2P",
+          "L#W67MjRHnl+#TfI/6{S"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "9*": {
+      "opcode": "control_create_clone_of",
+      "next": null,
+      "parent": "v7",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "aq|"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aq|": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "9*",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "9,": {
+      "opcode": "procedures_definition",
+      "next": "bL",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "aq}"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 64
+    },
+    "aq}": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "9,",
+      "inputs": {},
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Clone Logic",
+        "argumentids": "[]",
+        "argumentnames": "[]",
+        "argumentdefaults": "[]",
+        "warp": "true"
+      }
+    },
+    "bL": {
+      "opcode": "control_if_else",
+      "next": "g*",
+      "parent": "9,",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "v8"
+        ],
+        "SUBSTACK": [
+          2,
+          "g+"
+        ],
+        "SUBSTACK2": [
+          2,
+          "aq~"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "v8": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "bL",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "9-",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "ara",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "9-": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "v8",
+      "inputs": {
+        "NUM1": [
+          3,
+          "arb",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "arb": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "9-",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "_Hitbox: Index",
+            "B^Tx$/,2H/?lOi}2$:;R"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "8"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ara": {
+      "opcode": "data_lengthoflist",
+      "next": null,
+      "parent": "v8",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "+HitboxesE2P",
+          "L#W67MjRHnl+#TfI/6{S"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "g+": {
+      "opcode": "motion_gotoxy",
+      "next": "v9",
+      "parent": "bL",
+      "inputs": {
+        "X": [
+          3,
+          "9.",
+          [
+            4,
+            "36"
+          ]
+        ],
+        "Y": [
+          3,
+          "9/",
+          [
+            4,
+            "28"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "9.": {
+      "opcode": "operator_round",
+      "next": null,
+      "parent": "g+",
+      "inputs": {
+        "NUM": [
+          3,
+          "9:",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "9:": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "9.",
+      "inputs": {
+        "NUM1": [
+          3,
+          "v!",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          [
+            12,
+            "Render: Camera X",
+            "uXT|p(y:t3zxFfddvbIC"
+          ],
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "v!": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "9:",
+      "inputs": {
+        "NUM1": [
+          3,
+          "9;",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "arc",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "9;": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "v!",
+      "inputs": {
+        "INDEX": [
+          3,
+          "9=",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "+HitboxesE2P",
+          "L#W67MjRHnl+#TfI/6{S"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "9=": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "9;",
+      "inputs": {
+        "NUM1": [
+          3,
+          "ard",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ard": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "9=",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "_Hitbox: Index",
+            "B^Tx$/,2H/?lOi}2$:;R"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "8"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "arc": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "v!",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "Render: Scale",
+            "LLklvk9NqPKs+h+S3pTi"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "60"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "9/": {
+      "opcode": "operator_round",
+      "next": null,
+      "parent": "g+",
+      "inputs": {
+        "NUM": [
+          3,
+          "9?",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "9?": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "9/",
+      "inputs": {
+        "NUM1": [
+          3,
+          "v#",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          [
+            12,
+            "Render: Camera Y",
+            "68w@+cZN5jZ+Nv-K))Zg"
+          ],
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "v#": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "9?",
+      "inputs": {
+        "NUM1": [
+          3,
+          "9@",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "are",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "9@": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "v#",
+      "inputs": {
+        "INDEX": [
+          3,
+          "9[",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "+HitboxesE2P",
+          "L#W67MjRHnl+#TfI/6{S"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "9[": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "9@",
+      "inputs": {
+        "NUM1": [
+          3,
+          "arf",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "arf": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "9[",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "_Hitbox: Index",
+            "B^Tx$/,2H/?lOi}2$:;R"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "8"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "are": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "v#",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "Render: Scale",
+            "LLklvk9NqPKs+h+S3pTi"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "60"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "v9": {
+      "opcode": "looks_setsizeto",
+      "next": "g,",
+      "parent": "g+",
+      "inputs": {
+        "SIZE": [
+          3,
+          "9]",
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "9]": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "v9",
+      "inputs": {
+        "NUM1": [
+          3,
+          "9^",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          [
+            12,
+            "Render: Scale",
+            "LLklvk9NqPKs+h+S3pTi"
+          ],
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "9^": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "9]",
+      "inputs": {
+        "INDEX": [
+          3,
+          "9_",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "+HitboxesE2P",
+          "L#W67MjRHnl+#TfI/6{S"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "9_": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "9^",
+      "inputs": {
+        "NUM1": [
+          3,
+          "arg",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "arg": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "9_",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "_Hitbox: Index",
+            "B^Tx$/,2H/?lOi}2$:;R"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "8"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g,": {
+      "opcode": "looks_switchcostumeto",
+      "next": "v%",
+      "parent": "v9",
+      "inputs": {
+        "COSTUME": [
+          3,
+          "9`",
+          "PicK*=%t+V(+lW?^FF0/"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "9`": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "g,",
+      "inputs": {
+        "INDEX": [
+          3,
+          "9{",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "+HitboxesE2P",
+          "L#W67MjRHnl+#TfI/6{S"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "9{": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "9`",
+      "inputs": {
+        "NUM1": [
+          3,
+          "arh",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "4"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "arh": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "9{",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "_Hitbox: Index",
+            "B^Tx$/,2H/?lOi}2$:;R"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "8"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aBL": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "g,",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Round",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "v%": {
+      "opcode": "motion_pointindirection",
+      "next": "ari",
+      "parent": "g,",
+      "inputs": {
+        "DIRECTION": [
+          3,
+          "9|",
+          [
+            8,
+            "90"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "9|": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "v%",
+      "inputs": {
+        "INDEX": [
+          3,
+          "9}",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "+HitboxesE2P",
+          "L#W67MjRHnl+#TfI/6{S"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "9}": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "9|",
+      "inputs": {
+        "NUM1": [
+          3,
+          "arj",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "7"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "arj": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "9}",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "_Hitbox: Index",
+            "B^Tx$/,2H/?lOi}2$:;R"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "8"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ari": {
+      "opcode": "looks_show",
+      "next": null,
+      "parent": "v%",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aq~": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "bL",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g*": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "bL",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "ark"
+        ],
+        "SUBSTACK": [
+          2,
+          "arl"
+        ],
+        "SUBSTACK2": [
+          2,
+          "arm"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ark": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "g*",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "Debug: Enabled?",
+            "Imgp1c!6w@!EOzFmOH[c"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "arl": {
+      "opcode": "looks_seteffectto",
+      "next": null,
+      "parent": "g*",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "arm": {
+      "opcode": "looks_seteffectto",
+      "next": null,
+      "parent": "g*",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "arn": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "aro",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Layer: Hitboxes",
+          "c%m;P)*m-(bp;v@o{DT~"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 2229,
+      "y": 64
+    },
+    "aro": {
+      "opcode": "looks_gotofrontback",
+      "next": null,
+      "parent": "arn",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "back",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "arp": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "9~",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Game: Exit",
+          ".$xEny;i^aoE]HR1Q/0,"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 2229,
+      "y": 240
+    },
+    "9~": {
+      "opcode": "sound_stopallsounds",
+      "next": "arq",
+      "parent": "arp",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "arq": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "9~",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    }
+  },
+  "comments": {
+    "aBM": {
+      "blockId": null,
+      "x": 703,
+      "y": -1118,
+      "width": 348.211669921875,
+      "height": 233.60614013671875,
+      "minimized": false,
+      "text": "1: X (World Space)\n2: Y (World Space)\n3: Scale\n4: Shape\n5: Damage\n6: Knockback\n7: Rotation\n8: Entity Event Callback"
+    }
+  },
+  "currentCostume": 2,
+  "costumes": [
+    {
+      "assetId": "8c5ad0c7eac42fb1eafc1e0db6f72f92",
+      "name": "Round",
+      "bitmapResolution": 2,
+      "md5ext": "8c5ad0c7eac42fb1eafc1e0db6f72f92.png",
+      "dataFormat": "png",
+      "rotationCenterX": 8,
+      "rotationCenterY": 8
+    },
+    {
+      "assetId": "f5334fcf0e8664fa430578d3ff8da630",
+      "name": "Line2",
+      "bitmapResolution": 2,
+      "md5ext": "f5334fcf0e8664fa430578d3ff8da630.png",
+      "dataFormat": "png",
+      "rotationCenterX": 3,
+      "rotationCenterY": 8
+    },
+    {
+      "assetId": "6a2ecd0e6a975952ec9f2707a68acc94",
+      "name": "Square",
+      "bitmapResolution": 1,
+      "md5ext": "6a2ecd0e6a975952ec9f2707a68acc94.svg",
+      "dataFormat": "svg",
+      "rotationCenterX": 4.8873426110006335,
+      "rotationCenterY": 4.887352611000637
+    },
+    {
+      "assetId": "f5334fcf0e8664fa430578d3ff8da630",
+      "name": "Arrow",
+      "bitmapResolution": 2,
+      "md5ext": "f5334fcf0e8664fa430578d3ff8da630.png",
+      "dataFormat": "png",
+      "rotationCenterX": 3,
+      "rotationCenterY": 91
+    }
+  ],
+  "sounds": [
+    {
+      "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+      "name": "pop",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 44100,
+      "sampleCount": 1032,
+      "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+    }
+  ],
+  "volume": 100,
+  "layerOrder": 7,
+  "visible": false,
+  "x": 139,
+  "y": 67,
+  "size": 240,
+  "direction": 0,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

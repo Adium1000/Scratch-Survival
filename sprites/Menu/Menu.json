@@ -1,0 +1,609 @@
+{
+  "isStage": false,
+  "name": "Menu",
+  "variables": {
+    "I2R_xaAVpZC4hCNH%pF{": [
+      "_Menu: Fade Speed",
+      3
+    ]
+  },
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "ay1": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "y_",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Menu: Fade Full",
+          "-67^L-WBV|MO7cLj4%N$"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 958,
+      "y": 64
+    },
+    "y_": {
+      "opcode": "looks_setsizeto",
+      "next": ".m",
+      "parent": "ay1",
+      "inputs": {
+        "SIZE": [
+          3,
+          ".u",
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".u": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "y_",
+      "inputs": {
+        "NUM1": [
+          3,
+          "ay*",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay*": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": ".u",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "Global: Canvas Width",
+            "Cn;4htH9?I0BgSa=I/]("
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "480"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".m": {
+      "opcode": "looks_seteffectto",
+      "next": "ay2",
+      "parent": "y_",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay2": {
+      "opcode": "looks_show",
+      "next": null,
+      "parent": ".m",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay3": {
+      "opcode": "event_whenflagclicked",
+      "next": "y`",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 64
+    },
+    "y`": {
+      "opcode": "looks_switchcostumeto",
+      "next": ".n",
+      "parent": "ay3",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "ay4"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay4": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "y`",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Fade",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    ".n": {
+      "opcode": "motion_gotoxy",
+      "next": "ay5",
+      "parent": "y`",
+      "inputs": {
+        "X": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ],
+        "Y": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay5": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": ".n",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay6": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "y{",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Menu: Fade In",
+          "xjez|hsz:a#,oME*W%@w"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 374,
+      "y": 64
+    },
+    "y{": {
+      "opcode": "looks_setsizeto",
+      "next": ".o",
+      "parent": "ay6",
+      "inputs": {
+        "SIZE": [
+          3,
+          ".t",
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".t": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "y{",
+      "inputs": {
+        "NUM1": [
+          3,
+          "pS",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "pS": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": ".t",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "Global: Canvas Width",
+            "Cn;4htH9?I0BgSa=I/]("
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "480"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".o": {
+      "opcode": "looks_seteffectto",
+      "next": ".p",
+      "parent": "y{",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    ".p": {
+      "opcode": "looks_show",
+      "next": "h0",
+      "parent": ".o",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "h0": {
+      "opcode": "control_repeat",
+      "next": "ay7",
+      "parent": ".p",
+      "inputs": {
+        "TIMES": [
+          3,
+          "ay8",
+          [
+            6,
+            "100"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "ay9"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay8": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "h0",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ],
+        "NUM2": [
+          3,
+          [
+            12,
+            "_Menu: Fade Speed",
+            "I2R_xaAVpZC4hCNH%pF{"
+          ],
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay9": {
+      "opcode": "looks_changeeffectby",
+      "next": null,
+      "parent": "h0",
+      "inputs": {
+        "CHANGE": [
+          3,
+          [
+            12,
+            "_Menu: Fade Speed",
+            "I2R_xaAVpZC4hCNH%pF{"
+          ],
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay7": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "h0",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay!": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "ay#",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Menu: Fade None",
+          "QDsmK}l@H(SSO4aNJ7@="
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 958,
+      "y": 352
+    },
+    "ay#": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "ay!",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay%": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": ".q",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Menu: Fade Out",
+          "^KelUt1aC%uI32kfhYB:"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 374,
+      "y": 536
+    },
+    ".q": {
+      "opcode": "looks_seteffectto",
+      "next": ".r",
+      "parent": "ay%",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    ".r": {
+      "opcode": "looks_show",
+      "next": "y|",
+      "parent": ".q",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "y|": {
+      "opcode": "control_repeat",
+      "next": null,
+      "parent": ".r",
+      "inputs": {
+        "TIMES": [
+          3,
+          "ay(",
+          [
+            6,
+            "100"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          ".s"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay(": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "y|",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ],
+        "NUM2": [
+          3,
+          [
+            12,
+            "_Menu: Fade Speed",
+            "I2R_xaAVpZC4hCNH%pF{"
+          ],
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".s": {
+      "opcode": "looks_changeeffectby",
+      "next": null,
+      "parent": "y|",
+      "inputs": {
+        "CHANGE": [
+          3,
+          "ay)",
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay)": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": ".s",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          [
+            12,
+            "_Menu: Fade Speed",
+            "I2R_xaAVpZC4hCNH%pF{"
+          ],
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    }
+  },
+  "comments": {},
+  "currentCostume": 0,
+  "costumes": [
+    {
+      "assetId": "279daf26b7b43e0d5df0db327dc5ccce",
+      "name": "Fade",
+      "bitmapResolution": 2,
+      "md5ext": "279daf26b7b43e0d5df0db327dc5ccce.png",
+      "dataFormat": "png",
+      "rotationCenterX": 480,
+      "rotationCenterY": 360
+    }
+  ],
+  "sounds": [],
+  "volume": 0,
+  "layerOrder": 15,
+  "visible": false,
+  "x": 0,
+  "y": 0,
+  "size": 100.41666666666667,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

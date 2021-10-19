@@ -1,2 +1,2 @@
-# The compiled lists for the game
-*.txt
+build
+*.sb3

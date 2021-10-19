@@ -1,0 +1,2220 @@
+{
+  "isStage": false,
+  "name": "MenuFire",
+  "variables": {},
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "aCK": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "h2",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Mask",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "ay+": {
+      "opcode": "control_start_as_clone",
+      "next": ".v",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 2083,
+      "y": 64
+    },
+    ".v": {
+      "opcode": "looks_seteffectto",
+      "next": ".w",
+      "parent": "ay+",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    ".w": {
+      "opcode": "looks_show",
+      "next": ".x",
+      "parent": ".v",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".x": {
+      "opcode": "looks_goforwardbackwardlayers",
+      "next": "y}",
+      "parent": ".w",
+      "inputs": {
+        "NUM": [
+          1,
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "FORWARD_BACKWARD": [
+          "forward",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "y}": {
+      "opcode": "looks_switchcostumeto",
+      "next": "ay,",
+      "parent": ".x",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "ay-"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay-": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "y}",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "Mask",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "ay,": {
+      "opcode": "looks_gotofrontback",
+      "next": null,
+      "parent": "y}",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "front",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay.": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": ".y",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Menu: Start Fire",
+          "IZ+MuL4h9GmGnNX^?3@r"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 442,
+      "y": 64
+    },
+    ".y": {
+      "opcode": "pen_clear",
+      "next": "h1",
+      "parent": "ay.",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "h1": {
+      "opcode": "motion_gotoxy",
+      "next": "y~",
+      "parent": ".y",
+      "inputs": {
+        "X": [
+          3,
+          ".T",
+          [
+            4,
+            "115"
+          ]
+        ],
+        "Y": [
+          3,
+          ".U",
+          [
+            4,
+            "-10"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".T": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "h1",
+      "inputs": {
+        "NUM1": [
+          3,
+          "n6",
+          [
+            4,
+            "0"
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "125"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "n6": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": ".T",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "Global: Canvas Width",
+            "Cn;4htH9?I0BgSa=I/]("
+          ],
+          [
+            4,
+            "480"
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".U": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "h1",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "180"
+          ]
+        ],
+        "NUM2": [
+          3,
+          "azi",
+          [
+            4,
+            "125"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "azi": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": ".U",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "Global: Canvas Height",
+            "wD!U(H:^U7;20NRlZg#,"
+          ],
+          [
+            4,
+            "480"
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "y~": {
+      "opcode": "control_create_clone_of",
+      "next": ".B",
+      "parent": "h1",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "ay/"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay/": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "y~",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    ".B": {
+      "opcode": "looks_seteffectto",
+      "next": ".C",
+      "parent": "y~",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    ".C": {
+      "opcode": "looks_show",
+      "next": "+:G6`h5dhe~cngqUztp%",
+      "parent": ".B",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".D": {
+      "opcode": "control_forever",
+      "next": null,
+      "parent": "+:G6`h5dhe~cngqUztp%",
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          "h2"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "h2": {
+      "opcode": "looks_switchcostumeto",
+      "next": null,
+      "parent": ".D",
+      "inputs": {
+        "COSTUME": [
+          2,
+          ".E"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".E": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "h2",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "fire"
+          ]
+        ],
+        "STRING2": [
+          3,
+          ".`XG9MFJo/C$?.GUu0%z",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay?": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "zb",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Menu: Stop Fire",
+          "v*G|JDvb5n2VVM|Sd;Dr"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1697,
+      "y": 64
+    },
+    "zb": {
+      "opcode": "control_repeat",
+      "next": "ay@",
+      "parent": "ay?",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "25"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          ".G"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".G": {
+      "opcode": "looks_changeeffectby",
+      "next": "ay[",
+      "parent": "zb",
+      "inputs": {
+        "CHANGE": [
+          1,
+          [
+            4,
+            "4"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay[": {
+      "opcode": "control_wait",
+      "next": null,
+      "parent": ".G",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            "0.04"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay@": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "zb",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay]": {
+      "opcode": "event_whenflagclicked",
+      "next": "ay^",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1311,
+      "y": 64
+    },
+    "ay^": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "ay]",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay_": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "zc",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Menu: Stop Fire",
+          "v*G|JDvb5n2VVM|Sd;Dr"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 2083,
+      "y": 432
+    },
+    "zc": {
+      "opcode": "control_repeat",
+      "next": ".H",
+      "parent": "ay_",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "25"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          ".I"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".I": {
+      "opcode": "sound_changevolumeby",
+      "next": "ay`",
+      "parent": "zc",
+      "inputs": {
+        "VOLUME": [
+          1,
+          [
+            4,
+            "-4"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay`": {
+      "opcode": "control_wait",
+      "next": null,
+      "parent": ".I",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            "0.04"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".H": {
+      "opcode": "sound_stopallsounds",
+      "next": ".J",
+      "parent": "zc",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".J": {
+      "opcode": "control_stop",
+      "next": "ay{",
+      "parent": ".H",
+      "inputs": {},
+      "fields": {
+        "STOP_OPTION": [
+          "other scripts in sprite",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "hasnext": "true"
+      }
+    },
+    "ay{": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": ".J",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay|": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": ".K",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Menu: Start Fire",
+          "IZ+MuL4h9GmGnNX^?3@r"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1311,
+      "y": 240
+    },
+    ".K": {
+      "opcode": "looks_seteffectto",
+      "next": "zd",
+      "parent": "ay|",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "zd": {
+      "opcode": "looks_switchcostumeto",
+      "next": ".L",
+      "parent": ".K",
+      "inputs": {
+        "COSTUME": [
+          1,
+          "ay}"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay}": {
+      "opcode": "looks_costume",
+      "next": null,
+      "parent": "zd",
+      "inputs": {},
+      "fields": {
+        "COSTUME": [
+          "MenuText0",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    ".L": {
+      "opcode": "looks_show",
+      "next": ".M",
+      "parent": "zd",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".M": {
+      "opcode": "control_repeat",
+      "next": null,
+      "parent": ".L",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "25"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          ".N"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".N": {
+      "opcode": "looks_changeeffectby",
+      "next": "ay~",
+      "parent": ".M",
+      "inputs": {
+        "CHANGE": [
+          1,
+          [
+            4,
+            "-4"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "GHOST",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ay~": {
+      "opcode": "control_wait",
+      "next": null,
+      "parent": ".N",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            "0.01"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aza": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "azb",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Menu: Hide Fire",
+          "OWbYr_0.C7P2S)f2hT(`"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1697,
+      "y": 416
+    },
+    "azb": {
+      "opcode": "looks_hide",
+      "next": null,
+      "parent": "aza",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "azc": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "azd",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Menu: Show Fire",
+          "f8o[o??4WrGJCOD4)bUG"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1697,
+      "y": 592
+    },
+    "azd": {
+      "opcode": "looks_show",
+      "next": null,
+      "parent": "azc",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aze": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": ".O",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Menu: Start Fire",
+          "IZ+MuL4h9GmGnNX^?3@r"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 64
+    },
+    ".O": {
+      "opcode": "sound_setvolumeto",
+      "next": ".P",
+      "parent": "aze",
+      "inputs": {
+        "VOLUME": [
+          1,
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".P": {
+      "opcode": "control_forever",
+      "next": null,
+      "parent": ".O",
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          ".Q"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".Q": {
+      "opcode": "sound_playuntildone",
+      "next": null,
+      "parent": ".P",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "azf"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "azf": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": ".Q",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "campfire",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "azg": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": ".R",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Menu: Start Fire",
+          "IZ+MuL4h9GmGnNX^?3@r"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 360
+    },
+    ".R": {
+      "opcode": "control_wait",
+      "next": ".S",
+      "parent": "azg",
+      "inputs": {
+        "DURATION": [
+          1,
+          [
+            5,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".S": {
+      "opcode": "sound_play",
+      "next": null,
+      "parent": ".R",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "azh"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "azh": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": ".S",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Theme",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "+PJLA9iuNT9(L}5yP%[a": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "i{:b;%mG`igt0m-i#!RZ",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Game: Update Sound Volume",
+          "4[7fEX~TVpEA71:SMiPg"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1256,
+      "y": 745
+    },
+    "i{:b;%mG`igt0m-i#!RZ": {
+      "opcode": "sound_setvolumeto",
+      "next": null,
+      "parent": "+PJLA9iuNT9(L}5yP%[a",
+      "inputs": {
+        "VOLUME": [
+          3,
+          "=[[71}8c+ymMa$#CA/L_",
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "F0D~=IP[!zL^b`LAI,w*": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "=[[71}8c+ymMa$#CA/L_",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "16"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Settings",
+          "~mFl$K2+Rrl5n:1Sg(3~"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "=[[71}8c+ymMa$#CA/L_": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "i{:b;%mG`igt0m-i#!RZ",
+      "inputs": {
+        "NUM1": [
+          3,
+          "F0D~=IP[!zL^b`LAI,w*",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "10"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "+:G6`h5dhe~cngqUztp%": {
+      "opcode": "sensing_resettimer",
+      "next": ".D",
+      "parent": ".C",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "rtII`EFjXZFD8#Tb7U3d": {
+      "opcode": "sensing_timer",
+      "next": null,
+      "parent": "MJE1X:Yp$P@gsSZ5dVQ-",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".H|VKt63?gx#].tS$]B;": {
+      "opcode": "operator_mod",
+      "next": null,
+      "parent": "^?O.oHVHjK2z4MTytW(S",
+      "inputs": {
+        "NUM1": [
+          3,
+          "MJE1X:Yp$P@gsSZ5dVQ-",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "117"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "^?O.oHVHjK2z4MTytW(S": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": ".`XG9MFJo/C$?.GUu0%z",
+      "inputs": {
+        "NUM1": [
+          3,
+          ".H|VKt63?gx#].tS$]B;",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".`XG9MFJo/C$?.GUu0%z": {
+      "opcode": "operator_round",
+      "next": null,
+      "parent": ".E",
+      "inputs": {
+        "NUM": [
+          3,
+          "^?O.oHVHjK2z4MTytW(S",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "MJE1X:Yp$P@gsSZ5dVQ-": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": ".H|VKt63?gx#].tS$]B;",
+      "inputs": {
+        "NUM1": [
+          3,
+          "rtII`EFjXZFD8#Tb7U3d",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "15"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    }
+  },
+  "comments": {},
+  "currentCostume": 27,
+  "costumes": [
+    {
+      "assetId": "a2ff727dfcd5404cb1d6124cbff76f49",
+      "name": "fire1",
+      "bitmapResolution": 2,
+      "md5ext": "a2ff727dfcd5404cb1d6124cbff76f49.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "f2c35c16aa093730693df957e5f027af",
+      "name": "fire2",
+      "bitmapResolution": 2,
+      "md5ext": "f2c35c16aa093730693df957e5f027af.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "fcbb706b9f28e6d72e29aeb1aecf06a9",
+      "name": "fire3",
+      "bitmapResolution": 2,
+      "md5ext": "fcbb706b9f28e6d72e29aeb1aecf06a9.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "a23feac30ef7bb1552762cd1a13069d6",
+      "name": "fire4",
+      "bitmapResolution": 2,
+      "md5ext": "a23feac30ef7bb1552762cd1a13069d6.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "79b5c34b6a6e54c158745b2960c3adbb",
+      "name": "fire5",
+      "bitmapResolution": 2,
+      "md5ext": "79b5c34b6a6e54c158745b2960c3adbb.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "8d0786e28f82ec96dfba03679004ce6e",
+      "name": "fire6",
+      "bitmapResolution": 2,
+      "md5ext": "8d0786e28f82ec96dfba03679004ce6e.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "820f6a834359bf7bf87ded932f14d3ad",
+      "name": "fire7",
+      "bitmapResolution": 2,
+      "md5ext": "820f6a834359bf7bf87ded932f14d3ad.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "4486da076a118f06878bac7231fb42a8",
+      "name": "fire8",
+      "bitmapResolution": 2,
+      "md5ext": "4486da076a118f06878bac7231fb42a8.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "b0f53d34cb5d5988c3925d9280bd59d4",
+      "name": "fire11",
+      "bitmapResolution": 2,
+      "md5ext": "b0f53d34cb5d5988c3925d9280bd59d4.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "af0381084ced9471b9e6ac04ec7a4939",
+      "name": "fire10",
+      "bitmapResolution": 2,
+      "md5ext": "af0381084ced9471b9e6ac04ec7a4939.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "a66fb16e21326ba8fc210d088410aa17",
+      "name": "fire12",
+      "bitmapResolution": 2,
+      "md5ext": "a66fb16e21326ba8fc210d088410aa17.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "c87251779d72e4ee6957e7c178475162",
+      "name": "fire9",
+      "bitmapResolution": 2,
+      "md5ext": "c87251779d72e4ee6957e7c178475162.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "a87ea6e650148da65b2d3c7b742eafb7",
+      "name": "fire13",
+      "bitmapResolution": 2,
+      "md5ext": "a87ea6e650148da65b2d3c7b742eafb7.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "cc0182468dba4657cbd0ab430970de15",
+      "name": "fire14",
+      "bitmapResolution": 2,
+      "md5ext": "cc0182468dba4657cbd0ab430970de15.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "b0db039adf54d19e7d37e14b769da525",
+      "name": "fire15",
+      "bitmapResolution": 2,
+      "md5ext": "b0db039adf54d19e7d37e14b769da525.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "1d10b2fac763c09644281c3202f6432a",
+      "name": "fire16",
+      "bitmapResolution": 2,
+      "md5ext": "1d10b2fac763c09644281c3202f6432a.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "4744bc3de84ee3fadbefa9cf2b44ed9e",
+      "name": "fire17",
+      "bitmapResolution": 2,
+      "md5ext": "4744bc3de84ee3fadbefa9cf2b44ed9e.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "179b4d802381dd9c22a69480db265b9b",
+      "name": "fire20",
+      "bitmapResolution": 2,
+      "md5ext": "179b4d802381dd9c22a69480db265b9b.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "f02ba10232d6698c8ff5b118d2660ae2",
+      "name": "fire18",
+      "bitmapResolution": 2,
+      "md5ext": "f02ba10232d6698c8ff5b118d2660ae2.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "47c344c07571cb99cfe18b269811ee21",
+      "name": "fire19",
+      "bitmapResolution": 2,
+      "md5ext": "47c344c07571cb99cfe18b269811ee21.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "6b3490e08b2ad8624fcd4b7d537c3814",
+      "name": "fire21",
+      "bitmapResolution": 2,
+      "md5ext": "6b3490e08b2ad8624fcd4b7d537c3814.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "2f5f5226f21ce3e42b98150039983a71",
+      "name": "fire22",
+      "bitmapResolution": 2,
+      "md5ext": "2f5f5226f21ce3e42b98150039983a71.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "12cc37ba1e668473bd50d3d61fb1625a",
+      "name": "fire23",
+      "bitmapResolution": 2,
+      "md5ext": "12cc37ba1e668473bd50d3d61fb1625a.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "5e28857c937ef6c43cfd1f8f6f825610",
+      "name": "fire24",
+      "bitmapResolution": 2,
+      "md5ext": "5e28857c937ef6c43cfd1f8f6f825610.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "f9aebbb02f4b6c5e1f6d95ab3db7e16f",
+      "name": "fire27",
+      "bitmapResolution": 2,
+      "md5ext": "f9aebbb02f4b6c5e1f6d95ab3db7e16f.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "940f53bc42a4a1e8812e9a29d0f90293",
+      "name": "fire25",
+      "bitmapResolution": 2,
+      "md5ext": "940f53bc42a4a1e8812e9a29d0f90293.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "3c92d841223881a56dd3f89b7e4b3a47",
+      "name": "fire26",
+      "bitmapResolution": 2,
+      "md5ext": "3c92d841223881a56dd3f89b7e4b3a47.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "fed98e889605f4e04571b78cfc018cf6",
+      "name": "fire28",
+      "bitmapResolution": 2,
+      "md5ext": "fed98e889605f4e04571b78cfc018cf6.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "308f7018088e45f7293a9dcd7592dba4",
+      "name": "fire29",
+      "bitmapResolution": 2,
+      "md5ext": "308f7018088e45f7293a9dcd7592dba4.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "1185b5929b6dc0fe234cca0485f142a7",
+      "name": "fire30",
+      "bitmapResolution": 2,
+      "md5ext": "1185b5929b6dc0fe234cca0485f142a7.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "a5bc3a7fbc0ef14c5d7d6fe72bf84fcd",
+      "name": "fire32",
+      "bitmapResolution": 2,
+      "md5ext": "a5bc3a7fbc0ef14c5d7d6fe72bf84fcd.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "d068517bd541267f031594340d7dc718",
+      "name": "fire33",
+      "bitmapResolution": 2,
+      "md5ext": "d068517bd541267f031594340d7dc718.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "5f7cc6677252f63865d3b8d0ff126058",
+      "name": "fire34",
+      "bitmapResolution": 2,
+      "md5ext": "5f7cc6677252f63865d3b8d0ff126058.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "6b6e73f20ddc17dc5029819140513f41",
+      "name": "fire31",
+      "bitmapResolution": 2,
+      "md5ext": "6b6e73f20ddc17dc5029819140513f41.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "2db378b94514574f4cbad6163fedc876",
+      "name": "fire35",
+      "bitmapResolution": 2,
+      "md5ext": "2db378b94514574f4cbad6163fedc876.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "67929af372c7920d2655b6b470097c36",
+      "name": "fire36",
+      "bitmapResolution": 2,
+      "md5ext": "67929af372c7920d2655b6b470097c36.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "e88e26d0eacb25dab97572333128b6d8",
+      "name": "fire38",
+      "bitmapResolution": 2,
+      "md5ext": "e88e26d0eacb25dab97572333128b6d8.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "2d66feabad41908b700d88d3dcde5a6d",
+      "name": "fire37",
+      "bitmapResolution": 2,
+      "md5ext": "2d66feabad41908b700d88d3dcde5a6d.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "a2ce4017f32b79b3c7387558cde14e85",
+      "name": "fire39",
+      "bitmapResolution": 2,
+      "md5ext": "a2ce4017f32b79b3c7387558cde14e85.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "07f036586f564b8ce86483469573d1b4",
+      "name": "fire40",
+      "bitmapResolution": 2,
+      "md5ext": "07f036586f564b8ce86483469573d1b4.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "34ad0b0532b3d5dd766f4fa52cb013bf",
+      "name": "fire42",
+      "bitmapResolution": 2,
+      "md5ext": "34ad0b0532b3d5dd766f4fa52cb013bf.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "326dcbe6b10d25b146d10e76cb265004",
+      "name": "fire43",
+      "bitmapResolution": 2,
+      "md5ext": "326dcbe6b10d25b146d10e76cb265004.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "09afbe0de7c1e55489f58660119d32e1",
+      "name": "fire41",
+      "bitmapResolution": 2,
+      "md5ext": "09afbe0de7c1e55489f58660119d32e1.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "66421632b2399669ee80976ce7fd976b",
+      "name": "fire44",
+      "bitmapResolution": 2,
+      "md5ext": "66421632b2399669ee80976ce7fd976b.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "15f43a52aabb47cfac4cd30555b8c738",
+      "name": "fire45",
+      "bitmapResolution": 2,
+      "md5ext": "15f43a52aabb47cfac4cd30555b8c738.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "fa7c4c90dfd17fe00683d848ca258545",
+      "name": "fire46",
+      "bitmapResolution": 2,
+      "md5ext": "fa7c4c90dfd17fe00683d848ca258545.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "0ac85b3b6a2cabe4bbfca0f4547c8e35",
+      "name": "fire47",
+      "bitmapResolution": 2,
+      "md5ext": "0ac85b3b6a2cabe4bbfca0f4547c8e35.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "0da3fa519fcaba308886904acd1cc9df",
+      "name": "fire48",
+      "bitmapResolution": 2,
+      "md5ext": "0da3fa519fcaba308886904acd1cc9df.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "7958afb4f49bfb67b5e966f4ea18e2bf",
+      "name": "fire49",
+      "bitmapResolution": 2,
+      "md5ext": "7958afb4f49bfb67b5e966f4ea18e2bf.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "7c906b4bfa1075081dca98954895d8c3",
+      "name": "fire51",
+      "bitmapResolution": 2,
+      "md5ext": "7c906b4bfa1075081dca98954895d8c3.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "b7413a889337ae129b6294705f63a082",
+      "name": "fire50",
+      "bitmapResolution": 2,
+      "md5ext": "b7413a889337ae129b6294705f63a082.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "c41165fa355885044417f5e609487152",
+      "name": "fire52",
+      "bitmapResolution": 2,
+      "md5ext": "c41165fa355885044417f5e609487152.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "349cc1d4c141ddef0a76c17458540ba3",
+      "name": "fire54",
+      "bitmapResolution": 2,
+      "md5ext": "349cc1d4c141ddef0a76c17458540ba3.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "36b4caa06effba5fe526e8fe8ec49e40",
+      "name": "fire53",
+      "bitmapResolution": 2,
+      "md5ext": "36b4caa06effba5fe526e8fe8ec49e40.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "6a40e3f6fb389ce3b5c73fda704b3dd3",
+      "name": "fire55",
+      "bitmapResolution": 2,
+      "md5ext": "6a40e3f6fb389ce3b5c73fda704b3dd3.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "a1ca7d596bbd029de017144ba58cb416",
+      "name": "fire56",
+      "bitmapResolution": 2,
+      "md5ext": "a1ca7d596bbd029de017144ba58cb416.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "4285b219dd8fcad9fc2be68d040851e0",
+      "name": "fire57",
+      "bitmapResolution": 2,
+      "md5ext": "4285b219dd8fcad9fc2be68d040851e0.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "518b4512884a14d4e05539e0a6363d8e",
+      "name": "fire58",
+      "bitmapResolution": 2,
+      "md5ext": "518b4512884a14d4e05539e0a6363d8e.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "70ffadfe88c956b5314d04664d9b2aed",
+      "name": "fire59",
+      "bitmapResolution": 2,
+      "md5ext": "70ffadfe88c956b5314d04664d9b2aed.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "a735ee9e32e4aeb61d3bbe0851fc99ef",
+      "name": "fire60",
+      "bitmapResolution": 2,
+      "md5ext": "a735ee9e32e4aeb61d3bbe0851fc99ef.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "7ded1f7962a8fb54071e75b345f224fd",
+      "name": "fire61",
+      "bitmapResolution": 2,
+      "md5ext": "7ded1f7962a8fb54071e75b345f224fd.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "77bf20f9a1416b53cedc74309ebc7d14",
+      "name": "fire62",
+      "bitmapResolution": 2,
+      "md5ext": "77bf20f9a1416b53cedc74309ebc7d14.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "7b81eee49f4a153f41fd25f68b86246b",
+      "name": "fire63",
+      "bitmapResolution": 2,
+      "md5ext": "7b81eee49f4a153f41fd25f68b86246b.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "d24c70cb540ec5836fb7cae1c9877e66",
+      "name": "fire64",
+      "bitmapResolution": 2,
+      "md5ext": "d24c70cb540ec5836fb7cae1c9877e66.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "ef1b3d86dfd5c5e6297d3db54573082e",
+      "name": "fire65",
+      "bitmapResolution": 2,
+      "md5ext": "ef1b3d86dfd5c5e6297d3db54573082e.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "f3d51d54ff98dc70475a8dd3d17033af",
+      "name": "fire67",
+      "bitmapResolution": 2,
+      "md5ext": "f3d51d54ff98dc70475a8dd3d17033af.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "f4be42ea84ddce9ebd49035da828095b",
+      "name": "fire68",
+      "bitmapResolution": 2,
+      "md5ext": "f4be42ea84ddce9ebd49035da828095b.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "f0825f1df2e3074942a2b0394d0c577d",
+      "name": "fire66",
+      "bitmapResolution": 2,
+      "md5ext": "f0825f1df2e3074942a2b0394d0c577d.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "dce16227be9d236e5eb18b3f43b0329f",
+      "name": "fire69",
+      "bitmapResolution": 2,
+      "md5ext": "dce16227be9d236e5eb18b3f43b0329f.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "903815691a6f94f447ad1f1e93a6f3d3",
+      "name": "fire71",
+      "bitmapResolution": 2,
+      "md5ext": "903815691a6f94f447ad1f1e93a6f3d3.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "67aa7dcaae68ca8ceeff77a049896c42",
+      "name": "fire72",
+      "bitmapResolution": 2,
+      "md5ext": "67aa7dcaae68ca8ceeff77a049896c42.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "7307fa59317fb0a38c1a982a4bb26aa1",
+      "name": "fire70",
+      "bitmapResolution": 2,
+      "md5ext": "7307fa59317fb0a38c1a982a4bb26aa1.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "e45d59e0f13d5a0eb92e57ba0ef82818",
+      "name": "fire75",
+      "bitmapResolution": 2,
+      "md5ext": "e45d59e0f13d5a0eb92e57ba0ef82818.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "534e9c4aba7a787f9dab3d824a4dde26",
+      "name": "fire74",
+      "bitmapResolution": 2,
+      "md5ext": "534e9c4aba7a787f9dab3d824a4dde26.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "8f82669dfa86df4c94626a911218e784",
+      "name": "fire73",
+      "bitmapResolution": 2,
+      "md5ext": "8f82669dfa86df4c94626a911218e784.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "b5a8c718039a8c00959f282d2aeb6b12",
+      "name": "fire77",
+      "bitmapResolution": 2,
+      "md5ext": "b5a8c718039a8c00959f282d2aeb6b12.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "1f976a446cf20a107895bd60c5f1fe1f",
+      "name": "fire76",
+      "bitmapResolution": 2,
+      "md5ext": "1f976a446cf20a107895bd60c5f1fe1f.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "d1c8e38d74f02a8218082f6aafb15c42",
+      "name": "fire79",
+      "bitmapResolution": 2,
+      "md5ext": "d1c8e38d74f02a8218082f6aafb15c42.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "a12727a886561ca0af4d49c269abb5dd",
+      "name": "fire80",
+      "bitmapResolution": 2,
+      "md5ext": "a12727a886561ca0af4d49c269abb5dd.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "ba2fb94ed3371da4d06bf875c054cb40",
+      "name": "fire78",
+      "bitmapResolution": 2,
+      "md5ext": "ba2fb94ed3371da4d06bf875c054cb40.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "b0d5959b40139557a818c59b8e28cf8c",
+      "name": "fire81",
+      "bitmapResolution": 2,
+      "md5ext": "b0d5959b40139557a818c59b8e28cf8c.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "596d9a7eee54dbe9c9c4bfd481bba14e",
+      "name": "fire82",
+      "bitmapResolution": 2,
+      "md5ext": "596d9a7eee54dbe9c9c4bfd481bba14e.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "fe6d58237f71dffe043c0c6a33e6058c",
+      "name": "fire83",
+      "bitmapResolution": 2,
+      "md5ext": "fe6d58237f71dffe043c0c6a33e6058c.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "f90ce9229f9e1e4b747615b0eed9e741",
+      "name": "fire84",
+      "bitmapResolution": 2,
+      "md5ext": "f90ce9229f9e1e4b747615b0eed9e741.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "848e1d208a38a3923fc1fcdaa3a687ff",
+      "name": "fire85",
+      "bitmapResolution": 2,
+      "md5ext": "848e1d208a38a3923fc1fcdaa3a687ff.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "6802f70429b3a6ad2e34b9a3a21c6401",
+      "name": "fire87",
+      "bitmapResolution": 2,
+      "md5ext": "6802f70429b3a6ad2e34b9a3a21c6401.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "0185cc9127135115e1c002abca842ec8",
+      "name": "fire88",
+      "bitmapResolution": 2,
+      "md5ext": "0185cc9127135115e1c002abca842ec8.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "f8881b965e826123759649642e4fcdbf",
+      "name": "fire89",
+      "bitmapResolution": 2,
+      "md5ext": "f8881b965e826123759649642e4fcdbf.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "a734aa69396a6a931a3486cc3774bf89",
+      "name": "fire90",
+      "bitmapResolution": 2,
+      "md5ext": "a734aa69396a6a931a3486cc3774bf89.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "ccb7d434963bfbe04af39697c440999e",
+      "name": "fire91",
+      "bitmapResolution": 2,
+      "md5ext": "ccb7d434963bfbe04af39697c440999e.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "bb98a4099d062194868ff9bfa69437e8",
+      "name": "fire86",
+      "bitmapResolution": 2,
+      "md5ext": "bb98a4099d062194868ff9bfa69437e8.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "c996a9cb1022e17678f9da08cd196b2f",
+      "name": "fire92",
+      "bitmapResolution": 2,
+      "md5ext": "c996a9cb1022e17678f9da08cd196b2f.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "a5551fe1ca187d9e804c46537d0a6c4c",
+      "name": "fire93",
+      "bitmapResolution": 2,
+      "md5ext": "a5551fe1ca187d9e804c46537d0a6c4c.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "f2bf177e9a2f9a58510714914ddd7a92",
+      "name": "fire94",
+      "bitmapResolution": 2,
+      "md5ext": "f2bf177e9a2f9a58510714914ddd7a92.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "ce26ac840ade22f1d68150a8e67d8bab",
+      "name": "fire95",
+      "bitmapResolution": 2,
+      "md5ext": "ce26ac840ade22f1d68150a8e67d8bab.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "01b0b9071f9f9f8aff54a8dcbcb6d216",
+      "name": "fire96",
+      "bitmapResolution": 2,
+      "md5ext": "01b0b9071f9f9f8aff54a8dcbcb6d216.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "1fd2d2458f1e851e16807e7600783f41",
+      "name": "fire97",
+      "bitmapResolution": 2,
+      "md5ext": "1fd2d2458f1e851e16807e7600783f41.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "ff576a0d6dc182a709964c0830943967",
+      "name": "fire99",
+      "bitmapResolution": 2,
+      "md5ext": "ff576a0d6dc182a709964c0830943967.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "5bd250f4ecc7d65785002a5ec41b1ffe",
+      "name": "fire98",
+      "bitmapResolution": 2,
+      "md5ext": "5bd250f4ecc7d65785002a5ec41b1ffe.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "4d6eba5c78ddde258843bf7ca553ff07",
+      "name": "fire100",
+      "bitmapResolution": 2,
+      "md5ext": "4d6eba5c78ddde258843bf7ca553ff07.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "1e8e809d011e4a0a0dbfa90d67b1bb9c",
+      "name": "fire101",
+      "bitmapResolution": 2,
+      "md5ext": "1e8e809d011e4a0a0dbfa90d67b1bb9c.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "ea943454863cbe5083002bce8b010953",
+      "name": "fire102",
+      "bitmapResolution": 2,
+      "md5ext": "ea943454863cbe5083002bce8b010953.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "5e333f4d20062380001d0c91675faa71",
+      "name": "fire103",
+      "bitmapResolution": 2,
+      "md5ext": "5e333f4d20062380001d0c91675faa71.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "7698a6b5ce2628e4627cf4f4b5a0d6c5",
+      "name": "fire104",
+      "bitmapResolution": 2,
+      "md5ext": "7698a6b5ce2628e4627cf4f4b5a0d6c5.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "ed8dbcb5900cdc98641a2c5e3fa3d25e",
+      "name": "fire107",
+      "bitmapResolution": 2,
+      "md5ext": "ed8dbcb5900cdc98641a2c5e3fa3d25e.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "c89bc487b9efefd732c8c3b716b49ecc",
+      "name": "fire105",
+      "bitmapResolution": 2,
+      "md5ext": "c89bc487b9efefd732c8c3b716b49ecc.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "d472d8df9bad2bba2491ee486f44638a",
+      "name": "fire106",
+      "bitmapResolution": 2,
+      "md5ext": "d472d8df9bad2bba2491ee486f44638a.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "c3e678193abc359f9007276c8182860e",
+      "name": "fire108",
+      "bitmapResolution": 2,
+      "md5ext": "c3e678193abc359f9007276c8182860e.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "f2635ce4f2ebe7132e3fef110aa598e4",
+      "name": "fire109",
+      "bitmapResolution": 2,
+      "md5ext": "f2635ce4f2ebe7132e3fef110aa598e4.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "79028324204f6ad0de236de3924a05c0",
+      "name": "fire110",
+      "bitmapResolution": 2,
+      "md5ext": "79028324204f6ad0de236de3924a05c0.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "b1d0d93b88721e0d0dd813e43a866110",
+      "name": "fire113",
+      "bitmapResolution": 2,
+      "md5ext": "b1d0d93b88721e0d0dd813e43a866110.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "a3fecb44e9b851d2ab1646462ba49be5",
+      "name": "fire112",
+      "bitmapResolution": 2,
+      "md5ext": "a3fecb44e9b851d2ab1646462ba49be5.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "811c22e63e90ff3971ec57e1296efb10",
+      "name": "fire111",
+      "bitmapResolution": 2,
+      "md5ext": "811c22e63e90ff3971ec57e1296efb10.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "2a49e94b58cb7cfdd5caff2e699e8683",
+      "name": "fire114",
+      "bitmapResolution": 2,
+      "md5ext": "2a49e94b58cb7cfdd5caff2e699e8683.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "ee9b5e20ed77a66916e99a2f41fb2b7e",
+      "name": "fire115",
+      "bitmapResolution": 2,
+      "md5ext": "ee9b5e20ed77a66916e99a2f41fb2b7e.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "a5396a8f1bb25e8bbc05e51eb82a3046",
+      "name": "fire116",
+      "bitmapResolution": 2,
+      "md5ext": "a5396a8f1bb25e8bbc05e51eb82a3046.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "806e910eaed07686d3c491677390fbcb",
+      "name": "fire117",
+      "bitmapResolution": 2,
+      "md5ext": "806e910eaed07686d3c491677390fbcb.png",
+      "dataFormat": "png",
+      "rotationCenterX": 200,
+      "rotationCenterY": 223
+    },
+    {
+      "assetId": "834cbf87f884237efb3b018da2b0f5bb",
+      "name": "Mask",
+      "bitmapResolution": 2,
+      "md5ext": "834cbf87f884237efb3b018da2b0f5bb.png",
+      "dataFormat": "png",
+      "rotationCenterX": 212,
+      "rotationCenterY": 285
+    }
+  ],
+  "sounds": [
+    {
+      "assetId": "37cc41f24c7a1379f52849034ec67f3d",
+      "name": "campfire",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 44100,
+      "sampleCount": 2148791,
+      "md5ext": "37cc41f24c7a1379f52849034ec67f3d.wav"
+    },
+    {
+      "assetId": "1094e682c06182f83388d290ffb4e88a",
+      "name": "Theme",
+      "dataFormat": "wav",
+      "rate": 44100,
+      "sampleCount": 1881553,
+      "md5ext": "1094e682c06182f83388d290ffb4e88a.wav"
+    }
+  ],
+  "volume": 0,
+  "layerOrder": 16,
+  "visible": false,
+  "x": 116,
+  "y": -1,
+  "size": 175,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

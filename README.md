@@ -1,33 +1,16 @@
 # Scratch Survival
-Data files for the Scratch Survival game.
 
-To make the project faster and smaller, lots of stuff is stored in lists. All the block types, floor types, biomes, items and crafting recipes are stored in lists. To make life easier, I created human-readable JSON format that is parsed into TXT files that can be imported into Scratch.
+This repo has two main 'parts'. The actual project itself and the data lists. The data 
 
-## The basic format
+## The Project
 
-Each JSON file corresponds to a list in the game. Each JSON file has two parts: "Structure" and "Data", both are arrays of objects. The objects in structure define how the data objects will be parsed into the final TXT to be imported into Scratch. If you want to edit or add a new block you need add a new object to the *data* array.
+The project can be built into the SB3 on linux using the command `utils/openscratch assemble . build/ScratchSurvival.sb3`. If you're not on linux... good luck lmao. Get the openscratch executables from https://github.com/Tacodude7729/Open-Scratch/.
 
- Most of the values in these objects are self-explanitory but create an issue if you have any more advanced questions.
+## The Data
 
- *Biomes.json* contains overworld and cave layer biomes.
- *Blocks.json* contains all the different types of blocks.
- *Floors.json* contains all the different types of floors.
- *Items.json* contains all the different types of items.
- *Recipes.json* contains the recipes for all different workstations. ( Hand crafting, Workbench, Furnace, etc. )
+To make the project faster and smaller, lots of stuff is stored in lists. All the block types, floor types, biomes, items and crafting recipes are stored in lists. To make life easier, I created human-readable JSON format that is parsed into TXT files that can be imported into Scratch. 
 
-A lot of constants in the game are also stored in Scratch in a list called 'Raw: Constants'. In there you can change lots numbers that effect the game. Some things in there, however, should not be changed unless you really know what your doing so be careful!
-
-## Building
-
-This will quickly go through to process of importing these JSON files into the game. Sorry if this is conveluted or the error messages aren't very user friendly, these JSONs where made to make my life easier, not modding the game easier!
-
-So you have modified some values and want to see your changes in action! To convert the JSON files into TXT files that can be imported into scratch you will need Java. Included with this project is `JSONtoList.jar`. This is a simple program wich converts these special JSON files to TXT files. It is run like this;
-`java -jar JSONtoList.jar <JSON File>`
-So if you have modified an item in `Items.json` you would run
-`java -jar JSONtoList.jar Items.json`
-Hopefully, you wont see any errors and the program will create a new `Items.txt` file! Now all you have to do is open scratch, find the list and import. Each JSON has a corrisponding list in the scratch project (see below). Find the one you want to change (in this case `Raw: Items`), show the list by checking the box next to it, right click on it in the stage, click `import` than find your generated TXT file. You will need to click the green flag again to see your hard work.
-
-Your game should now be modified! 
+### Building the lists
 
 Here are the names of the generated TXT files and their corresponding list.
 
@@ -43,7 +26,7 @@ Here are the names of the generated TXT files and their corresponding list.
 |StatusEffectMetadata.json|StatusEffectMetadata.txt|Raw: Status Effects
 
 Note that `EntityMetadata.json` dosn't actually contain information about entity behaviour, that's all contained in the `Entities` sprite in the code.  Same goes for `StatusEffectMetadata.json`, but the actual code for status effects is scattered around.
-## Extra Info
+### Extra Info
 Some documentation on values, mostly so I don't forget.
 
 

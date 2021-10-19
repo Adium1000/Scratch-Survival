@@ -2,39 +2,53 @@
 # There is probably no good reason to use make for this but stfu I like make.
 #
 
-parser_location = JSONtoList.jar
+build_location = build
+raws_location = raws
+parser_location = utils/JSONtoList.jar
 generate_comments = false
 
-all: biomes blocks floors items recipes achievements entity_metadata status_effect_metadata
+all: assemble
 
-biomes:
-	java -jar $(parser_location) Biomes.json $(generate_comments)
+raws: biomes blocks floors items recipes achievements entity_metadata status_effect_metadata
+
+assemble: create_build_dir
+	rm -f build/ScratchSurvival.sb3
+	utils/openscratch assemble . build/ScratchSurvival.sb3
+
+disassemble:
+	utils/openscratch disassemble build/ScratchSurvival.sb3
+
+biomes: create_build_dir
+	java -jar $(parser_location) $(raws_location)/Biomes.json $(build_location)/Biomes.txt $(generate_comments)
 	@echo Parsed Biomes.json
 
-blocks: 
-	java -jar $(parser_location) Blocks.json $(generate_comments)
+blocks:  create_build_dir
+	java -jar $(parser_location) $(raws_location)/Blocks.json $(build_location)/Blocks.txt $(generate_comments)
 	@echo Parsed Blocks.json
 
-floors:
-	java -jar $(parser_location) Floors.json $(generate_comments)
+floors: create_build_dir
+	java -jar $(parser_location) $(raws_location)/Floors.json $(build_location)/Floors.txt $(generate_comments)
 	@echo Parsed Floors.json
 
-items:
-	java -jar $(parser_location) Items.json $(generate_comments)
+items: create_build_dir
+	java -jar $(parser_location) $(raws_location)/Items.json $(build_location)/Items.txt $(generate_comments)
 	@echo Parsed Items.json
 
-recipes:
-	java -jar $(parser_location) Recipes.json $(generate_comments)
+recipes: create_build_dir
+	java -jar $(parser_location) $(raws_location)/Recipes.json $(build_location)/Recipes.txt $(generate_comments)
 	@echo Parsed Recipes.json
 
-achievements:
-	java -jar $(parser_location) Achievements.json $(generate_comments)
+achievements: create_build_dir
+	java -jar $(parser_location) $(raws_location)/Achievements.json $(build_location)/Achievements.txt $(generate_comments)
 	@echo Parsed Achievements.json
 
-entity_metadata:
-	java -jar $(parser_location) EntityMetadata.json $(generate_comments)
+entity_metadata: create_build_dir
+	java -jar $(parser_location) $(raws_location)/EntityMetadata.json $(build_location)/EntityMetadata.txt $(generate_comments)
 	@echo Parsed EntityMetadata.json
 
-status_effect_metadata:
-	java -jar $(parser_location) StatusEffectMetadata.json $(generate_comments)
+status_effect_metadata: create_build_dir
+	java -jar $(parser_location) $(raws_location)/StatusEffectMetadata.json $(build_location)/StatusEffectMetadata.txt $(generate_comments)
 	@echo Parsed EntityMetadata.json
+
+create_build_dir:
+	mkdir -p $(build_location) 

@@ -1,0 +1,150 @@
+{
+  "isStage": false,
+  "name": "Blank",
+  "variables": {},
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    ":b": {
+      "opcode": "data_replaceitemoflist",
+      "next": ":c",
+      "parent": null,
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "4"
+          ]
+        ],
+        "ITEM": [
+          1,
+          [
+            10,
+            "47"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Inventory: Contents",
+          "7[C;i]D4+)Ucpy!+AI}0"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -311,
+      "y": 197
+    },
+    ":c": {
+      "opcode": "event_broadcast",
+      "next": null,
+      "parent": ":b",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "Game: Sync Inventory",
+            "AS1y|k+)pPX*vJ%vF@9!"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ":d": {
+      "opcode": "data_replaceitemoflist",
+      "next": ":e",
+      "parent": null,
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "5"
+          ]
+        ],
+        "ITEM": [
+          1,
+          [
+            10,
+            "61"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Inventory: Contents",
+          "7[C;i]D4+)Ucpy!+AI}0"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": -176,
+      "y": 392
+    },
+    ":e": {
+      "opcode": "event_broadcast",
+      "next": null,
+      "parent": ":d",
+      "inputs": {
+        "BROADCAST_INPUT": [
+          1,
+          [
+            11,
+            "Game: Sync Inventory",
+            "AS1y|k+)pPX*vJ%vF@9!"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    }
+  },
+  "comments": {
+    "1_yRc~xSlF_?w%^[cSHN": {
+      "blockId": null,
+      "x": 115,
+      "y": -49,
+      "width": 745,
+      "height": 177,
+      "minimized": false,
+      "text": "Hello :)\n\nIf you want to mod the game I have only two words for you; good luck.\n\nAlso, go here: https://github.com/Tacodude7729/Scratch-Survival\n"
+    }
+  },
+  "currentCostume": 0,
+  "costumes": [
+    {
+      "assetId": "c446646a95cd43c36d25583fdaea3dbc",
+      "name": " ",
+      "bitmapResolution": 2,
+      "md5ext": "c446646a95cd43c36d25583fdaea3dbc.png",
+      "dataFormat": "png",
+      "rotationCenterX": 0,
+      "rotationCenterY": 0
+    }
+  ],
+  "sounds": [
+    {
+      "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+      "name": "pop",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 44100,
+      "sampleCount": 1032,
+      "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+    }
+  ],
+  "volume": 100,
+  "layerOrder": 13,
+  "visible": false,
+  "x": 0,
+  "y": 0,
+  "size": 100,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

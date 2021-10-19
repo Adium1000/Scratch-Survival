@@ -1,0 +1,27 @@
+{
+  "meta-semver": "3.0.0",
+  "meta-vm": "0.2.0",
+  "extensions": [
+    "pen"
+  ],
+  "format-version": "1.0",
+  "sprites": [
+    "Stage",
+    "Blank",
+    "Loop",
+    "Main",
+    "Inventory",
+    "Entities",
+    "E2P Hitbox",
+    "P2E Hitbox",
+    "Player",
+    "World Gen",
+    "Sound Loops",
+    "Sound FX",
+    "Menu",
+    "MenuFire",
+    "Pre-Entity Layer",
+    "Logo",
+    "Input"
+  ]
+}

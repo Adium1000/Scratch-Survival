@@ -1,0 +1,364 @@
+{
+  "isStage": false,
+  "name": "Pre-Entity Layer",
+  "variables": {},
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "azj": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "azk",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Layer: Pre-entity",
+          ")JdVBA4:HUEe?3=;lv8v"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 64
+    },
+    "azk": {
+      "opcode": "looks_gotofrontback",
+      "next": null,
+      "parent": "azj",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "back",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "azl": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "azm",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Game: Tick",
+          "m2%Xt3wT|T(s%WQ)U+(n"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 431,
+      "y": 64
+    },
+    ".V": {
+      "opcode": "procedures_definition",
+      "next": "ze",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "azn"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 819,
+      "y": 64
+    },
+    "azn": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": ".V",
+      "inputs": {},
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Tick",
+        "argumentids": "[]",
+        "argumentnames": "[]",
+        "argumentdefaults": "[]",
+        "warp": "true"
+      }
+    },
+    "azm": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "azl",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Tick",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "ze": {
+      "opcode": "data_setvariableto",
+      "next": ".W",
+      "parent": ".V",
+      "inputs": {
+        "VALUE": [
+          3,
+          "azo",
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "Hitboxes: E2P Offset",
+          "}B]`sQV6:%fzHq|vOpa2"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    ".W": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "ze",
+      "inputs": {
+        "VALUE": [
+          3,
+          "azp",
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "Hitboxes: P2E Offset",
+          "n+m-/iCwT[t4)tJ2!O2w"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "azo": {
+      "opcode": "data_lengthoflist",
+      "next": null,
+      "parent": "ze",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "Hitboxes: E2P",
+          "L#W67MjRHnl+#TfI/6{S"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "azp": {
+      "opcode": "data_lengthoflist",
+      "next": null,
+      "parent": ".W",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "Hitboxes: P2E",
+          "4!pxJqFg6h^R}|v}(CfP"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "azq": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "azr",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Game: Prerender",
+          "34m}9-fagi_|R@5|+1bG"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 431,
+      "y": 240
+    },
+    ".X": {
+      "opcode": "procedures_definition",
+      "next": "zf",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "azs"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 819,
+      "y": 304
+    },
+    "azs": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": ".X",
+      "inputs": {},
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Prerender",
+        "argumentids": "[]",
+        "argumentnames": "[]",
+        "argumentdefaults": "[]",
+        "warp": "true"
+      }
+    },
+    "azr": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "azq",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Prerender",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "azt": {
+      "opcode": "data_deleteoflist",
+      "next": null,
+      "parent": "zf",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Hitboxes: E2P",
+          "L#W67MjRHnl+#TfI/6{S"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "zf": {
+      "opcode": "control_repeat",
+      "next": ".Y",
+      "parent": ".X",
+      "inputs": {
+        "TIMES": [
+          3,
+          [
+            12,
+            "Hitboxes: E2P Offset",
+            "}B]`sQV6:%fzHq|vOpa2"
+          ],
+          [
+            6,
+            "10"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "azt"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ".Y": {
+      "opcode": "control_repeat",
+      "next": null,
+      "parent": "zf",
+      "inputs": {
+        "TIMES": [
+          3,
+          [
+            12,
+            "Hitboxes: P2E Offset",
+            "n+m-/iCwT[t4)tJ2!O2w"
+          ],
+          [
+            6,
+            "10"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "azu"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "azu": {
+      "opcode": "data_deleteoflist",
+      "next": null,
+      "parent": ".Y",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Hitboxes: P2E",
+          "4!pxJqFg6h^R}|v}(CfP"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    }
+  },
+  "comments": {},
+  "currentCostume": 0,
+  "costumes": [
+    {
+      "assetId": "3339a2953a3bf62bb80e54ff575dbced",
+      "name": "costume1",
+      "bitmapResolution": 1,
+      "md5ext": "3339a2953a3bf62bb80e54ff575dbced.svg",
+      "dataFormat": "svg",
+      "rotationCenterX": 0,
+      "rotationCenterY": 0
+    }
+  ],
+  "sounds": [],
+  "volume": 100,
+  "layerOrder": 5,
+  "visible": true,
+  "x": 36,
+  "y": 28,
+  "size": 100,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}

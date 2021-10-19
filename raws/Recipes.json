@@ -1,0 +1,339 @@
+{
+    "Data": [
+        {
+            "Output": 41,
+            "Inputs": {
+                "Item0": 7
+            }
+        },
+        {
+            "Output": 40,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 7
+            }
+        },
+        {
+            "Output": 39,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 41,
+                "Item2": 7
+            }
+        },
+        {
+            "Output": 42,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 7,
+                "Item2": 7
+            }
+        },
+        {
+            "Output": 6,
+            "Inputs": {
+                "Item0": 7,
+                "Item1": 8
+            }
+        },
+        {
+            "Output": 22,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 14
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 41,
+            "Inputs": {
+                "Item0": 7
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 11,
+            "Inputs": {
+                "Item0": 7,
+                "Item1": 7
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 55,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 41,
+                "Item2": 8
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 53,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 8,
+                "Item2": 8
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 54,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 8
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 36,
+            "Inputs": {
+                "Item0": 11,
+                "Item1": 8
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 9,
+            "Inputs": {
+                "Item0": 11,
+                "Item1": 11,
+                "Item2": 8
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 15,
+            "Inputs": {
+                "Item0": 8,
+                "Item1": 8,
+                "Item2": 14
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 22,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 14
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 47,
+            "Inputs": {
+                "Item0": 11,
+                "Item1": 49
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 43,
+            "Inputs": {
+                "Item0": 11,
+                "Item1": 11
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 44,
+            "Inputs": {
+                "Item0": 11
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 56,
+            "Inputs": {
+                "Item0": 8
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 57,
+            "Inputs": {
+                "Item0": 56,
+                "Item1": 56
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 58,
+            "Inputs": {
+                "Item0": 56
+            }
+        },
+        {
+            "Workstation": "Furnace",
+            "Output": 28,
+            "Inputs": {
+                "Item0": 27,
+                "Item1": 7
+            }
+        },
+        {
+            "Workstation": "Furnace",
+            "Output": 22,
+            "Inputs": {
+                "Item0": 41
+            }
+        },
+        {
+            "Workstation": "Furnace",
+            "Output": 12,
+            "Inputs": {
+                "Item0": 14,
+                "Item1": 20,
+                "Item2": 20
+            }
+        },
+        {
+            "Workstation": "Furnace",
+            "Output": 18,
+            "Inputs": {
+                "Item0": 14,
+                "Item1": 16,
+                "Item2": 16
+            }
+        },
+        {
+            "Workstation": "Furnace",
+            "Output": 46,
+            "Inputs": {
+                "Item0": 14,
+                "Item1": 12,
+                "Item2": 12
+            }
+        },
+        {
+            "Workstation": "Furnace",
+            "Output": 4,
+            "Inputs": {
+                "Item0": 8,
+                "Item1": 8
+            }
+        },
+        {
+            "Workstation": "Furnace",
+            "Output": 5,
+            "Inputs": {
+                "Item0": 8
+            }
+        },
+        {
+            "Workstation": "Anvil",
+            "Output": 2,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 12,
+                "Item2": 12
+            }
+        },
+        {
+            "Workstation": "Anvil",
+            "Output": 3,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 41,
+                "Item2": 12
+            }
+        },
+        {
+            "Workstation": "Anvil",
+            "Output": 1,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 12,
+                "Item2": 12
+            }
+        },
+        {
+            "Workstation": "Brewing",
+            "Output": 51,
+            "Inputs": {
+                "Item0": 49,
+                "Item1": 50
+            }
+        },
+        {
+            "Workstation": "Brewing",
+            "Output": 52,
+            "Inputs": {
+                "Item0": 49,
+                "Item1": 50,
+                "Item2": 48
+            }
+        },
+        {
+            "Workstation": "Brewing",
+            "Output": 59,
+            "Inputs": {
+                "Item0": 30,
+                "Item1": 30,
+                "Item2": 49
+            }
+        },
+        {
+            "Workstation": "Brewing",
+            "Output": 60,
+            "Inputs": {
+                "Item0": 48,
+                "Item1": 29,
+                "Item2": 20
+            }
+        },
+        {
+            "Workstation": "Brewing",
+            "Output": 61,
+            "Inputs": {
+                "Item0": 31,
+                "Item1": 29,
+                "Item2": 62
+            }
+        }
+    ],
+    "Structure": [
+        {
+            "Index": 0,
+            "Name": "Workstation",
+            "Type": "Enum",
+            "Values": {
+                "Nothing": "0",
+                "Workbench": "1",
+                "Furnace": "2",
+                "Anvil": "3",
+                "Brewing": "4"
+            },
+            "Default": "Nothing"
+        },
+        {
+            "Index": 1,
+            "Name": "Output",
+            "Type": "Int"
+        },
+        {
+            "Index": 2,
+            "Name": "Inputs",
+            "Type": "Object",
+            "Structure": [
+                {
+                    "Index": 0,
+                    "Name": "Item0",
+                    "Type": "Int"
+                },
+                {
+                    "Index": 1,
+                    "Name": "Item1",
+                    "Type": "Int",
+                    "Default": 0
+                },
+                {
+                    "Index": 2,
+                    "Name": "Item2",
+                    "Type": "Int",
+                    "Default": 0
+                }
+            ]
+        }
+    ]
+}

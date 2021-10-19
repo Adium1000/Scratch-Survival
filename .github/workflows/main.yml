@@ -15,17 +15,27 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: actions/setup-java@v2
+      - name: Setup Java
+        uses: actions/setup-java@v2
         with:
           distribution: 'adopt'
           java-version: '11'
           
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.x
+
       - name: Create Lists
         run: |
-          make
-          
-      - name: Upload Lists
+          make raws
+
+      - name: Create SB3
+        run: |
+          make assemble
+      
+      - name: Upload Build
         uses: actions/upload-artifact@v2.2.3
         with:
           name: Lists
-          path: '*.txt'
+          path: 'build/*'

@@ -1,0 +1,2039 @@
+{
+  "isStage": false,
+  "name": "Sound Loops",
+  "variables": {
+    "s*r~8u*(g6(HU,*bypTQ": [
+      "_Global: Is Clone?",
+      0
+    ],
+    "y6)^?s,dytXg=#:8cY2N": [
+      "_Sound: Index",
+      0
+    ],
+    "8}m*gCbKpDNlKkOR|rEK": [
+      "_Global: Temp1",
+      12.828435780000003
+    ]
+  },
+  "lists": {},
+  "broadcasts": {},
+  "blocks": {
+    "axF": {
+      "opcode": "control_start_as_clone",
+      "next": "-K",
+      "parent": null,
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 943,
+      "y": 64
+    },
+    "-K": {
+      "opcode": "data_setvariableto",
+      "next": "-L",
+      "parent": "axF",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "_Global: Is Clone?",
+          "s*r~8u*(g6(HU,*bypTQ"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "-L": {
+      "opcode": "data_setvariableto",
+      "next": "-M",
+      "parent": "-K",
+      "inputs": {
+        "VALUE": [
+          3,
+          [
+            12,
+            "Clone Count: Sound Loop",
+            "FG(/`84[q]h;Fx9]redk"
+          ],
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "_Sound: Index",
+          "y6)^?s,dytXg=#:8cY2N"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "-M": {
+      "opcode": "data_changevariableby",
+      "next": "yX",
+      "parent": "-L",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "Clone Count: Sound Loop",
+          "FG(/`84[q]h;Fx9]redk"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "-N": {
+      "opcode": "control_forever",
+      "next": null,
+      "parent": "yX",
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          "-O"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "-O": {
+      "opcode": "sound_playuntildone",
+      "next": null,
+      "parent": "-N",
+      "inputs": {
+        "SOUND_MENU": [
+          3,
+          "-P",
+          "q#7$Kd}48/RD|@FHW/!."
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "-P": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "-O",
+      "inputs": {
+        "INDEX": [
+          3,
+          "-Q",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "+SoundLoops",
+          "okJtKoU;#pZ$d6SlN(a."
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "-Q": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "-P",
+      "inputs": {
+        "NUM1": [
+          3,
+          "axG",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "axG": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "-Q",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "_Sound: Index",
+            "y6)^?s,dytXg=#:8cY2N"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "4"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aCG": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "day",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": true,
+      "x": 1043,
+      "y": 360
+    },
+    "axH": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "hT",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Game: Tick",
+          "m2%Xt3wT|T(s%WQ)U+(n"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 2610,
+      "y": 64
+    },
+    "hT": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "axH",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "axI"
+        ],
+        "SUBSTACK": [
+          2,
+          "axJ"
+        ],
+        "SUBSTACK2": [
+          2,
+          "yY"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "axI": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "hT",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "_Global: Is Clone?",
+            "s*r~8u*(g6(HU,*bypTQ"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "axJ": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "hT",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Master Logic",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "yY": {
+      "opcode": "data_setvariableto",
+      "next": "hU",
+      "parent": "hT",
+      "inputs": {
+        "VALUE": [
+          3,
+          "-R",
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "_Global: Temp1",
+          "8}m*gCbKpDNlKkOR|rEK"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "-R": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "yY",
+      "inputs": {
+        "INDEX": [
+          3,
+          "-S",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "+SoundLoops",
+          "okJtKoU;#pZ$d6SlN(a."
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "-S": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "-R",
+      "inputs": {
+        "NUM1": [
+          3,
+          "axK",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "axK": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "-S",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "_Sound: Index",
+            "y6)^?s,dytXg=#:8cY2N"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "4"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "hU": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "yY",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "axL"
+        ],
+        "SUBSTACK": [
+          2,
+          "axM"
+        ],
+        "SUBSTACK2": [
+          2,
+          "axN"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "axL": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "hU",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "_Global: Temp1",
+            "8}m*gCbKpDNlKkOR|rEK"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "axM": {
+      "opcode": "sound_setvolumeto",
+      "next": null,
+      "parent": "hU",
+      "inputs": {
+        "VOLUME": [
+          3,
+          "yi5]puq|;)1_-}Qx^/wz",
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "axN": {
+      "opcode": "sound_setvolumeto",
+      "next": null,
+      "parent": "hU",
+      "inputs": {
+        "VOLUME": [
+          3,
+          "+6RJMfXz:(FD:dJACe[a",
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "axO": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "b0",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Game: Stop Sounds",
+          "?5lH2DVEW=Lh!s/KR@%h"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 943,
+      "y": 528
+    },
+    "b0": {
+      "opcode": "control_if_else",
+      "next": "axP",
+      "parent": "axO",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "axQ"
+        ],
+        "SUBSTACK": [
+          2,
+          "-T"
+        ],
+        "SUBSTACK2": [
+          2,
+          "axR"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "axQ": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "b0",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "_Global: Is Clone?",
+            "s*r~8u*(g6(HU,*bypTQ"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "-T": {
+      "opcode": "data_deletealloflist",
+      "next": "axS",
+      "parent": "b0",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "+SoundLoops",
+          "okJtKoU;#pZ$d6SlN(a."
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "axS": {
+      "opcode": "data_setvariableto",
+      "next": null,
+      "parent": "-T",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "Clone Count: Sound Loop",
+          "FG(/`84[q]h;Fx9]redk"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "axR": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "b0",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "axP": {
+      "opcode": "sound_stopallsounds",
+      "next": null,
+      "parent": "b0",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "-U": {
+      "opcode": "procedures_definition",
+      "next": "yZ",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "axT"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 3465,
+      "y": 64
+    },
+    "axT": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "-U",
+      "inputs": {},
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Master Logic",
+        "argumentids": "[]",
+        "argumentnames": "[]",
+        "argumentdefaults": "[]",
+        "warp": "true"
+      }
+    },
+    "yZ": {
+      "opcode": "control_repeat",
+      "next": null,
+      "parent": "-U",
+      "inputs": {
+        "TIMES": [
+          3,
+          "-V",
+          [
+            6,
+            "10"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "-W"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "-V": {
+      "opcode": "operator_subtract",
+      "next": null,
+      "parent": "yZ",
+      "inputs": {
+        "NUM1": [
+          3,
+          "-X",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          [
+            12,
+            "Clone Count: Sound Loop",
+            "FG(/`84[q]h;Fx9]redk"
+          ],
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "-X": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "-V",
+      "inputs": {
+        "NUM1": [
+          3,
+          "axU",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "4"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "axU": {
+      "opcode": "data_lengthoflist",
+      "next": null,
+      "parent": "-X",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "+SoundLoops",
+          "okJtKoU;#pZ$d6SlN(a."
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "-W": {
+      "opcode": "control_create_clone_of",
+      "next": null,
+      "parent": "yZ",
+      "inputs": {
+        "CLONE_OPTION": [
+          1,
+          "axV"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "axV": {
+      "opcode": "control_create_clone_of_menu",
+      "next": null,
+      "parent": "-W",
+      "inputs": {},
+      "fields": {
+        "CLONE_OPTION": [
+          "_myself_",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "axW": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "-Y",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Game: Init",
+          "$!K?vc0q`vZBW`::L:I^"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1737,
+      "y": 64
+    },
+    "-Y": {
+      "opcode": "data_setvariableto",
+      "next": "-Z",
+      "parent": "axW",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "_Global: Is Clone?",
+          "s*r~8u*(g6(HU,*bypTQ"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "-Z": {
+      "opcode": "data_setvariableto",
+      "next": "axX",
+      "parent": "-Y",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "Clone Count: Sound Loop",
+          "FG(/`84[q]h;Fx9]redk"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "axX": {
+      "opcode": "data_deletealloflist",
+      "next": null,
+      "parent": "-Z",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "+SoundLoops",
+          "okJtKoU;#pZ$d6SlN(a."
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "axY": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "y0",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Game: Tick",
+          "m2%Xt3wT|T(s%WQ)U+(n"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 1737,
+      "y": 336
+    },
+    "y0": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "axY",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "axZ"
+        ],
+        "SUBSTACK": [
+          2,
+          "-0"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "axZ": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "y0",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "_Global: Is Clone?",
+            "s*r~8u*(g6(HU,*bypTQ"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "-0": {
+      "opcode": "sound_seteffectto",
+      "next": null,
+      "parent": "y0",
+      "inputs": {
+        "VALUE": [
+          3,
+          "-1",
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "PAN",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "-1": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "-0",
+      "inputs": {
+        "INDEX": [
+          3,
+          "-2",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "+SoundLoops",
+          "okJtKoU;#pZ$d6SlN(a."
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "-2": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "-1",
+      "inputs": {
+        "NUM1": [
+          3,
+          "ax0",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "4"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ax0": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "-2",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "_Sound: Index",
+            "y6)^?s,dytXg=#:8cY2N"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "4"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ax1": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "y1",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Game: Tick",
+          "m2%Xt3wT|T(s%WQ)U+(n"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 3465,
+      "y": 352
+    },
+    "y1": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "ax1",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "ax2"
+        ],
+        "SUBSTACK": [
+          2,
+          "-3"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ax2": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "y1",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "_Global: Is Clone?",
+            "s*r~8u*(g6(HU,*bypTQ"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "-3": {
+      "opcode": "sound_seteffectto",
+      "next": null,
+      "parent": "y1",
+      "inputs": {
+        "VALUE": [
+          3,
+          "-4",
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {
+        "EFFECT": [
+          "PITCH",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "-4": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "-3",
+      "inputs": {
+        "INDEX": [
+          3,
+          "-5",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "+SoundLoops",
+          "okJtKoU;#pZ$d6SlN(a."
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "-5": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "-4",
+      "inputs": {
+        "NUM1": [
+          3,
+          "ax3",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "3"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ax3": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "-5",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "_Sound: Index",
+            "y6)^?s,dytXg=#:8cY2N"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "4"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ax4": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "ax5",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Game: Switch Layer",
+          "`,p8w}I]y;a1FFW5+FR3"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 511,
+      "y": 64
+    },
+    "ax5": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "ax4",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Stop all Sounds",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "ax6": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "ax7",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Layer: Sound",
+          "VUl{exP/-_^{VcE)%^Zg"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 280
+    },
+    "ax7": {
+      "opcode": "looks_gotofrontback",
+      "next": null,
+      "parent": "ax6",
+      "inputs": {},
+      "fields": {
+        "FRONT_BACK": [
+          "back",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "-6": {
+      "opcode": "procedures_definition",
+      "next": "hV",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "ax8"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 456
+    },
+    "ax8": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "-6",
+      "inputs": {},
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Stop all Sounds",
+        "argumentids": "[]",
+        "argumentnames": "[]",
+        "argumentdefaults": "[]",
+        "warp": "true"
+      }
+    },
+    "hV": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "-6",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "ax9"
+        ],
+        "SUBSTACK": [
+          2,
+          "-7"
+        ],
+        "SUBSTACK2": [
+          2,
+          "ax!"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ax9": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "hV",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "_Global: Is Clone?",
+            "s*r~8u*(g6(HU,*bypTQ"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ax#": {
+      "opcode": "data_deletealloflist",
+      "next": null,
+      "parent": "-7",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "+SoundLoops",
+          "okJtKoU;#pZ$d6SlN(a."
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "-7": {
+      "opcode": "data_setvariableto",
+      "next": "ax#",
+      "parent": "hV",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "Clone Count: Sound Loop",
+          "FG(/`84[q]h;Fx9]redk"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ax!": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "hV",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ax%": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "ax(",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Game: Stop All Sounds",
+          "Z8l:Bz/K@5#uw6;;%6UN"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 511,
+      "y": 240
+    },
+    "ax(": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "ax%",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Stop all Sounds",
+        "argumentids": "[]",
+        "warp": "true"
+      }
+    },
+    "yX": {
+      "opcode": "sound_playuntildone",
+      "next": "-N",
+      "parent": "-M",
+      "inputs": {
+        "SOUND_MENU": [
+          1,
+          "ax)"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ax)": {
+      "opcode": "sound_sounds_menu",
+      "next": null,
+      "parent": "yX",
+      "inputs": {},
+      "fields": {
+        "SOUND_MENU": [
+          "Silence",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "ax*": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "-8",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Game: Exit",
+          ".$xEny;i^aoE]HR1Q/0,"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 48,
+      "y": 64
+    },
+    "-8": {
+      "opcode": "sound_stopallsounds",
+      "next": "ax+",
+      "parent": "ax*",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ax+": {
+      "opcode": "control_delete_this_clone",
+      "next": null,
+      "parent": "-8",
+      "inputs": {},
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "+fv7SwpNy3Ulo$sv~q-.": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "+6RJMfXz:(FD:dJACe[a",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "16"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Settings",
+          "~mFl$K2+Rrl5n:1Sg(3~"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "+6RJMfXz:(FD:dJACe[a": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "axN",
+      "inputs": {
+        "NUM1": [
+          3,
+          "+fv7SwpNy3Ulo$sv~q-.",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "10"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "{49*{)]a0.)6ZJPhpk-#": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "yi5]puq|;)1_-}Qx^/wz",
+      "inputs": {
+        "NUM1": [
+          3,
+          "J`(cI1*)9Y|`h}[R0=w(",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "10"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "J`(cI1*)9Y|`h}[R0=w(": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "{49*{)]a0.)6ZJPhpk-#",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "16"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Settings",
+          "~mFl$K2+Rrl5n:1Sg(3~"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "yi5]puq|;)1_-}Qx^/wz": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "axM",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "_Global: Temp1",
+            "8}m*gCbKpDNlKkOR|rEK"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "{49*{)]a0.)6ZJPhpk-#",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "GQEf_sd^*7la0E}=*Jej": {
+      "opcode": "event_whenbroadcastreceived",
+      "next": "*=-OU2[T8la_Llo_bx*G",
+      "parent": null,
+      "inputs": {},
+      "fields": {
+        "BROADCAST_OPTION": [
+          "Game: Update Sound Volume",
+          "4[7fEX~TVpEA71:SMiPg"
+        ]
+      },
+      "shadow": false,
+      "topLevel": true,
+      "x": 2625,
+      "y": 716
+    },
+    "*=-OU2[T8la_Llo_bx*G": {
+      "opcode": "control_if",
+      "next": null,
+      "parent": "GQEf_sd^*7la0E}=*Jej",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "sJ_2Y7dp#VHD}TTa-Qyu"
+        ],
+        "SUBSTACK": [
+          2,
+          "ELJ$Ox1}XIUItLM$Diw+"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "sJ_2Y7dp#VHD}TTa-Qyu": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "*=-OU2[T8la_Llo_bx*G",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "_Global: Is Clone?",
+            "s*r~8u*(g6(HU,*bypTQ"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ELJ$Ox1}XIUItLM$Diw+": {
+      "opcode": "data_setvariableto",
+      "next": "pxQh}Y$D#?^=wCczN59X",
+      "parent": "*=-OU2[T8la_Llo_bx*G",
+      "inputs": {
+        "VALUE": [
+          3,
+          "/wh)R=Tgg`S8VR~K~(4x",
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "_Global: Temp1",
+          "8}m*gCbKpDNlKkOR|rEK"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "/wh)R=Tgg`S8VR~K~(4x": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "ELJ$Ox1}XIUItLM$Diw+",
+      "inputs": {
+        "INDEX": [
+          3,
+          "W.Myk`x!t[4vL2vs.i[-",
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Sound: Loops",
+          "okJtKoU;#pZ$d6SlN(a."
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "W.Myk`x!t[4vL2vs.i[-": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "/wh)R=Tgg`S8VR~K~(4x",
+      "inputs": {
+        "NUM1": [
+          3,
+          "RW7PUm-rwTbX$s1k?=`^",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "2"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "RW7PUm-rwTbX$s1k?=`^": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "W.Myk`x!t[4vL2vs.i[-",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "_Sound: Index",
+            "y6)^?s,dytXg=#:8cY2N"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "4"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "pxQh}Y$D#?^=wCczN59X": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "ELJ$Ox1}XIUItLM$Diw+",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "4Bt`]MVzw1b{y@mCPn)m"
+        ],
+        "SUBSTACK": [
+          2,
+          "1O{NL;seK+qoB*LC(|li"
+        ],
+        "SUBSTACK2": [
+          2,
+          "RPl5rLQ:VzYW$j$^Q2ya"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "4Bt`]MVzw1b{y@mCPn)m": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "pxQh}Y$D#?^=wCczN59X",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "_Global: Temp1",
+            "8}m*gCbKpDNlKkOR|rEK"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "1O{NL;seK+qoB*LC(|li": {
+      "opcode": "sound_setvolumeto",
+      "next": null,
+      "parent": "pxQh}Y$D#?^=wCczN59X",
+      "inputs": {
+        "VOLUME": [
+          3,
+          "e-m=[*Q$nUkzFU{*d6[2",
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "e-m=[*Q$nUkzFU{*d6[2": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "1O{NL;seK+qoB*LC(|li",
+      "inputs": {
+        "NUM1": [
+          3,
+          [
+            12,
+            "_Global: Temp1",
+            "8}m*gCbKpDNlKkOR|rEK"
+          ],
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          3,
+          "?E=6qW1GF=QQ`|a]`Z,V",
+          [
+            4,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "?E=6qW1GF=QQ`|a]`Z,V": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "e-m=[*Q$nUkzFU{*d6[2",
+      "inputs": {
+        "NUM1": [
+          3,
+          "*yBcUG}Rg#I_8RnGeYXF",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "10"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "*yBcUG}Rg#I_8RnGeYXF": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "?E=6qW1GF=QQ`|a]`Z,V",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "16"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Settings",
+          "~mFl$K2+Rrl5n:1Sg(3~"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "RPl5rLQ:VzYW$j$^Q2ya": {
+      "opcode": "sound_setvolumeto",
+      "next": null,
+      "parent": "pxQh}Y$D#?^=wCczN59X",
+      "inputs": {
+        "VOLUME": [
+          3,
+          "EY`dYGa6r)9lIxr$~NPa",
+          [
+            4,
+            "100"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "EY`dYGa6r)9lIxr$~NPa": {
+      "opcode": "operator_multiply",
+      "next": null,
+      "parent": "RPl5rLQ:VzYW$j$^Q2ya",
+      "inputs": {
+        "NUM1": [
+          3,
+          "3(`:xm;?%./o,FPp4dj5",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "10"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "3(`:xm;?%./o,FPp4dj5": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "EY`dYGa6r)9lIxr$~NPa",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "16"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Settings",
+          "~mFl$K2+Rrl5n:1Sg(3~"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    }
+  },
+  "comments": {
+    "aCH": {
+      "blockId": null,
+      "x": 1829,
+      "y": -625,
+      "width": 536,
+      "height": 346,
+      "minimized": false,
+      "text": "1: Sound Name\n2: Volume\n3: Pan\n4: Pitch"
+    }
+  },
+  "currentCostume": 0,
+  "costumes": [
+    {
+      "assetId": "9d00455bdc22330c76793515495434d9",
+      "name": "costume2",
+      "bitmapResolution": 1,
+      "md5ext": "9d00455bdc22330c76793515495434d9.svg",
+      "dataFormat": "svg",
+      "rotationCenterX": 0,
+      "rotationCenterY": 0
+    }
+  ],
+  "sounds": [
+    {
+      "assetId": "71a8e2f4b6277392f5d3559c7702d685",
+      "name": "Silence",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 44100,
+      "sampleCount": 583,
+      "md5ext": "71a8e2f4b6277392f5d3559c7702d685.wav"
+    },
+    {
+      "assetId": "37cc41f24c7a1379f52849034ec67f3d",
+      "name": "campfire",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 44100,
+      "sampleCount": 2148791,
+      "md5ext": "37cc41f24c7a1379f52849034ec67f3d.wav"
+    },
+    {
+      "assetId": "c2967e6f4d9c7fe7bc46ef8954be08c3",
+      "name": "wind",
+      "dataFormat": "wav",
+      "format": "",
+      "rate": 44100,
+      "sampleCount": 5324782,
+      "md5ext": "c2967e6f4d9c7fe7bc46ef8954be08c3.wav"
+    },
+    {
+      "assetId": "ef3aa4586ba5e028b7ca634e608ee4b9",
+      "name": "day",
+      "dataFormat": "wav",
+      "rate": 44100,
+      "sampleCount": 4221076,
+      "md5ext": "ef3aa4586ba5e028b7ca634e608ee4b9.wav"
+    },
+    {
+      "assetId": "cc87f14c1f0f0276a6f396d4b59bc070",
+      "name": "night",
+      "dataFormat": "wav",
+      "rate": 44100,
+      "sampleCount": 5282945,
+      "md5ext": "cc87f14c1f0f0276a6f396d4b59bc070.wav"
+    },
+    {
+      "assetId": "61a42041eb70bc913e57fdfbd5d8b869",
+      "name": "cave",
+      "dataFormat": "wav",
+      "rate": 44100,
+      "sampleCount": 4694442,
+      "md5ext": "61a42041eb70bc913e57fdfbd5d8b869.wav"
+    }
+  ],
+  "volume": 12.828435780000003,
+  "layerOrder": 9,
+  "visible": false,
+  "x": 147,
+  "y": -72,
+  "size": 100,
+  "direction": 90,
+  "draggable": false,
+  "rotationStyle": "all around"
+}
