@@ -4,19 +4,19 @@
   "variables": {
     "[:~I.i^m7Xg?RW_gha.w-gridX-": [
       "_Noise: gridX",
-      8
+      23
     ],
     "[:~I.i^m7Xg?RW_gha.w-gridY-": [
       "_Noise: gridY",
-      8
+      23
     ],
     "[:~I.i^m7Xg?RW_gha.w-weightX-": [
       "_Noise: Weight X",
-      0.9199999999999999
+      0.9200000000000017
     ],
     "[:~I.i^m7Xg?RW_gha.w-weightY-": [
       "_Noise: Weight Y",
-      0.9199999999999999
+      0.9200000000000017
     ],
     "[:~I.i^m7Xg?RW_gha.w-angle-": [
       "_Noise: angle",
@@ -24,15 +24,15 @@
     ],
     "[:~I.i^m7Xg?RW_gha.w-dotReturn-": [
       "_Noise: dotReturn",
-      -0.08000000000000007
+      -0.0799999999999983
     ],
     "[:~I.i^m7Xg?RW_gha.w-int1-1-": [
       "_Noise: int1-1",
-      0.9199999999999999
+      0.9200000000000017
     ],
     "[:~I.i^m7Xg?RW_gha.w-int1-2-": [
       "_Noise: int1-2",
-      -0.08000000000000007
+      -0.0799999999999983
     ],
     "[:~I.i^m7Xg?RW_gha.w-weight-": [
       "_Noise: Weight",
@@ -40,47 +40,47 @@
     ],
     "[:~I.i^m7Xg?RW_gha.w-intReturn-": [
       "_Noise: intReturn",
-      -0.06469113276016474
+      -0.0647285195166404
     ],
     "[:~I.i^m7Xg?RW_gha.w-int2-1-": [
       "_Noise: int2-1",
-      -0.08972712557325688
+      -0.09210717129309569
     ],
     "[:~I.i^m7Xg?RW_gha.w-int2-2-": [
       "_Noise: int2-2",
-      -0.06429158055000006
+      -0.06429158054999828
     ],
     "[:~I.i^m7Xg?RW_gha.w-perlinReturn-": [
       "_Noise: PerlinReturn",
-      -0.06469113276016474
+      -0.0647285195166404
     ],
     "[:~I.i^m7Xg?RW_gha.w-_Temp-": [
       "_Global: Temp 5",
-      0.026880824944809478
+      0.04995642854570559
     ],
     "vzxC#K]wm,+]Z728n7+G": [
       "_Global: Temp 1",
-      230.1532440185547
+      90001
     ],
     "}pDxJBoCRa(3#~B}o+(A": [
       "_Global: Temp 2",
-      301.07994079589844
+      0
     ],
     "i~sH~K]8f6-Px3C3Jlby": [
       "_Global: Temp 3",
-      0.68768310546875
+      0
     ],
     "1oFOkQr0J`!A}w4WU|Ko": [
       "_Global: Temp 4",
-      0
+      6
     ],
     "0*KT3q:.bQ12RN)m1{38": [
       "_Global: ConstTemp1",
-      2
+      6
     ],
     "f;hhlm)([m;~kbacW!5c": [
       "_Global: ConstTemp2",
-      0.5379360902242767
+      0.548673538786042
     ],
     "L*#U1j.XRc-pN!;TaMpA": [
       "_Temp3",
@@ -116,11 +116,11 @@
     ],
     "iU.E9FuhdNubR]a/{}1?": [
       "_RNG: State",
-      92842777.14014435
+      52310951.937812805
     ],
     "E?q=T;dDSj{8Fk{.A{4l": [
       "_RNG: Return",
-      0.14014434814453125
+      0.9378128051757812
     ]
   },
   "lists": {
@@ -19741,231 +19741,6 @@
         "warp": "true"
       }
     },
-    "avV": {
-      "opcode": "data_setvariableto",
-      "next": "hD",
-      "parent": null,
-      "inputs": {
-        "VALUE": [
-          1,
-          [
-            10,
-            "Generating World"
-          ]
-        ]
-      },
-      "fields": {
-        "VARIABLE": [
-          "+Temp3",
-          "ci.@--Sd)Td+BRGiP`;."
-        ]
-      },
-      "shadow": false,
-      "topLevel": true,
-      "x": 13171,
-      "y": 1040
-    },
-    "hD": {
-      "opcode": "control_if",
-      "next": "+U",
-      "parent": "avV",
-      "inputs": {
-        "CONDITION": [
-          2,
-          "+V"
-        ],
-        "SUBSTACK": [
-          2,
-          "+W"
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "+V": {
-      "opcode": "operator_not",
-      "next": null,
-      "parent": "hD",
-      "inputs": {
-        "OPERAND": [
-          2,
-          "avW"
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "avW": {
-      "opcode": "operator_equals",
-      "next": null,
-      "parent": "+V",
-      "inputs": {
-        "OPERAND1": [
-          3,
-          [
-            12,
-            "World: Layer",
-            "idu{l|^Tstsc914.KLHZ"
-          ],
-          [
-            10,
-            ""
-          ]
-        ],
-        "OPERAND2": [
-          1,
-          [
-            10,
-            "1"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "+W": {
-      "opcode": "data_setvariableto",
-      "next": "+X",
-      "parent": "hD",
-      "inputs": {
-        "VALUE": [
-          1,
-          [
-            10,
-            "Switching worlds for generation"
-          ]
-        ]
-      },
-      "fields": {
-        "VARIABLE": [
-          "+Temp1",
-          "t,X/V!R;t3*}dINH5h^-"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "+X": {
-      "opcode": "event_broadcastandwait",
-      "next": "+Y",
-      "parent": "+W",
-      "inputs": {
-        "BROADCAST_INPUT": [
-          1,
-          [
-            11,
-            "Save: Save Layer",
-            "xa#[![osp#imI-aX4%9W"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "+Y": {
-      "opcode": "data_setvariableto",
-      "next": "avX",
-      "parent": "+X",
-      "inputs": {
-        "VALUE": [
-          1,
-          [
-            10,
-            "1"
-          ]
-        ]
-      },
-      "fields": {
-        "VARIABLE": [
-          "World: Layer",
-          "idu{l|^Tstsc914.KLHZ"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "avX": {
-      "opcode": "event_broadcastandwait",
-      "next": null,
-      "parent": "+Y",
-      "inputs": {
-        "BROADCAST_INPUT": [
-          1,
-          [
-            11,
-            "Save: Load Layer",
-            "UD;jP@nwesCSm#Y`$54:"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "+U": {
-      "opcode": "data_setvariableto",
-      "next": "+Z",
-      "parent": "hD",
-      "inputs": {
-        "VALUE": [
-          1,
-          [
-            10,
-            "2"
-          ]
-        ]
-      },
-      "fields": {
-        "VARIABLE": [
-          "World: Layer",
-          "idu{l|^Tstsc914.KLHZ"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "+Z": {
-      "opcode": "data_setvariableto",
-      "next": "avY",
-      "parent": "+U",
-      "inputs": {
-        "VALUE": [
-          1,
-          [
-            10,
-            "Generating Dependant Features"
-          ]
-        ]
-      },
-      "fields": {
-        "VARIABLE": [
-          "+Temp1",
-          "t,X/V!R;t3*}dINH5h^-"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "avY": {
-      "opcode": "procedures_call",
-      "next": null,
-      "parent": "+Z",
-      "inputs": {},
-      "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "Generate Dependant Dungeon Features",
-        "argumentids": "[]",
-        "warp": "true"
-      }
-    },
     "avZ": {
       "opcode": "procedures_definition",
       "next": null,
@@ -30057,7 +29832,7 @@
           1,
           [
             4,
-            "50"
+            "100"
           ]
         ]
       },

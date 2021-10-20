@@ -630,7 +630,7 @@
     "value": [],
     "width": 181,
     "height": 271,
-    "x": 48,
+    "x": 56,
     "y": 87,
     "visible": false
   },
@@ -854,10 +854,10 @@
     },
     "spriteName": null,
     "value": [],
-    "width": 172,
-    "height": 267,
-    "x": 306,
-    "y": 91,
+    "width": 144,
+    "height": 283,
+    "x": 338,
+    "y": -208,
     "visible": false
   },
   {
@@ -1398,7 +1398,7 @@
     "visible": false
   },
   {
-    "id": "mb1rjlIh!:JR|lW3;c;k_volume",
+    "id": "39eZW[U_ItkpAP1OTCOW_volume",
     "mode": "default",
     "opcode": "sound_volume",
     "params": {},

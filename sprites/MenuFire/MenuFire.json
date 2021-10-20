@@ -1124,7 +1124,7 @@
     }
   },
   "comments": {},
-  "currentCostume": 27,
+  "currentCostume": 34,
   "costumes": [
     {
       "assetId": "a2ff727dfcd5404cb1d6124cbff76f49",
@@ -2208,11 +2208,11 @@
       "md5ext": "1094e682c06182f83388d290ffb4e88a.wav"
     }
   ],
-  "volume": 0,
+  "volume": 70,
   "layerOrder": 16,
   "visible": false,
-  "x": 116,
-  "y": -1,
+  "x": 115,
+  "y": 0,
   "size": 175,
   "direction": 90,
   "draggable": false,

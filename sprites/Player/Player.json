@@ -12,7 +12,7 @@
     ],
     "C4HF^S(T*ZV)U4ZZ{5}v": [
       "_Global: Temp 1",
-      0.4875284901033731
+      0.3981071705535182
     ],
     ")j^5n#oU5C-~nPY)lMCA": [
       "_Player: Velocity X",
@@ -28,11 +28,11 @@
     ],
     "e+x24_Shn9TEZaos!@iN": [
       "_Global: Temp 3",
-      "0.0"
+      "0.5"
     ],
     "1O`Y/hyeIe]BEl7vw#=X": [
       "_Global: Temp 4",
-      193.81756639254647
+      263.52816447007876
     ],
     "4[%t%HHn0S+^3|aPkVX+": [
       "_Global: Temp 5",
@@ -8533,8 +8533,8 @@
   "volume": 100,
   "layerOrder": 4,
   "visible": true,
-  "x": 20,
-  "y": -22,
+  "x": 19,
+  "y": -18,
   "size": 200,
   "direction": 90,
   "draggable": false,
