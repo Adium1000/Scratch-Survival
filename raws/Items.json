@@ -205,7 +205,7 @@
         {
             "Index": 25,
             "Name": "Copper Pants",
-            "Texture": "ItemCopperPants",
+            "Texture": "ItemedPants",
             "Type": "Pants",
             "TypeInfo": [
                 "2",
@@ -491,7 +491,7 @@
             "TypeInfo": [
                 "1",
                 "0.3",
-                ""
+                "0ew"
             ]
         },
         {
@@ -585,6 +585,17 @@
             "Name": "Mixed Seeds",
             "Texture": "ItemMixedSeeds",
             "Type": "MixedSeeds"
+        },
+        {
+            "Index": 65,
+            "Name": "Baked Potato",
+            "Texture": "ItemBakedPotato",
+            "Type": "Food",
+            "TypeInfo": [
+                "16",
+                "",
+                ""
+            ]
         }
     ],
     "Structure": [

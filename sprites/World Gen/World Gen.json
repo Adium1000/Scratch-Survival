@@ -4,19 +4,19 @@
   "variables": {
     "[:~I.i^m7Xg?RW_gha.w-gridX-": [
       "_Noise: gridX",
-      23
+      8
     ],
     "[:~I.i^m7Xg?RW_gha.w-gridY-": [
       "_Noise: gridY",
-      23
+      8
     ],
     "[:~I.i^m7Xg?RW_gha.w-weightX-": [
       "_Noise: Weight X",
-      0.9200000000000017
+      0.9199999999999999
     ],
     "[:~I.i^m7Xg?RW_gha.w-weightY-": [
       "_Noise: Weight Y",
-      0.9200000000000017
+      0.9199999999999999
     ],
     "[:~I.i^m7Xg?RW_gha.w-angle-": [
       "_Noise: angle",
@@ -24,15 +24,15 @@
     ],
     "[:~I.i^m7Xg?RW_gha.w-dotReturn-": [
       "_Noise: dotReturn",
-      -0.0799999999999983
+      -0.08000000000000007
     ],
     "[:~I.i^m7Xg?RW_gha.w-int1-1-": [
       "_Noise: int1-1",
-      0.9200000000000017
+      0.9199999999999999
     ],
     "[:~I.i^m7Xg?RW_gha.w-int1-2-": [
       "_Noise: int1-2",
-      -0.0799999999999983
+      -0.08000000000000007
     ],
     "[:~I.i^m7Xg?RW_gha.w-weight-": [
       "_Noise: Weight",
@@ -40,47 +40,47 @@
     ],
     "[:~I.i^m7Xg?RW_gha.w-intReturn-": [
       "_Noise: intReturn",
-      -0.0647285195166404
+      -0.06455570129347803
     ],
     "[:~I.i^m7Xg?RW_gha.w-int2-1-": [
       "_Noise: int2-1",
-      -0.09210717129309569
+      -0.08110554100723501
     ],
     "[:~I.i^m7Xg?RW_gha.w-int2-2-": [
       "_Noise: int2-2",
-      -0.06429158054999828
+      -0.06429158055000006
     ],
     "[:~I.i^m7Xg?RW_gha.w-perlinReturn-": [
       "_Noise: PerlinReturn",
-      -0.0647285195166404
+      -0.06455570129347803
     ],
     "[:~I.i^m7Xg?RW_gha.w-_Temp-": [
       "_Global: Temp 5",
-      0.04995642854570559
+      0.029561395146700642
     ],
     "vzxC#K]wm,+]Z728n7+G": [
       "_Global: Temp 1",
-      90001
+      119.84765625
     ],
     "}pDxJBoCRa(3#~B}o+(A": [
       "_Global: Temp 2",
-      0
+      408.1491394042969
     ],
     "i~sH~K]8f6-Px3C3Jlby": [
       "_Global: Temp 3",
-      0
+      -0.5443115234375
     ],
     "1oFOkQr0J`!A}w4WU|Ko": [
       "_Global: Temp 4",
-      6
+      0
     ],
     "0*KT3q:.bQ12RN)m1{38": [
       "_Global: ConstTemp1",
-      6
+      3
     ],
     "f;hhlm)([m;~kbacW!5c": [
       "_Global: ConstTemp2",
-      0.548673538786042
+      0.4717443564225219
     ],
     "L*#U1j.XRc-pN!;TaMpA": [
       "_Temp3",
@@ -116,11 +116,11 @@
     ],
     "iU.E9FuhdNubR]a/{}1?": [
       "_RNG: State",
-      52310951.937812805
+      33690534.88763428
     ],
     "E?q=T;dDSj{8Fk{.A{4l": [
       "_RNG: Return",
-      0.9378128051757812
+      -0.11236572265625
     ]
   },
   "lists": {
@@ -28989,7 +28989,8 @@
       "parent": "v",
       "inputs": {
         "ITEM": [
-          1,
+          3,
+          "[0a0gBuGC*Xncb]8eV.=",
           [
             10,
             "0"
@@ -30528,6 +30529,30 @@
           "](kA{U!n*.$$cF}qds5:"
         ]
       },
+      "shadow": false,
+      "topLevel": false
+    },
+    "[0a0gBuGC*Xncb]8eV.=": {
+      "opcode": "operator_random",
+      "next": null,
+      "parent": "bE",
+      "inputs": {
+        "FROM": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ],
+        "TO": [
+          1,
+          [
+            4,
+            "360"
+          ]
+        ]
+      },
+      "fields": {},
       "shadow": false,
       "topLevel": false
     }

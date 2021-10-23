@@ -127,7 +127,7 @@
     },
     "ay.": {
       "opcode": "event_whenbroadcastreceived",
-      "next": ".y",
+      "next": "h1",
       "parent": null,
       "inputs": {},
       "fields": {
@@ -138,22 +138,13 @@
       },
       "shadow": false,
       "topLevel": true,
-      "x": 442,
-      "y": 64
-    },
-    ".y": {
-      "opcode": "pen_clear",
-      "next": "h1",
-      "parent": "ay.",
-      "inputs": {},
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
+      "x": 441,
+      "y": 178
     },
     "h1": {
       "opcode": "motion_gotoxy",
       "next": "y~",
-      "parent": ".y",
+      "parent": "ay.",
       "inputs": {
         "X": [
           3,
@@ -1124,7 +1115,7 @@
     }
   },
   "comments": {},
-  "currentCostume": 34,
+  "currentCostume": 82,
   "costumes": [
     {
       "assetId": "a2ff727dfcd5404cb1d6124cbff76f49",
@@ -2208,11 +2199,11 @@
       "md5ext": "1094e682c06182f83388d290ffb4e88a.wav"
     }
   ],
-  "volume": 70,
+  "volume": 100,
   "layerOrder": 16,
   "visible": false,
-  "x": 115,
-  "y": 0,
+  "x": 116,
+  "y": -1,
   "size": 175,
   "direction": 90,
   "draggable": false,

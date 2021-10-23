@@ -4,15 +4,15 @@
   "variables": {
     "11TJfACH}}2,h~IeHaJQ": [
       "_Entity: X",
-      31
+      44
     ],
     "U8TPll$Qtm:xEnwF;uU8": [
       "_Entity: Y",
-      31
+      56
     ],
     "g1h._kU,(yI+#A23YWkH": [
       "_Entity: Index",
-      1892
+      3990.6000000000004
     ],
     "$~i^-r|uAcN%73b!I;7Q": [
       "_Global: Is Clone?",
@@ -28,15 +28,15 @@
     ],
     "@GnM_^as+IKk=e^d.(G9": [
       "_Entity: Chunk X",
-      29
+      42
     ],
     "rGV{yrL:^iE4k)|l//D^": [
       "_Entity: Chunk Y",
-      30
+      55
     ],
     "w{BLy5LV)|)]iKKb)Vgk": [
       "_Global: Temp2",
-      0.08347196518619171
+      -0.8796120450040803
     ],
     "x.mH{**+i|KXlOVIV$ru": [
       "_Global: Temp3",
@@ -37824,16 +37824,6 @@
       "shadow": false,
       "topLevel": false
     },
-    "D9hybTct_URpIe[4g||D": [
-      12,
-      "Render: Camera X",
-      "uXT|p(y:t3zxFfddvbIC"
-    ],
-    "HjH-1B1ShAhILYY(ra8y": [
-      12,
-      "_Temp1",
-      "C4HF^S(T*ZV)U4ZZ{5}v"
-    ],
     "|:},9Yu(Y7vIPPD5-9`8": {
       "opcode": "data_addtolist",
       "next": null,
@@ -37908,7 +37898,17 @@
       "fields": {},
       "shadow": false,
       "topLevel": false
-    }
+    },
+    "^JZS^c|V+k5IPtotHqQ#": [
+      12,
+      "Render: Camera X",
+      "uXT|p(y:t3zxFfddvbIC"
+    ],
+    "l%SKxp/:7uFVIy?IkCQ[": [
+      12,
+      "_Temp1",
+      "C4HF^S(T*ZV)U4ZZ{5}v"
+    ]
   },
   "comments": {
     "aBH": {
@@ -37927,7 +37927,7 @@
       "width": 444,
       "height": 423,
       "minimized": false,
-      "text": "Entity: Entities  Format\n\n1 - Entity AI\n2 - Texture 1\n3 - Texture 2\n4 - Texture 3\n5 - Texture 4\n6 - X\n7 - Y\n8 - Rotation\n9 - Data 1\n10 - Data 2\n11 - Data 3\n12 - Data 4\n13 - Data 5\n14 - Data 6\n15 - Ghost"
+      "text": "Entity: Entities  Format\n\n1 - Entity Behaviour ID\n2 - Texture 1\n3 - Texture 2\n4 - Texture 3\n5 - Texture 4\n6 - X\n7 - Y\n8 - Rotation\n9 - Data 1\n10 - Data 2\n11 - Data 3\n12 - Data 4\n13 - Data 5\n14 - Data 6\n15 - Ghost"
     },
     "aBK": {
       "blockId": null,

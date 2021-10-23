@@ -88,8 +88,9 @@
             "Workstation": "Workbench",
             "Output": 36,
             "Inputs": {
-                "Item0": 11,
-                "Item1": 8
+                "Item0": 41,
+                "Item1": 11,
+                "Item2": 8
             }
         },
         {
@@ -143,6 +144,41 @@
         },
         {
             "Workstation": "Workbench",
+            "Output": 32,
+            "Inputs": {
+                "Item0": 31,
+                "Item1": 31
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 34,
+            "Inputs": {
+                "Item0": 30,
+                "Item1": 30,
+                "Item2": 29
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 33,
+            "Inputs": {
+                "Item0": 32,
+                "Item1": 28,
+                "Item2": 32
+            }
+        },
+        {
+            "Workstation": "Workbench",
+            "Output": 35,
+            "Inputs": {
+                "Item0": 33,
+                "Item1": 30,
+                "Item2": 29
+            }
+        },
+        {
+            "Workstation": "Workbench",
             "Output": 56,
             "Inputs": {
                 "Item0": 8
@@ -168,6 +204,14 @@
             "Output": 28,
             "Inputs": {
                 "Item0": 27,
+                "Item1": 7
+            }
+        },
+        {
+            "Workstation": "Furnace",
+            "Output": 65,
+            "Inputs": {
+                "Item0": 29,
                 "Item1": 7
             }
         },
@@ -225,8 +269,33 @@
             "Output": 2,
             "Inputs": {
                 "Item0": 41,
+                "Item1": 12
+            }
+        },
+        {
+            "Workstation": "Anvil",
+            "Output": 3,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 41,
+                "Item2": 12
+            }
+        },
+        {
+            "Workstation": "Anvil",
+            "Output": 1,
+            "Inputs": {
+                "Item0": 41,
                 "Item1": 12,
                 "Item2": 12
+            }
+        },
+        {
+            "Workstation": "Anvil",
+            "Output": 2,
+            "Inputs": {
+                "Item0": 41,
+                "Item1": 12
             }
         },
         {
